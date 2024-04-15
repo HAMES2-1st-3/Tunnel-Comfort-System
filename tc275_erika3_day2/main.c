@@ -76,8 +76,8 @@ TASK(Ctrl_Btn){ // Control window using Joystick
 }
 TASK(Ctrl_Window){ // AutoControl Window using CAN Frame(0x100)
 	uint16 internal = getisInternal(); // get frmInTunnel value
-	static uint16 backupDir ;	// Backup Direction of Window (0: close / 1: open) for Memorial
-	static uint32 backupDist;	// Backup Distance for Memorial
+	static uint16 backupDir = 1-status.window ;	// Backup Direction of Window (0: close / 1: open) for Memorial
+	static uint32 backupDist = status.dist;	// Backup Distance for Memorial
 	if(internal){
 //		status.backupDir = status.window;	// save current status to backup
 		backupDir = status.window;	// save current status to backup
@@ -115,7 +115,7 @@ TASK(Ctrl_Window){ // AutoControl Window using CAN Frame(0x100)
 
 TASK(Ctrl_HLamp){ // AutoControl Head Lamp
 	uint16 dark = getisDark();	// get frmDark value
-	static uint16 backup;		// Backup Head Lamp Status for Memorial
+	static uint16 backup = status.hLamp;		// Backup Head Lamp Status for Memorial
 
 	if(dark == 1){
 		backup = status.hLamp; 		// save cur status to backup
@@ -132,7 +132,7 @@ TASK(Ctrl_HLamp){ // AutoControl Head Lamp
 }
 TASK(Ctrl_InAir){ // AutoControl In-Air Mode Motor
 	uint16 internal = getisInternal();	// get frmInTunnel value
-	static uint16 backup;		// Backup In Air mode for Memorial
+	static uint16 backup = status.inAir;		// Backup In Air mode for Memorial
 	if(internal){
 		backup = status.inAir;
 		status.inAir = 1; // start
