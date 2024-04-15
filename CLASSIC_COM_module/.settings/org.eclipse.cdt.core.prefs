@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.toolchain.gnu.cygwin.base.1233731681/BINDIR/delimiter=;
+environment/project/cdt.managedbuild.toolchain.gnu.cygwin.base.1233731681/BINDIR/operation=replace
+environment/project/cdt.managedbuild.toolchain.gnu.cygwin.base.1233731681/BINDIR/value=C\:\\HighTec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\bin
+environment/project/cdt.managedbuild.toolchain.gnu.cygwin.base.1233731681/PWD/delimiter=;
+environment/project/cdt.managedbuild.toolchain.gnu.cygwin.base.1233731681/PWD/operation=replace
+environment/project/cdt.managedbuild.toolchain.gnu.cygwin.base.1233731681/append=true
+environment/project/cdt.managedbuild.toolchain.gnu.cygwin.base.1233731681/appendContributed=true
