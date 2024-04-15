@@ -1,0 +1,13 @@
+!SESSION 2024-04-12 16:19:22.497 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_402
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -application com.eu.evidence.rtdruid3.oil.ee.core.generator --inputFile conf.oil --outputDir .
+Command-line arguments:  -data ./erika/workspace -application com.eu.evidence.rtdruid3.oil.ee.core.generator --inputFile conf.oil --outputDir .
+
+!ENTRY org.eclipse.acceleo.engine 2 0 2024-04-12 16:19:26.687
+!MESSAGE No value found for the property 'preference_tricore__path_for_hightec_gcc_compiler'.
+
+!ENTRY org.eclipse.acceleo.engine 2 0 2024-04-12 16:19:27.046
+!MESSAGE No value found for the property 'preference_lauterbach__path_for_trace32'.
