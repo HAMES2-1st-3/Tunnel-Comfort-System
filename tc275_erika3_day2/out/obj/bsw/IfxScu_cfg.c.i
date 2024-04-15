@@ -1,0 +1,8713 @@
+# 1 "C:\\RTDRUI~1\\TC275_~1\\bsw\\IfxScu_cfg.c"
+# 1 "C:\\rtdruid3-ws\\tc275_erika3_day2\\out//"
+# 1 "<built-in>"
+#define __STDC__ 1
+#define __STDC_VERSION__ 199901L
+#define __STDC_HOSTED__ 1
+#define __GNUC__ 4
+#define __GNUC_MINOR__ 9
+#define __GNUC_PATCHLEVEL__ 4
+#define __VERSION__ "4.9.4 build on 2019-06-07"
+#define __ATOMIC_RELAXED 0
+#define __ATOMIC_SEQ_CST 5
+#define __ATOMIC_ACQUIRE 2
+#define __ATOMIC_RELEASE 3
+#define __ATOMIC_ACQ_REL 4
+#define __ATOMIC_CONSUME 1
+#define __OPTIMIZE__ 1
+#define __FAST_MATH__ 1
+#define __FINITE_MATH_ONLY__ 1
+#define __SIZEOF_INT__ 4
+#define __SIZEOF_LONG__ 4
+#define __SIZEOF_LONG_LONG__ 8
+#define __SIZEOF_SHORT__ 2
+#define __SIZEOF_FLOAT__ 4
+#define __SIZEOF_DOUBLE__ 4
+#define __SIZEOF_LONG_DOUBLE__ 8
+#define __SIZEOF_SIZE_T__ 4
+#define __CHAR_BIT__ 8
+#define __BIGGEST_ALIGNMENT__ 4
+#define __ORDER_LITTLE_ENDIAN__ 1234
+#define __ORDER_BIG_ENDIAN__ 4321
+#define __ORDER_PDP_ENDIAN__ 3412
+#define __BYTE_ORDER__ __ORDER_LITTLE_ENDIAN__
+#define __FLOAT_WORD_ORDER__ __ORDER_LITTLE_ENDIAN__
+#define __SIZEOF_POINTER__ 4
+#define __SIZE_TYPE__ long unsigned int
+#define __PTRDIFF_TYPE__ long int
+#define __WCHAR_TYPE__ int
+#define __WINT_TYPE__ unsigned int
+#define __INTMAX_TYPE__ long long int
+#define __UINTMAX_TYPE__ long long unsigned int
+#define __CHAR16_TYPE__ short unsigned int
+#define __CHAR32_TYPE__ long unsigned int
+#define __SIG_ATOMIC_TYPE__ int
+#define __INT8_TYPE__ signed char
+#define __INT16_TYPE__ short int
+#define __INT32_TYPE__ long int
+#define __INT64_TYPE__ long long int
+#define __UINT8_TYPE__ unsigned char
+#define __UINT16_TYPE__ short unsigned int
+#define __UINT32_TYPE__ long unsigned int
+#define __UINT64_TYPE__ long long unsigned int
+#define __INT_LEAST8_TYPE__ signed char
+#define __INT_LEAST16_TYPE__ short int
+#define __INT_LEAST32_TYPE__ long int
+#define __INT_LEAST64_TYPE__ long long int
+#define __UINT_LEAST8_TYPE__ unsigned char
+#define __UINT_LEAST16_TYPE__ short unsigned int
+#define __UINT_LEAST32_TYPE__ long unsigned int
+#define __UINT_LEAST64_TYPE__ long long unsigned int
+#define __INT_FAST8_TYPE__ int
+#define __INT_FAST16_TYPE__ int
+#define __INT_FAST32_TYPE__ int
+#define __INT_FAST64_TYPE__ long long int
+#define __UINT_FAST8_TYPE__ unsigned int
+#define __UINT_FAST16_TYPE__ unsigned int
+#define __UINT_FAST32_TYPE__ unsigned int
+#define __UINT_FAST64_TYPE__ long long unsigned int
+#define __INTPTR_TYPE__ long int
+#define __UINTPTR_TYPE__ long unsigned int
+#define __has_include(STR) __has_include__(STR)
+#define __has_include_next(STR) __has_include_next__(STR)
+#define __GXX_ABI_VERSION 1002
+#define __USING_SJLJ_EXCEPTIONS__ 1
+#define __SCHAR_MAX__ 127
+#define __SHRT_MAX__ 32767
+#define __INT_MAX__ 2147483647
+#define __LONG_MAX__ 2147483647L
+#define __LONG_LONG_MAX__ 9223372036854775807LL
+#define __WCHAR_MAX__ 2147483647
+#define __WCHAR_MIN__ (-__WCHAR_MAX__ - 1)
+#define __WINT_MAX__ 4294967295U
+#define __WINT_MIN__ 0U
+#define __PTRDIFF_MAX__ 2147483647L
+#define __SIZE_MAX__ 4294967295UL
+#define __INTMAX_MAX__ 9223372036854775807LL
+#define __INTMAX_C(c) c ## LL
+#define __UINTMAX_MAX__ 18446744073709551615ULL
+#define __UINTMAX_C(c) c ## ULL
+#define __SIG_ATOMIC_MAX__ 2147483647
+#define __SIG_ATOMIC_MIN__ (-__SIG_ATOMIC_MAX__ - 1)
+#define __INT8_MAX__ 127
+#define __INT16_MAX__ 32767
+#define __INT32_MAX__ 2147483647L
+#define __INT64_MAX__ 9223372036854775807LL
+#define __UINT8_MAX__ 255
+#define __UINT16_MAX__ 65535
+#define __UINT32_MAX__ 4294967295UL
+#define __UINT64_MAX__ 18446744073709551615ULL
+#define __INT_LEAST8_MAX__ 127
+#define __INT8_C(c) c
+#define __INT_LEAST16_MAX__ 32767
+#define __INT16_C(c) c
+#define __INT_LEAST32_MAX__ 2147483647L
+#define __INT32_C(c) c ## L
+#define __INT_LEAST64_MAX__ 9223372036854775807LL
+#define __INT64_C(c) c ## LL
+#define __UINT_LEAST8_MAX__ 255
+#define __UINT8_C(c) c
+#define __UINT_LEAST16_MAX__ 65535
+#define __UINT16_C(c) c
+#define __UINT_LEAST32_MAX__ 4294967295UL
+#define __UINT32_C(c) c ## UL
+#define __UINT_LEAST64_MAX__ 18446744073709551615ULL
+#define __UINT64_C(c) c ## ULL
+#define __INT_FAST8_MAX__ 2147483647
+#define __INT_FAST16_MAX__ 2147483647
+#define __INT_FAST32_MAX__ 2147483647
+#define __INT_FAST64_MAX__ 9223372036854775807LL
+#define __UINT_FAST8_MAX__ 4294967295U
+#define __UINT_FAST16_MAX__ 4294967295U
+#define __UINT_FAST32_MAX__ 4294967295U
+#define __UINT_FAST64_MAX__ 18446744073709551615ULL
+#define __INTPTR_MAX__ 2147483647L
+#define __UINTPTR_MAX__ 4294967295UL
+#define __GCC_IEC_559 0
+#define __GCC_IEC_559_COMPLEX 0
+#define __FLT_EVAL_METHOD__ 0
+#define __DEC_EVAL_METHOD__ 2
+#define __FLT_RADIX__ 2
+#define __FLT_MANT_DIG__ 24
+#define __FLT_DIG__ 6
+#define __FLT_MIN_EXP__ (-125)
+#define __FLT_MIN_10_EXP__ (-37)
+#define __FLT_MAX_EXP__ 128
+#define __FLT_MAX_10_EXP__ 38
+#define __FLT_DECIMAL_DIG__ 9
+#define __FLT_MAX__ 3.4028234663852886e+38F
+#define __FLT_MIN__ 1.1754943508222875e-38F
+#define __FLT_EPSILON__ 1.1920928955078125e-7F
+#define __FLT_DENORM_MIN__ 1.4012984643248171e-45F
+#define __FLT_HAS_DENORM__ 1
+#define __FLT_HAS_INFINITY__ 1
+#define __FLT_HAS_QUIET_NAN__ 1
+#define __FP_FAST_FMAF 1
+#define __DBL_MANT_DIG__ 24
+#define __DBL_DIG__ 6
+#define __DBL_MIN_EXP__ (-125)
+#define __DBL_MIN_10_EXP__ (-37)
+#define __DBL_MAX_EXP__ 128
+#define __DBL_MAX_10_EXP__ 38
+#define __DBL_DECIMAL_DIG__ 9
+#define __DBL_MAX__ ((double)3.4028234663852886e+38L)
+#define __DBL_MIN__ ((double)1.1754943508222875e-38L)
+#define __DBL_EPSILON__ ((double)1.1920928955078125e-7L)
+#define __DBL_DENORM_MIN__ ((double)1.4012984643248171e-45L)
+#define __DBL_HAS_DENORM__ 1
+#define __DBL_HAS_INFINITY__ 1
+#define __DBL_HAS_QUIET_NAN__ 1
+#define __FP_FAST_FMA 1
+#define __LDBL_MANT_DIG__ 53
+#define __LDBL_DIG__ 15
+#define __LDBL_MIN_EXP__ (-1021)
+#define __LDBL_MIN_10_EXP__ (-307)
+#define __LDBL_MAX_EXP__ 1024
+#define __LDBL_MAX_10_EXP__ 308
+#define __DECIMAL_DIG__ 17
+#define __LDBL_MAX__ 1.7976931348623157e+308L
+#define __LDBL_MIN__ 2.2250738585072014e-308L
+#define __LDBL_EPSILON__ 2.2204460492503131e-16L
+#define __LDBL_DENORM_MIN__ 4.9406564584124654e-324L
+#define __LDBL_HAS_DENORM__ 1
+#define __LDBL_HAS_INFINITY__ 1
+#define __LDBL_HAS_QUIET_NAN__ 1
+#define __DEC32_MANT_DIG__ 7
+#define __DEC32_MIN_EXP__ (-94)
+#define __DEC32_MAX_EXP__ 97
+#define __DEC32_MIN__ 1E-95DF
+#define __DEC32_MAX__ 9.999999E96DF
+#define __DEC32_EPSILON__ 1E-6DF
+#define __DEC32_SUBNORMAL_MIN__ 0.000001E-95DF
+#define __DEC64_MANT_DIG__ 16
+#define __DEC64_MIN_EXP__ (-382)
+#define __DEC64_MAX_EXP__ 385
+#define __DEC64_MIN__ 1E-383DD
+#define __DEC64_MAX__ 9.999999999999999E384DD
+#define __DEC64_EPSILON__ 1E-15DD
+#define __DEC64_SUBNORMAL_MIN__ 0.000000000000001E-383DD
+#define __DEC128_MANT_DIG__ 34
+#define __DEC128_MIN_EXP__ (-6142)
+#define __DEC128_MAX_EXP__ 6145
+#define __DEC128_MIN__ 1E-6143DL
+#define __DEC128_MAX__ 9.999999999999999999999999999999999E6144DL
+#define __DEC128_EPSILON__ 1E-33DL
+#define __DEC128_SUBNORMAL_MIN__ 0.000000000000000000000000000000001E-6143DL
+#define __REGISTER_PREFIX__ %
+#define __USER_LABEL_PREFIX__ 
+#define __GNUC_STDC_INLINE__ 1
+#define __STRICT_ANSI__ 1
+#define __GCC_ATOMIC_BOOL_LOCK_FREE 1
+#define __GCC_ATOMIC_CHAR_LOCK_FREE 1
+#define __GCC_ATOMIC_CHAR16_T_LOCK_FREE 1
+#define __GCC_ATOMIC_CHAR32_T_LOCK_FREE 1
+#define __GCC_ATOMIC_WCHAR_T_LOCK_FREE 1
+#define __GCC_ATOMIC_SHORT_LOCK_FREE 1
+#define __GCC_ATOMIC_INT_LOCK_FREE 1
+#define __GCC_ATOMIC_LONG_LOCK_FREE 1
+#define __GCC_ATOMIC_LLONG_LOCK_FREE 1
+#define __GCC_ATOMIC_TEST_AND_SET_TRUEVAL 1
+#define __GCC_ATOMIC_POINTER_LOCK_FREE 1
+#define __PRAGMA_REDEFINE_EXTNAME 1
+#define __SIZEOF_WCHAR_T__ 4
+#define __SIZEOF_WINT_T__ 4
+#define __SIZEOF_PTRDIFF_T__ 4
+#define __HIGHTEC__ 1
+#define __HAVE_SHORT_DOUBLE__ 1
+#define __tricore 1
+#define __tricore__ 1
+#define __TRICORE__ 1
+#define __TC161__ 1
+#define __TRICORE_CORE__ 0x161
+#define __TC27XX__ 1
+#define __TRICORE_NAME__ 0x2700
+#define __TRICORE_HAVE_DIV__ 1
+#define __TRICORE_HAVE_FTOIZ__ 1
+#define __TRICORE_HAVE_MOV64__ 1
+#define __TRICORE_HAVE_FLOAT16__ 1
+#define __BUILTIN_TRICORE_NOP 1
+#define __BUILTIN_TRICORE_LROTATE 1
+#define __BUILTIN_TRICORE_RROTATE 1
+#define __BUILTIN_TRICORE_INSERT 1
+#define __BUILTIN_TRICORE_IMASK 1
+#define __BUILTIN_TRICORE_SWAPW 1
+#define __BUILTIN_TRICORE_SWAPMSKW 1
+#define __BUILTIN_TRICORE_CMPSWAPW 1
+#define __BUILTIN_TRICORE_SATB 1
+#define __BUILTIN_TRICORE_SATH 1
+#define __BUILTIN_TRICORE_SATBU 1
+#define __BUILTIN_TRICORE_SATHU 1
+#define __BUILTIN_TRICORE_LDMST 1
+#define __ELF__ 1
+# 1 "<command-line>"
+#define __HAVE_SHORT_DOUBLE__ 1
+# 1 "C:\\RTDRUI~1\\TC275_~1\\bsw\\IfxScu_cfg.c"
+# 46 "C:\\RTDRUI~1\\TC275_~1\\bsw\\IfxScu_cfg.c"
+# 1 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 1 3
+# 50 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_H 
+
+# 1 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\Ifx_Cfg.h" 1 3
+# 30 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\Ifx_Cfg.h" 3
+#define IFX_CFG_H 1
+
+
+
+
+
+#define IFX_CFG_SCU_XTAL_FREQUENCY (20000000)
+
+#define IFX_CFG_SCU_PLL_FREQUENCY (200000000)
+# 53 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 2 3
+# 1 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\IfxScu_bf.h" 1 3
+# 28 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\IfxScu_bf.h" 3
+#define IFXSCU_BF_H 1
+
+
+
+
+
+
+#define IFX_SCU_ACCEN0_EN0_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN0_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN0_OFF (0u)
+
+
+#define IFX_SCU_ACCEN0_EN10_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN10_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN10_OFF (10u)
+
+
+#define IFX_SCU_ACCEN0_EN11_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN11_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN11_OFF (11u)
+
+
+#define IFX_SCU_ACCEN0_EN12_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN12_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN12_OFF (12u)
+
+
+#define IFX_SCU_ACCEN0_EN13_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN13_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN13_OFF (13u)
+
+
+#define IFX_SCU_ACCEN0_EN14_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN14_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN14_OFF (14u)
+
+
+#define IFX_SCU_ACCEN0_EN15_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN15_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN15_OFF (15u)
+
+
+#define IFX_SCU_ACCEN0_EN16_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN16_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN16_OFF (16u)
+
+
+#define IFX_SCU_ACCEN0_EN17_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN17_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN17_OFF (17u)
+
+
+#define IFX_SCU_ACCEN0_EN18_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN18_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN18_OFF (18u)
+
+
+#define IFX_SCU_ACCEN0_EN19_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN19_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN19_OFF (19u)
+
+
+#define IFX_SCU_ACCEN0_EN1_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN1_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN1_OFF (1u)
+
+
+#define IFX_SCU_ACCEN0_EN20_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN20_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN20_OFF (20u)
+
+
+#define IFX_SCU_ACCEN0_EN21_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN21_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN21_OFF (21u)
+
+
+#define IFX_SCU_ACCEN0_EN22_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN22_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN22_OFF (22u)
+
+
+#define IFX_SCU_ACCEN0_EN23_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN23_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN23_OFF (23u)
+
+
+#define IFX_SCU_ACCEN0_EN24_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN24_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN24_OFF (24u)
+
+
+#define IFX_SCU_ACCEN0_EN25_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN25_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN25_OFF (25u)
+
+
+#define IFX_SCU_ACCEN0_EN26_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN26_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN26_OFF (26u)
+
+
+#define IFX_SCU_ACCEN0_EN27_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN27_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN27_OFF (27u)
+
+
+#define IFX_SCU_ACCEN0_EN28_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN28_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN28_OFF (28u)
+
+
+#define IFX_SCU_ACCEN0_EN29_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN29_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN29_OFF (29u)
+
+
+#define IFX_SCU_ACCEN0_EN2_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN2_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN2_OFF (2u)
+
+
+#define IFX_SCU_ACCEN0_EN30_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN30_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN30_OFF (30u)
+
+
+#define IFX_SCU_ACCEN0_EN31_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN31_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN31_OFF (31u)
+
+
+#define IFX_SCU_ACCEN0_EN3_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN3_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN3_OFF (3u)
+
+
+#define IFX_SCU_ACCEN0_EN4_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN4_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN4_OFF (4u)
+
+
+#define IFX_SCU_ACCEN0_EN5_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN5_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN5_OFF (5u)
+
+
+#define IFX_SCU_ACCEN0_EN6_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN6_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN6_OFF (6u)
+
+
+#define IFX_SCU_ACCEN0_EN7_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN7_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN7_OFF (7u)
+
+
+#define IFX_SCU_ACCEN0_EN8_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN8_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN8_OFF (8u)
+
+
+#define IFX_SCU_ACCEN0_EN9_LEN (1u)
+
+
+#define IFX_SCU_ACCEN0_EN9_MSK (0x1u)
+
+
+#define IFX_SCU_ACCEN0_EN9_OFF (9u)
+
+
+#define IFX_SCU_ARSTDIS_STM0DIS_LEN (1u)
+
+
+#define IFX_SCU_ARSTDIS_STM0DIS_MSK (0x1u)
+
+
+#define IFX_SCU_ARSTDIS_STM0DIS_OFF (0u)
+
+
+#define IFX_SCU_ARSTDIS_STM1DIS_LEN (1u)
+
+
+#define IFX_SCU_ARSTDIS_STM1DIS_MSK (0x1u)
+
+
+#define IFX_SCU_ARSTDIS_STM1DIS_OFF (1u)
+
+
+#define IFX_SCU_ARSTDIS_STM2DIS_LEN (1u)
+
+
+#define IFX_SCU_ARSTDIS_STM2DIS_MSK (0x1u)
+
+
+#define IFX_SCU_ARSTDIS_STM2DIS_OFF (2u)
+
+
+#define IFX_SCU_CCUCON0_BAUD1DIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON0_BAUD1DIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON0_BAUD1DIV_OFF (0u)
+
+
+#define IFX_SCU_CCUCON0_BAUD2DIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON0_BAUD2DIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON0_BAUD2DIV_OFF (4u)
+
+
+#define IFX_SCU_CCUCON0_CLKSEL_LEN (2u)
+
+
+#define IFX_SCU_CCUCON0_CLKSEL_MSK (0x3u)
+
+
+#define IFX_SCU_CCUCON0_CLKSEL_OFF (28u)
+
+
+#define IFX_SCU_CCUCON0_FSI2DIV_LEN (2u)
+
+
+#define IFX_SCU_CCUCON0_FSI2DIV_MSK (0x3u)
+
+
+#define IFX_SCU_CCUCON0_FSI2DIV_OFF (20u)
+
+
+#define IFX_SCU_CCUCON0_FSIDIV_LEN (2u)
+
+
+#define IFX_SCU_CCUCON0_FSIDIV_MSK (0x3u)
+
+
+#define IFX_SCU_CCUCON0_FSIDIV_OFF (24u)
+
+
+#define IFX_SCU_CCUCON0_LCK_LEN (1u)
+
+
+#define IFX_SCU_CCUCON0_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON0_LCK_OFF (31u)
+
+
+#define IFX_SCU_CCUCON0_LPDIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON0_LPDIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON0_LPDIV_OFF (12u)
+
+
+#define IFX_SCU_CCUCON0_SPBDIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON0_SPBDIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON0_SPBDIV_OFF (16u)
+
+
+#define IFX_SCU_CCUCON0_SRIDIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON0_SRIDIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON0_SRIDIV_OFF (8u)
+
+
+#define IFX_SCU_CCUCON0_UP_LEN (1u)
+
+
+#define IFX_SCU_CCUCON0_UP_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON0_UP_OFF (30u)
+
+
+#define IFX_SCU_CCUCON1_ASCLINFDIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON1_ASCLINFDIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON1_ASCLINFDIV_OFF (20u)
+
+
+#define IFX_SCU_CCUCON1_ASCLINSDIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON1_ASCLINSDIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON1_ASCLINSDIV_OFF (24u)
+
+
+#define IFX_SCU_CCUCON1_CANDIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON1_CANDIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON1_CANDIV_OFF (0u)
+
+
+#define IFX_SCU_CCUCON1_ERAYDIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON1_ERAYDIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON1_ERAYDIV_OFF (4u)
+
+
+#define IFX_SCU_CCUCON1_ETHDIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON1_ETHDIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON1_ETHDIV_OFF (16u)
+
+
+#define IFX_SCU_CCUCON1_GTMDIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON1_GTMDIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON1_GTMDIV_OFF (12u)
+
+
+#define IFX_SCU_CCUCON1_INSEL_LEN (2u)
+
+
+#define IFX_SCU_CCUCON1_INSEL_MSK (0x3u)
+
+
+#define IFX_SCU_CCUCON1_INSEL_OFF (28u)
+
+
+#define IFX_SCU_CCUCON1_LCK_LEN (1u)
+
+
+#define IFX_SCU_CCUCON1_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON1_LCK_OFF (31u)
+
+
+#define IFX_SCU_CCUCON1_STMDIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON1_STMDIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON1_STMDIV_OFF (8u)
+
+
+#define IFX_SCU_CCUCON1_UP_LEN (1u)
+
+
+#define IFX_SCU_CCUCON1_UP_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON1_UP_OFF (30u)
+
+
+#define IFX_SCU_CCUCON2_BBBDIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON2_BBBDIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON2_BBBDIV_OFF (0u)
+
+
+#define IFX_SCU_CCUCON2_LCK_LEN (1u)
+
+
+#define IFX_SCU_CCUCON2_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON2_LCK_OFF (31u)
+
+
+#define IFX_SCU_CCUCON2_UP_LEN (1u)
+
+
+#define IFX_SCU_CCUCON2_UP_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON2_UP_OFF (30u)
+
+
+#define IFX_SCU_CCUCON3_LCK_LEN (1u)
+
+
+#define IFX_SCU_CCUCON3_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON3_LCK_OFF (31u)
+
+
+#define IFX_SCU_CCUCON3_PLLDIV_LEN (6u)
+
+
+#define IFX_SCU_CCUCON3_PLLDIV_MSK (0x3fu)
+
+
+#define IFX_SCU_CCUCON3_PLLDIV_OFF (0u)
+
+
+#define IFX_SCU_CCUCON3_PLLERAYDIV_LEN (6u)
+
+
+#define IFX_SCU_CCUCON3_PLLERAYDIV_MSK (0x3fu)
+
+
+#define IFX_SCU_CCUCON3_PLLERAYDIV_OFF (8u)
+
+
+#define IFX_SCU_CCUCON3_PLLERAYSEL_LEN (2u)
+
+
+#define IFX_SCU_CCUCON3_PLLERAYSEL_MSK (0x3u)
+
+
+#define IFX_SCU_CCUCON3_PLLERAYSEL_OFF (14u)
+
+
+#define IFX_SCU_CCUCON3_PLLSEL_LEN (2u)
+
+
+#define IFX_SCU_CCUCON3_PLLSEL_MSK (0x3u)
+
+
+#define IFX_SCU_CCUCON3_PLLSEL_OFF (6u)
+
+
+#define IFX_SCU_CCUCON3_SLCK_LEN (1u)
+
+
+#define IFX_SCU_CCUCON3_SLCK_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON3_SLCK_OFF (29u)
+
+
+#define IFX_SCU_CCUCON3_SRIDIV_LEN (6u)
+
+
+#define IFX_SCU_CCUCON3_SRIDIV_MSK (0x3fu)
+
+
+#define IFX_SCU_CCUCON3_SRIDIV_OFF (16u)
+
+
+#define IFX_SCU_CCUCON3_SRISEL_LEN (2u)
+
+
+#define IFX_SCU_CCUCON3_SRISEL_MSK (0x3u)
+
+
+#define IFX_SCU_CCUCON3_SRISEL_OFF (22u)
+
+
+#define IFX_SCU_CCUCON3_UP_LEN (1u)
+
+
+#define IFX_SCU_CCUCON3_UP_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON3_UP_OFF (30u)
+
+
+#define IFX_SCU_CCUCON4_GTMDIV_LEN (6u)
+
+
+#define IFX_SCU_CCUCON4_GTMDIV_MSK (0x3fu)
+
+
+#define IFX_SCU_CCUCON4_GTMDIV_OFF (8u)
+
+
+#define IFX_SCU_CCUCON4_GTMSEL_LEN (2u)
+
+
+#define IFX_SCU_CCUCON4_GTMSEL_MSK (0x3u)
+
+
+#define IFX_SCU_CCUCON4_GTMSEL_OFF (14u)
+
+
+#define IFX_SCU_CCUCON4_LCK_LEN (1u)
+
+
+#define IFX_SCU_CCUCON4_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON4_LCK_OFF (31u)
+
+
+#define IFX_SCU_CCUCON4_SLCK_LEN (1u)
+
+
+#define IFX_SCU_CCUCON4_SLCK_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON4_SLCK_OFF (29u)
+
+
+#define IFX_SCU_CCUCON4_SPBDIV_LEN (6u)
+
+
+#define IFX_SCU_CCUCON4_SPBDIV_MSK (0x3fu)
+
+
+#define IFX_SCU_CCUCON4_SPBDIV_OFF (0u)
+
+
+#define IFX_SCU_CCUCON4_SPBSEL_LEN (2u)
+
+
+#define IFX_SCU_CCUCON4_SPBSEL_MSK (0x3u)
+
+
+#define IFX_SCU_CCUCON4_SPBSEL_OFF (6u)
+
+
+#define IFX_SCU_CCUCON4_STMDIV_LEN (6u)
+
+
+#define IFX_SCU_CCUCON4_STMDIV_MSK (0x3fu)
+
+
+#define IFX_SCU_CCUCON4_STMDIV_OFF (16u)
+
+
+#define IFX_SCU_CCUCON4_STMSEL_LEN (2u)
+
+
+#define IFX_SCU_CCUCON4_STMSEL_MSK (0x3u)
+
+
+#define IFX_SCU_CCUCON4_STMSEL_OFF (22u)
+
+
+#define IFX_SCU_CCUCON4_UP_LEN (1u)
+
+
+#define IFX_SCU_CCUCON4_UP_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON4_UP_OFF (30u)
+
+
+#define IFX_SCU_CCUCON5_LCK_LEN (1u)
+
+
+#define IFX_SCU_CCUCON5_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON5_LCK_OFF (31u)
+
+
+#define IFX_SCU_CCUCON5_MAXDIV_LEN (4u)
+
+
+#define IFX_SCU_CCUCON5_MAXDIV_MSK (0xfu)
+
+
+#define IFX_SCU_CCUCON5_MAXDIV_OFF (0u)
+
+
+#define IFX_SCU_CCUCON5_UP_LEN (1u)
+
+
+#define IFX_SCU_CCUCON5_UP_MSK (0x1u)
+
+
+#define IFX_SCU_CCUCON5_UP_OFF (30u)
+
+
+#define IFX_SCU_CCUCON6_CPU0DIV_LEN (6u)
+
+
+#define IFX_SCU_CCUCON6_CPU0DIV_MSK (0x3fu)
+
+
+#define IFX_SCU_CCUCON6_CPU0DIV_OFF (0u)
+
+
+#define IFX_SCU_CCUCON7_CPU1DIV_LEN (6u)
+
+
+#define IFX_SCU_CCUCON7_CPU1DIV_MSK (0x3fu)
+
+
+#define IFX_SCU_CCUCON7_CPU1DIV_OFF (0u)
+
+
+#define IFX_SCU_CCUCON8_CPU2DIV_LEN (6u)
+
+
+#define IFX_SCU_CCUCON8_CPU2DIV_MSK (0x3fu)
+
+
+#define IFX_SCU_CCUCON8_CPU2DIV_OFF (0u)
+
+
+#define IFX_SCU_CHIPID_CHID_LEN (8u)
+
+
+#define IFX_SCU_CHIPID_CHID_MSK (0xffu)
+
+
+#define IFX_SCU_CHIPID_CHID_OFF (8u)
+
+
+#define IFX_SCU_CHIPID_CHREV_LEN (6u)
+
+
+#define IFX_SCU_CHIPID_CHREV_MSK (0x3fu)
+
+
+#define IFX_SCU_CHIPID_CHREV_OFF (0u)
+
+
+#define IFX_SCU_CHIPID_CHTEC_LEN (2u)
+
+
+#define IFX_SCU_CHIPID_CHTEC_MSK (0x3u)
+
+
+#define IFX_SCU_CHIPID_CHTEC_OFF (6u)
+
+
+#define IFX_SCU_CHIPID_EEA_LEN (1u)
+
+
+#define IFX_SCU_CHIPID_EEA_MSK (0x1u)
+
+
+#define IFX_SCU_CHIPID_EEA_OFF (16u)
+
+
+#define IFX_SCU_CHIPID_FSIZE_LEN (4u)
+
+
+#define IFX_SCU_CHIPID_FSIZE_MSK (0xfu)
+
+
+#define IFX_SCU_CHIPID_FSIZE_OFF (24u)
+
+
+#define IFX_SCU_CHIPID_SEC_LEN (1u)
+
+
+#define IFX_SCU_CHIPID_SEC_MSK (0x1u)
+
+
+#define IFX_SCU_CHIPID_SEC_OFF (30u)
+
+
+#define IFX_SCU_CHIPID_SP_LEN (2u)
+
+
+#define IFX_SCU_CHIPID_SP_MSK (0x3u)
+
+
+#define IFX_SCU_CHIPID_SP_OFF (28u)
+
+
+#define IFX_SCU_CHIPID_UCODE_LEN (7u)
+
+
+#define IFX_SCU_CHIPID_UCODE_MSK (0x7fu)
+
+
+#define IFX_SCU_CHIPID_UCODE_OFF (17u)
+
+
+#define IFX_SCU_DTSCON_CAL_LEN (22u)
+
+
+#define IFX_SCU_DTSCON_CAL_MSK (0x3fffffu)
+
+
+#define IFX_SCU_DTSCON_CAL_OFF (4u)
+
+
+#define IFX_SCU_DTSCON_PWD_LEN (1u)
+
+
+#define IFX_SCU_DTSCON_PWD_MSK (0x1u)
+
+
+#define IFX_SCU_DTSCON_PWD_OFF (0u)
+
+
+#define IFX_SCU_DTSCON_SLCK_LEN (1u)
+
+
+#define IFX_SCU_DTSCON_SLCK_MSK (0x1u)
+
+
+#define IFX_SCU_DTSCON_SLCK_OFF (31u)
+
+
+#define IFX_SCU_DTSCON_START_LEN (1u)
+
+
+#define IFX_SCU_DTSCON_START_MSK (0x1u)
+
+
+#define IFX_SCU_DTSCON_START_OFF (1u)
+
+
+#define IFX_SCU_DTSLIM_LLU_LEN (1u)
+
+
+#define IFX_SCU_DTSLIM_LLU_MSK (0x1u)
+
+
+#define IFX_SCU_DTSLIM_LLU_OFF (15u)
+
+
+#define IFX_SCU_DTSLIM_LOWER_LEN (10u)
+
+
+#define IFX_SCU_DTSLIM_LOWER_MSK (0x3ffu)
+
+
+#define IFX_SCU_DTSLIM_LOWER_OFF (0u)
+
+
+#define IFX_SCU_DTSLIM_SLCK_LEN (1u)
+
+
+#define IFX_SCU_DTSLIM_SLCK_MSK (0x1u)
+
+
+#define IFX_SCU_DTSLIM_SLCK_OFF (30u)
+
+
+#define IFX_SCU_DTSLIM_UOF_LEN (1u)
+
+
+#define IFX_SCU_DTSLIM_UOF_MSK (0x1u)
+
+
+#define IFX_SCU_DTSLIM_UOF_OFF (31u)
+
+
+#define IFX_SCU_DTSLIM_UPPER_LEN (10u)
+
+
+#define IFX_SCU_DTSLIM_UPPER_MSK (0x3ffu)
+
+
+#define IFX_SCU_DTSLIM_UPPER_OFF (16u)
+
+
+#define IFX_SCU_DTSSTAT_BUSY_LEN (1u)
+
+
+#define IFX_SCU_DTSSTAT_BUSY_MSK (0x1u)
+
+
+#define IFX_SCU_DTSSTAT_BUSY_OFF (15u)
+
+
+#define IFX_SCU_DTSSTAT_RDY_LEN (1u)
+
+
+#define IFX_SCU_DTSSTAT_RDY_MSK (0x1u)
+
+
+#define IFX_SCU_DTSSTAT_RDY_OFF (14u)
+
+
+#define IFX_SCU_DTSSTAT_RESULT_LEN (10u)
+
+
+#define IFX_SCU_DTSSTAT_RESULT_MSK (0x3ffu)
+
+
+#define IFX_SCU_DTSSTAT_RESULT_OFF (0u)
+
+
+#define IFX_SCU_EICR_EIEN0_LEN (1u)
+
+
+#define IFX_SCU_EICR_EIEN0_MSK (0x1u)
+
+
+#define IFX_SCU_EICR_EIEN0_OFF (11u)
+
+
+#define IFX_SCU_EICR_EIEN1_LEN (1u)
+
+
+#define IFX_SCU_EICR_EIEN1_MSK (0x1u)
+
+
+#define IFX_SCU_EICR_EIEN1_OFF (27u)
+
+
+#define IFX_SCU_EICR_EXIS0_LEN (3u)
+
+
+#define IFX_SCU_EICR_EXIS0_MSK (0x7u)
+
+
+#define IFX_SCU_EICR_EXIS0_OFF (4u)
+
+
+#define IFX_SCU_EICR_EXIS1_LEN (3u)
+
+
+#define IFX_SCU_EICR_EXIS1_MSK (0x7u)
+
+
+#define IFX_SCU_EICR_EXIS1_OFF (20u)
+
+
+#define IFX_SCU_EICR_FEN0_LEN (1u)
+
+
+#define IFX_SCU_EICR_FEN0_MSK (0x1u)
+
+
+#define IFX_SCU_EICR_FEN0_OFF (8u)
+
+
+#define IFX_SCU_EICR_FEN1_LEN (1u)
+
+
+#define IFX_SCU_EICR_FEN1_MSK (0x1u)
+
+
+#define IFX_SCU_EICR_FEN1_OFF (24u)
+
+
+#define IFX_SCU_EICR_INP0_LEN (3u)
+
+
+#define IFX_SCU_EICR_INP0_MSK (0x7u)
+
+
+#define IFX_SCU_EICR_INP0_OFF (12u)
+
+
+#define IFX_SCU_EICR_INP1_LEN (3u)
+
+
+#define IFX_SCU_EICR_INP1_MSK (0x7u)
+
+
+#define IFX_SCU_EICR_INP1_OFF (28u)
+
+
+#define IFX_SCU_EICR_LDEN0_LEN (1u)
+
+
+#define IFX_SCU_EICR_LDEN0_MSK (0x1u)
+
+
+#define IFX_SCU_EICR_LDEN0_OFF (10u)
+
+
+#define IFX_SCU_EICR_LDEN1_LEN (1u)
+
+
+#define IFX_SCU_EICR_LDEN1_MSK (0x1u)
+
+
+#define IFX_SCU_EICR_LDEN1_OFF (26u)
+
+
+#define IFX_SCU_EICR_REN0_LEN (1u)
+
+
+#define IFX_SCU_EICR_REN0_MSK (0x1u)
+
+
+#define IFX_SCU_EICR_REN0_OFF (9u)
+
+
+#define IFX_SCU_EICR_REN1_LEN (1u)
+
+
+#define IFX_SCU_EICR_REN1_MSK (0x1u)
+
+
+#define IFX_SCU_EICR_REN1_OFF (25u)
+
+
+#define IFX_SCU_EIFR_INTF0_LEN (1u)
+
+
+#define IFX_SCU_EIFR_INTF0_MSK (0x1u)
+
+
+#define IFX_SCU_EIFR_INTF0_OFF (0u)
+
+
+#define IFX_SCU_EIFR_INTF1_LEN (1u)
+
+
+#define IFX_SCU_EIFR_INTF1_MSK (0x1u)
+
+
+#define IFX_SCU_EIFR_INTF1_OFF (1u)
+
+
+#define IFX_SCU_EIFR_INTF2_LEN (1u)
+
+
+#define IFX_SCU_EIFR_INTF2_MSK (0x1u)
+
+
+#define IFX_SCU_EIFR_INTF2_OFF (2u)
+
+
+#define IFX_SCU_EIFR_INTF3_LEN (1u)
+
+
+#define IFX_SCU_EIFR_INTF3_MSK (0x1u)
+
+
+#define IFX_SCU_EIFR_INTF3_OFF (3u)
+
+
+#define IFX_SCU_EIFR_INTF4_LEN (1u)
+
+
+#define IFX_SCU_EIFR_INTF4_MSK (0x1u)
+
+
+#define IFX_SCU_EIFR_INTF4_OFF (4u)
+
+
+#define IFX_SCU_EIFR_INTF5_LEN (1u)
+
+
+#define IFX_SCU_EIFR_INTF5_MSK (0x1u)
+
+
+#define IFX_SCU_EIFR_INTF5_OFF (5u)
+
+
+#define IFX_SCU_EIFR_INTF6_LEN (1u)
+
+
+#define IFX_SCU_EIFR_INTF6_MSK (0x1u)
+
+
+#define IFX_SCU_EIFR_INTF6_OFF (6u)
+
+
+#define IFX_SCU_EIFR_INTF7_LEN (1u)
+
+
+#define IFX_SCU_EIFR_INTF7_MSK (0x1u)
+
+
+#define IFX_SCU_EIFR_INTF7_OFF (7u)
+
+
+#define IFX_SCU_EMSR_EMSF_LEN (1u)
+
+
+#define IFX_SCU_EMSR_EMSF_MSK (0x1u)
+
+
+#define IFX_SCU_EMSR_EMSF_OFF (16u)
+
+
+#define IFX_SCU_EMSR_EMSFM_LEN (2u)
+
+
+#define IFX_SCU_EMSR_EMSFM_MSK (0x3u)
+
+
+#define IFX_SCU_EMSR_EMSFM_OFF (24u)
+
+
+#define IFX_SCU_EMSR_ENON_LEN (1u)
+
+
+#define IFX_SCU_EMSR_ENON_MSK (0x1u)
+
+
+#define IFX_SCU_EMSR_ENON_OFF (2u)
+
+
+#define IFX_SCU_EMSR_MODE_LEN (1u)
+
+
+#define IFX_SCU_EMSR_MODE_MSK (0x1u)
+
+
+#define IFX_SCU_EMSR_MODE_OFF (1u)
+
+
+#define IFX_SCU_EMSR_POL_LEN (1u)
+
+
+#define IFX_SCU_EMSR_POL_MSK (0x1u)
+
+
+#define IFX_SCU_EMSR_POL_OFF (0u)
+
+
+#define IFX_SCU_EMSR_PSEL_LEN (1u)
+
+
+#define IFX_SCU_EMSR_PSEL_MSK (0x1u)
+
+
+#define IFX_SCU_EMSR_PSEL_OFF (3u)
+
+
+#define IFX_SCU_EMSR_SEMSF_LEN (1u)
+
+
+#define IFX_SCU_EMSR_SEMSF_MSK (0x1u)
+
+
+#define IFX_SCU_EMSR_SEMSF_OFF (17u)
+
+
+#define IFX_SCU_EMSR_SEMSFM_LEN (2u)
+
+
+#define IFX_SCU_EMSR_SEMSFM_MSK (0x3u)
+
+
+#define IFX_SCU_EMSR_SEMSFM_OFF (26u)
+
+
+#define IFX_SCU_ESRCFG_EDCON_LEN (2u)
+
+
+#define IFX_SCU_ESRCFG_EDCON_MSK (0x3u)
+
+
+#define IFX_SCU_ESRCFG_EDCON_OFF (7u)
+
+
+#define IFX_SCU_ESROCFG_ARC_LEN (1u)
+
+
+#define IFX_SCU_ESROCFG_ARC_MSK (0x1u)
+
+
+#define IFX_SCU_ESROCFG_ARC_OFF (1u)
+
+
+#define IFX_SCU_ESROCFG_ARI_LEN (1u)
+
+
+#define IFX_SCU_ESROCFG_ARI_MSK (0x1u)
+
+
+#define IFX_SCU_ESROCFG_ARI_OFF (0u)
+
+
+#define IFX_SCU_EVR13CON_BPEVR13OFF_LEN (1u)
+
+
+#define IFX_SCU_EVR13CON_BPEVR13OFF_MSK (0x1u)
+
+
+#define IFX_SCU_EVR13CON_BPEVR13OFF_OFF (29u)
+
+
+#define IFX_SCU_EVR13CON_EVR13OFF_LEN (1u)
+
+
+#define IFX_SCU_EVR13CON_EVR13OFF_MSK (0x1u)
+
+
+#define IFX_SCU_EVR13CON_EVR13OFF_OFF (28u)
+
+
+#define IFX_SCU_EVR13CON_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVR13CON_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVR13CON_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVR33CON_BPEVR33OFF_LEN (1u)
+
+
+#define IFX_SCU_EVR33CON_BPEVR33OFF_MSK (0x1u)
+
+
+#define IFX_SCU_EVR33CON_BPEVR33OFF_OFF (29u)
+
+
+#define IFX_SCU_EVR33CON_EVR33OFF_LEN (1u)
+
+
+#define IFX_SCU_EVR33CON_EVR33OFF_MSK (0x1u)
+
+
+#define IFX_SCU_EVR33CON_EVR33OFF_OFF (28u)
+
+
+#define IFX_SCU_EVR33CON_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVR33CON_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVR33CON_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRADCSTAT_ADC13V_LEN (8u)
+
+
+#define IFX_SCU_EVRADCSTAT_ADC13V_MSK (0xffu)
+
+
+#define IFX_SCU_EVRADCSTAT_ADC13V_OFF (0u)
+
+
+#define IFX_SCU_EVRADCSTAT_ADC33V_LEN (8u)
+
+
+#define IFX_SCU_EVRADCSTAT_ADC33V_MSK (0xffu)
+
+
+#define IFX_SCU_EVRADCSTAT_ADC33V_OFF (8u)
+
+
+#define IFX_SCU_EVRADCSTAT_ADCSWDV_LEN (8u)
+
+
+#define IFX_SCU_EVRADCSTAT_ADCSWDV_MSK (0xffu)
+
+
+#define IFX_SCU_EVRADCSTAT_ADCSWDV_OFF (16u)
+
+
+#define IFX_SCU_EVRADCSTAT_VAL_LEN (1u)
+
+
+#define IFX_SCU_EVRADCSTAT_VAL_MSK (0x1u)
+
+
+#define IFX_SCU_EVRADCSTAT_VAL_OFF (31u)
+
+
+#define IFX_SCU_EVRDVSTAT_DVS13TRIM_LEN (8u)
+
+
+#define IFX_SCU_EVRDVSTAT_DVS13TRIM_MSK (0xffu)
+
+
+#define IFX_SCU_EVRDVSTAT_DVS13TRIM_OFF (0u)
+
+
+#define IFX_SCU_EVRDVSTAT_DVS33TRIM_LEN (8u)
+
+
+#define IFX_SCU_EVRDVSTAT_DVS33TRIM_MSK (0xffu)
+
+
+#define IFX_SCU_EVRDVSTAT_DVS33TRIM_OFF (16u)
+
+
+#define IFX_SCU_EVRDVSTAT_VAL_LEN (1u)
+
+
+#define IFX_SCU_EVRDVSTAT_VAL_MSK (0x1u)
+
+
+#define IFX_SCU_EVRDVSTAT_VAL_OFF (31u)
+
+
+#define IFX_SCU_EVRMONCTRL_EVR13OVMOD_LEN (2u)
+
+
+#define IFX_SCU_EVRMONCTRL_EVR13OVMOD_MSK (0x3u)
+
+
+#define IFX_SCU_EVRMONCTRL_EVR13OVMOD_OFF (0u)
+
+
+#define IFX_SCU_EVRMONCTRL_EVR13UVMOD_LEN (2u)
+
+
+#define IFX_SCU_EVRMONCTRL_EVR13UVMOD_MSK (0x3u)
+
+
+#define IFX_SCU_EVRMONCTRL_EVR13UVMOD_OFF (4u)
+
+
+#define IFX_SCU_EVRMONCTRL_EVR33OVMOD_LEN (2u)
+
+
+#define IFX_SCU_EVRMONCTRL_EVR33OVMOD_MSK (0x3u)
+
+
+#define IFX_SCU_EVRMONCTRL_EVR33OVMOD_OFF (8u)
+
+
+#define IFX_SCU_EVRMONCTRL_EVR33UVMOD_LEN (2u)
+
+
+#define IFX_SCU_EVRMONCTRL_EVR33UVMOD_MSK (0x3u)
+
+
+#define IFX_SCU_EVRMONCTRL_EVR33UVMOD_OFF (12u)
+
+
+#define IFX_SCU_EVRMONCTRL_SLCK_LEN (1u)
+
+
+#define IFX_SCU_EVRMONCTRL_SLCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRMONCTRL_SLCK_OFF (30u)
+
+
+#define IFX_SCU_EVRMONCTRL_SWDOVMOD_LEN (2u)
+
+
+#define IFX_SCU_EVRMONCTRL_SWDOVMOD_MSK (0x3u)
+
+
+#define IFX_SCU_EVRMONCTRL_SWDOVMOD_OFF (16u)
+
+
+#define IFX_SCU_EVRMONCTRL_SWDUVMOD_LEN (2u)
+
+
+#define IFX_SCU_EVRMONCTRL_SWDUVMOD_MSK (0x3u)
+
+
+#define IFX_SCU_EVRMONCTRL_SWDUVMOD_OFF (20u)
+
+
+#define IFX_SCU_EVROVMON_EVR13OVVAL_LEN (8u)
+
+
+#define IFX_SCU_EVROVMON_EVR13OVVAL_MSK (0xffu)
+
+
+#define IFX_SCU_EVROVMON_EVR13OVVAL_OFF (0u)
+
+
+#define IFX_SCU_EVROVMON_EVR33OVVAL_LEN (8u)
+
+
+#define IFX_SCU_EVROVMON_EVR33OVVAL_MSK (0xffu)
+
+
+#define IFX_SCU_EVROVMON_EVR33OVVAL_OFF (8u)
+
+
+#define IFX_SCU_EVROVMON_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVROVMON_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVROVMON_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVROVMON_SLCK_LEN (1u)
+
+
+#define IFX_SCU_EVROVMON_SLCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVROVMON_SLCK_OFF (30u)
+
+
+#define IFX_SCU_EVROVMON_SWDOVVAL_LEN (8u)
+
+
+#define IFX_SCU_EVROVMON_SWDOVVAL_MSK (0xffu)
+
+
+#define IFX_SCU_EVROVMON_SWDOVVAL_OFF (16u)
+
+
+#define IFX_SCU_EVRRSTCON_BPRST13OFF_LEN (1u)
+
+
+#define IFX_SCU_EVRRSTCON_BPRST13OFF_MSK (0x1u)
+
+
+#define IFX_SCU_EVRRSTCON_BPRST13OFF_OFF (25u)
+
+
+#define IFX_SCU_EVRRSTCON_BPRST33OFF_LEN (1u)
+
+
+#define IFX_SCU_EVRRSTCON_BPRST33OFF_MSK (0x1u)
+
+
+#define IFX_SCU_EVRRSTCON_BPRST33OFF_OFF (27u)
+
+
+#define IFX_SCU_EVRRSTCON_BPRSTSWDOFF_LEN (1u)
+
+
+#define IFX_SCU_EVRRSTCON_BPRSTSWDOFF_MSK (0x1u)
+
+
+#define IFX_SCU_EVRRSTCON_BPRSTSWDOFF_OFF (29u)
+
+
+#define IFX_SCU_EVRRSTCON_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRRSTCON_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRRSTCON_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRRSTCON_RST13OFF_LEN (1u)
+
+
+#define IFX_SCU_EVRRSTCON_RST13OFF_MSK (0x1u)
+
+
+#define IFX_SCU_EVRRSTCON_RST13OFF_OFF (24u)
+
+
+#define IFX_SCU_EVRRSTCON_RST13TRIM_LEN (8u)
+
+
+#define IFX_SCU_EVRRSTCON_RST13TRIM_MSK (0xffu)
+
+
+#define IFX_SCU_EVRRSTCON_RST13TRIM_OFF (0u)
+
+
+#define IFX_SCU_EVRRSTCON_RST33OFF_LEN (1u)
+
+
+#define IFX_SCU_EVRRSTCON_RST33OFF_MSK (0x1u)
+
+
+#define IFX_SCU_EVRRSTCON_RST33OFF_OFF (26u)
+
+
+#define IFX_SCU_EVRRSTCON_RSTSWDOFF_LEN (1u)
+
+
+#define IFX_SCU_EVRRSTCON_RSTSWDOFF_MSK (0x1u)
+
+
+#define IFX_SCU_EVRRSTCON_RSTSWDOFF_OFF (28u)
+
+
+#define IFX_SCU_EVRRSTCON_SLCK_LEN (1u)
+
+
+#define IFX_SCU_EVRRSTCON_SLCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRRSTCON_SLCK_OFF (30u)
+
+
+#define IFX_SCU_EVRSDCOEFF1_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRSDCOEFF1_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSDCOEFF1_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRSDCOEFF1_SD5D_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF1_SD5D_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF1_SD5D_OFF (16u)
+
+
+#define IFX_SCU_EVRSDCOEFF1_SD5I_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF1_SD5I_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF1_SD5I_OFF (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF1_SD5P_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF1_SD5P_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF1_SD5P_OFF (0u)
+
+
+#define IFX_SCU_EVRSDCOEFF2_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRSDCOEFF2_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSDCOEFF2_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRSDCOEFF2_SD33D_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF2_SD33D_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF2_SD33D_OFF (16u)
+
+
+#define IFX_SCU_EVRSDCOEFF2_SD33I_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF2_SD33I_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF2_SD33I_OFF (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF2_SD33P_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF2_SD33P_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF2_SD33P_OFF (0u)
+
+
+#define IFX_SCU_EVRSDCOEFF3_CT5REG0_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF3_CT5REG0_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF3_CT5REG0_OFF (0u)
+
+
+#define IFX_SCU_EVRSDCOEFF3_CT5REG1_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF3_CT5REG1_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF3_CT5REG1_OFF (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF3_CT5REG2_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF3_CT5REG2_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF3_CT5REG2_OFF (16u)
+
+
+#define IFX_SCU_EVRSDCOEFF3_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRSDCOEFF3_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSDCOEFF3_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRSDCOEFF4_CT5REG3_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF4_CT5REG3_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF4_CT5REG3_OFF (0u)
+
+
+#define IFX_SCU_EVRSDCOEFF4_CT5REG4_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF4_CT5REG4_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF4_CT5REG4_OFF (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF4_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRSDCOEFF4_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSDCOEFF4_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRSDCOEFF5_CT33REG0_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF5_CT33REG0_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF5_CT33REG0_OFF (0u)
+
+
+#define IFX_SCU_EVRSDCOEFF5_CT33REG1_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF5_CT33REG1_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF5_CT33REG1_OFF (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF5_CT33REG2_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF5_CT33REG2_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF5_CT33REG2_OFF (16u)
+
+
+#define IFX_SCU_EVRSDCOEFF5_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRSDCOEFF5_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSDCOEFF5_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRSDCOEFF6_CT33REG3_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF6_CT33REG3_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF6_CT33REG3_OFF (0u)
+
+
+#define IFX_SCU_EVRSDCOEFF6_CT33REG4_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF6_CT33REG4_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCOEFF6_CT33REG4_OFF (8u)
+
+
+#define IFX_SCU_EVRSDCOEFF6_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRSDCOEFF6_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSDCOEFF6_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRSDCTRL1_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRSDCTRL1_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSDCTRL1_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRSDCTRL1_SDFREQ_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCTRL1_SDFREQ_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCTRL1_SDFREQ_OFF (16u)
+
+
+#define IFX_SCU_EVRSDCTRL1_SDFREQSPRD_LEN (16u)
+
+
+#define IFX_SCU_EVRSDCTRL1_SDFREQSPRD_MSK (0xffffu)
+
+
+#define IFX_SCU_EVRSDCTRL1_SDFREQSPRD_OFF (0u)
+
+
+#define IFX_SCU_EVRSDCTRL1_SDSAMPLE_LEN (1u)
+
+
+#define IFX_SCU_EVRSDCTRL1_SDSAMPLE_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSDCTRL1_SDSAMPLE_OFF (30u)
+
+
+#define IFX_SCU_EVRSDCTRL1_SDSTEP_LEN (4u)
+
+
+#define IFX_SCU_EVRSDCTRL1_SDSTEP_MSK (0xfu)
+
+
+#define IFX_SCU_EVRSDCTRL1_SDSTEP_OFF (24u)
+
+
+#define IFX_SCU_EVRSDCTRL2_DRVN_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCTRL2_DRVN_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCTRL2_DRVN_OFF (16u)
+
+
+#define IFX_SCU_EVRSDCTRL2_DRVP_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCTRL2_DRVP_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCTRL2_DRVP_OFF (0u)
+
+
+#define IFX_SCU_EVRSDCTRL2_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRSDCTRL2_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSDCTRL2_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRSDCTRL2_SDLUT_LEN (6u)
+
+
+#define IFX_SCU_EVRSDCTRL2_SDLUT_MSK (0x3fu)
+
+
+#define IFX_SCU_EVRSDCTRL2_SDLUT_OFF (24u)
+
+
+#define IFX_SCU_EVRSDCTRL2_SDMINMAXDC_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCTRL2_SDMINMAXDC_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCTRL2_SDMINMAXDC_OFF (8u)
+
+
+#define IFX_SCU_EVRSDCTRL3_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRSDCTRL3_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSDCTRL3_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRSDCTRL3_SDPID_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCTRL3_SDPID_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCTRL3_SDPID_OFF (8u)
+
+
+#define IFX_SCU_EVRSDCTRL3_SDPWMPRE_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCTRL3_SDPWMPRE_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCTRL3_SDPWMPRE_OFF (0u)
+
+
+#define IFX_SCU_EVRSDCTRL3_SDVOKLVL_LEN (8u)
+
+
+#define IFX_SCU_EVRSDCTRL3_SDVOKLVL_MSK (0xffu)
+
+
+#define IFX_SCU_EVRSDCTRL3_SDVOKLVL_OFF (16u)
+
+
+#define IFX_SCU_EVRSDCTRL4_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRSDCTRL4_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSDCTRL4_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRSDCTRL4_SYNCDIV_LEN (3u)
+
+
+#define IFX_SCU_EVRSDCTRL4_SYNCDIV_MSK (0x7u)
+
+
+#define IFX_SCU_EVRSDCTRL4_SYNCDIV_OFF (8u)
+
+
+#define IFX_SCU_EVRSTAT_BGPROK_LEN (1u)
+
+
+#define IFX_SCU_EVRSTAT_BGPROK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSTAT_BGPROK_OFF (10u)
+
+
+#define IFX_SCU_EVRSTAT_EVR13_LEN (1u)
+
+
+#define IFX_SCU_EVRSTAT_EVR13_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSTAT_EVR13_OFF (0u)
+
+
+#define IFX_SCU_EVRSTAT_EVR33_LEN (1u)
+
+
+#define IFX_SCU_EVRSTAT_EVR33_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSTAT_EVR33_OFF (2u)
+
+
+#define IFX_SCU_EVRSTAT_EXTPASS13_LEN (1u)
+
+
+#define IFX_SCU_EVRSTAT_EXTPASS13_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSTAT_EXTPASS13_OFF (8u)
+
+
+#define IFX_SCU_EVRSTAT_EXTPASS33_LEN (1u)
+
+
+#define IFX_SCU_EVRSTAT_EXTPASS33_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSTAT_EXTPASS33_OFF (9u)
+
+
+#define IFX_SCU_EVRSTAT_OV13_LEN (1u)
+
+
+#define IFX_SCU_EVRSTAT_OV13_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSTAT_OV13_OFF (1u)
+
+
+#define IFX_SCU_EVRSTAT_OV33_LEN (1u)
+
+
+#define IFX_SCU_EVRSTAT_OV33_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSTAT_OV33_OFF (3u)
+
+
+#define IFX_SCU_EVRSTAT_OVSWD_LEN (1u)
+
+
+#define IFX_SCU_EVRSTAT_OVSWD_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSTAT_OVSWD_OFF (4u)
+
+
+#define IFX_SCU_EVRSTAT_UV13_LEN (1u)
+
+
+#define IFX_SCU_EVRSTAT_UV13_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSTAT_UV13_OFF (5u)
+
+
+#define IFX_SCU_EVRSTAT_UV33_LEN (1u)
+
+
+#define IFX_SCU_EVRSTAT_UV33_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSTAT_UV33_OFF (6u)
+
+
+#define IFX_SCU_EVRSTAT_UVSWD_LEN (1u)
+
+
+#define IFX_SCU_EVRSTAT_UVSWD_MSK (0x1u)
+
+
+#define IFX_SCU_EVRSTAT_UVSWD_OFF (7u)
+
+
+#define IFX_SCU_EVRTRIM_EVR13TRIM_LEN (8u)
+
+
+#define IFX_SCU_EVRTRIM_EVR13TRIM_MSK (0xffu)
+
+
+#define IFX_SCU_EVRTRIM_EVR13TRIM_OFF (0u)
+
+
+#define IFX_SCU_EVRTRIM_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRTRIM_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRTRIM_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRTRIM_SDVOUTSEL_LEN (8u)
+
+
+#define IFX_SCU_EVRTRIM_SDVOUTSEL_MSK (0xffu)
+
+
+#define IFX_SCU_EVRTRIM_SDVOUTSEL_OFF (8u)
+
+
+#define IFX_SCU_EVRTRIM_SLCK_LEN (1u)
+
+
+#define IFX_SCU_EVRTRIM_SLCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRTRIM_SLCK_OFF (30u)
+
+
+#define IFX_SCU_EVRUVMON_EVR13UVVAL_LEN (8u)
+
+
+#define IFX_SCU_EVRUVMON_EVR13UVVAL_MSK (0xffu)
+
+
+#define IFX_SCU_EVRUVMON_EVR13UVVAL_OFF (0u)
+
+
+#define IFX_SCU_EVRUVMON_EVR33UVVAL_LEN (8u)
+
+
+#define IFX_SCU_EVRUVMON_EVR33UVVAL_MSK (0xffu)
+
+
+#define IFX_SCU_EVRUVMON_EVR33UVVAL_OFF (8u)
+
+
+#define IFX_SCU_EVRUVMON_LCK_LEN (1u)
+
+
+#define IFX_SCU_EVRUVMON_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRUVMON_LCK_OFF (31u)
+
+
+#define IFX_SCU_EVRUVMON_SLCK_LEN (1u)
+
+
+#define IFX_SCU_EVRUVMON_SLCK_MSK (0x1u)
+
+
+#define IFX_SCU_EVRUVMON_SLCK_OFF (30u)
+
+
+#define IFX_SCU_EVRUVMON_SWDUVVAL_LEN (8u)
+
+
+#define IFX_SCU_EVRUVMON_SWDUVVAL_MSK (0xffu)
+
+
+#define IFX_SCU_EVRUVMON_SWDUVVAL_OFF (16u)
+
+
+#define IFX_SCU_EXTCON_DIV1_LEN (8u)
+
+
+#define IFX_SCU_EXTCON_DIV1_MSK (0xffu)
+
+
+#define IFX_SCU_EXTCON_DIV1_OFF (24u)
+
+
+#define IFX_SCU_EXTCON_EN0_LEN (1u)
+
+
+#define IFX_SCU_EXTCON_EN0_MSK (0x1u)
+
+
+#define IFX_SCU_EXTCON_EN0_OFF (0u)
+
+
+#define IFX_SCU_EXTCON_EN1_LEN (1u)
+
+
+#define IFX_SCU_EXTCON_EN1_MSK (0x1u)
+
+
+#define IFX_SCU_EXTCON_EN1_OFF (16u)
+
+
+#define IFX_SCU_EXTCON_NSEL_LEN (1u)
+
+
+#define IFX_SCU_EXTCON_NSEL_MSK (0x1u)
+
+
+#define IFX_SCU_EXTCON_NSEL_OFF (17u)
+
+
+#define IFX_SCU_EXTCON_SEL0_LEN (4u)
+
+
+#define IFX_SCU_EXTCON_SEL0_MSK (0xfu)
+
+
+#define IFX_SCU_EXTCON_SEL0_OFF (2u)
+
+
+#define IFX_SCU_EXTCON_SEL1_LEN (4u)
+
+
+#define IFX_SCU_EXTCON_SEL1_MSK (0xfu)
+
+
+#define IFX_SCU_EXTCON_SEL1_OFF (18u)
+
+
+#define IFX_SCU_FDR_DISCLK_LEN (1u)
+
+
+#define IFX_SCU_FDR_DISCLK_MSK (0x1u)
+
+
+#define IFX_SCU_FDR_DISCLK_OFF (31u)
+
+
+#define IFX_SCU_FDR_DM_LEN (2u)
+
+
+#define IFX_SCU_FDR_DM_MSK (0x3u)
+
+
+#define IFX_SCU_FDR_DM_OFF (14u)
+
+
+#define IFX_SCU_FDR_RESULT_LEN (10u)
+
+
+#define IFX_SCU_FDR_RESULT_MSK (0x3ffu)
+
+
+#define IFX_SCU_FDR_RESULT_OFF (16u)
+
+
+#define IFX_SCU_FDR_STEP_LEN (10u)
+
+
+#define IFX_SCU_FDR_STEP_MSK (0x3ffu)
+
+
+#define IFX_SCU_FDR_STEP_OFF (0u)
+
+
+#define IFX_SCU_FMR_FC0_LEN (1u)
+
+
+#define IFX_SCU_FMR_FC0_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FC0_OFF (16u)
+
+
+#define IFX_SCU_FMR_FC1_LEN (1u)
+
+
+#define IFX_SCU_FMR_FC1_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FC1_OFF (17u)
+
+
+#define IFX_SCU_FMR_FC2_LEN (1u)
+
+
+#define IFX_SCU_FMR_FC2_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FC2_OFF (18u)
+
+
+#define IFX_SCU_FMR_FC3_LEN (1u)
+
+
+#define IFX_SCU_FMR_FC3_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FC3_OFF (19u)
+
+
+#define IFX_SCU_FMR_FC4_LEN (1u)
+
+
+#define IFX_SCU_FMR_FC4_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FC4_OFF (20u)
+
+
+#define IFX_SCU_FMR_FC5_LEN (1u)
+
+
+#define IFX_SCU_FMR_FC5_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FC5_OFF (21u)
+
+
+#define IFX_SCU_FMR_FC6_LEN (1u)
+
+
+#define IFX_SCU_FMR_FC6_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FC6_OFF (22u)
+
+
+#define IFX_SCU_FMR_FC7_LEN (1u)
+
+
+#define IFX_SCU_FMR_FC7_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FC7_OFF (23u)
+
+
+#define IFX_SCU_FMR_FS0_LEN (1u)
+
+
+#define IFX_SCU_FMR_FS0_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FS0_OFF (0u)
+
+
+#define IFX_SCU_FMR_FS1_LEN (1u)
+
+
+#define IFX_SCU_FMR_FS1_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FS1_OFF (1u)
+
+
+#define IFX_SCU_FMR_FS2_LEN (1u)
+
+
+#define IFX_SCU_FMR_FS2_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FS2_OFF (2u)
+
+
+#define IFX_SCU_FMR_FS3_LEN (1u)
+
+
+#define IFX_SCU_FMR_FS3_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FS3_OFF (3u)
+
+
+#define IFX_SCU_FMR_FS4_LEN (1u)
+
+
+#define IFX_SCU_FMR_FS4_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FS4_OFF (4u)
+
+
+#define IFX_SCU_FMR_FS5_LEN (1u)
+
+
+#define IFX_SCU_FMR_FS5_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FS5_OFF (5u)
+
+
+#define IFX_SCU_FMR_FS6_LEN (1u)
+
+
+#define IFX_SCU_FMR_FS6_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FS6_OFF (6u)
+
+
+#define IFX_SCU_FMR_FS7_LEN (1u)
+
+
+#define IFX_SCU_FMR_FS7_MSK (0x1u)
+
+
+#define IFX_SCU_FMR_FS7_OFF (7u)
+
+
+#define IFX_SCU_ID_MODNUMBER_LEN (16u)
+
+
+#define IFX_SCU_ID_MODNUMBER_MSK (0xffffu)
+
+
+#define IFX_SCU_ID_MODNUMBER_OFF (16u)
+
+
+#define IFX_SCU_ID_MODREV_LEN (8u)
+
+
+#define IFX_SCU_ID_MODREV_MSK (0xffu)
+
+
+#define IFX_SCU_ID_MODREV_OFF (0u)
+
+
+#define IFX_SCU_ID_MODTYPE_LEN (8u)
+
+
+#define IFX_SCU_ID_MODTYPE_MSK (0xffu)
+
+
+#define IFX_SCU_ID_MODTYPE_OFF (8u)
+
+
+#define IFX_SCU_IGCR_GEEN0_LEN (1u)
+
+
+#define IFX_SCU_IGCR_GEEN0_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_GEEN0_OFF (13u)
+
+
+#define IFX_SCU_IGCR_GEEN1_LEN (1u)
+
+
+#define IFX_SCU_IGCR_GEEN1_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_GEEN1_OFF (29u)
+
+
+#define IFX_SCU_IGCR_IGP0_LEN (2u)
+
+
+#define IFX_SCU_IGCR_IGP0_MSK (0x3u)
+
+
+#define IFX_SCU_IGCR_IGP0_OFF (14u)
+
+
+#define IFX_SCU_IGCR_IGP1_LEN (2u)
+
+
+#define IFX_SCU_IGCR_IGP1_MSK (0x3u)
+
+
+#define IFX_SCU_IGCR_IGP1_OFF (30u)
+
+
+#define IFX_SCU_IGCR_IPEN00_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN00_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN00_OFF (0u)
+
+
+#define IFX_SCU_IGCR_IPEN01_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN01_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN01_OFF (1u)
+
+
+#define IFX_SCU_IGCR_IPEN02_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN02_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN02_OFF (2u)
+
+
+#define IFX_SCU_IGCR_IPEN03_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN03_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN03_OFF (3u)
+
+
+#define IFX_SCU_IGCR_IPEN04_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN04_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN04_OFF (4u)
+
+
+#define IFX_SCU_IGCR_IPEN05_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN05_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN05_OFF (5u)
+
+
+#define IFX_SCU_IGCR_IPEN06_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN06_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN06_OFF (6u)
+
+
+#define IFX_SCU_IGCR_IPEN07_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN07_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN07_OFF (7u)
+
+
+#define IFX_SCU_IGCR_IPEN10_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN10_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN10_OFF (16u)
+
+
+#define IFX_SCU_IGCR_IPEN11_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN11_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN11_OFF (17u)
+
+
+#define IFX_SCU_IGCR_IPEN12_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN12_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN12_OFF (18u)
+
+
+#define IFX_SCU_IGCR_IPEN13_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN13_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN13_OFF (19u)
+
+
+#define IFX_SCU_IGCR_IPEN14_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN14_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN14_OFF (20u)
+
+
+#define IFX_SCU_IGCR_IPEN15_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN15_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN15_OFF (21u)
+
+
+#define IFX_SCU_IGCR_IPEN16_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN16_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN16_OFF (22u)
+
+
+#define IFX_SCU_IGCR_IPEN17_LEN (1u)
+
+
+#define IFX_SCU_IGCR_IPEN17_MSK (0x1u)
+
+
+#define IFX_SCU_IGCR_IPEN17_OFF (23u)
+
+
+#define IFX_SCU_IN_P0_LEN (1u)
+
+
+#define IFX_SCU_IN_P0_MSK (0x1u)
+
+
+#define IFX_SCU_IN_P0_OFF (0u)
+
+
+#define IFX_SCU_IN_P1_LEN (1u)
+
+
+#define IFX_SCU_IN_P1_MSK (0x1u)
+
+
+#define IFX_SCU_IN_P1_OFF (1u)
+
+
+#define IFX_SCU_IOCR_PC0_LEN (4u)
+
+
+#define IFX_SCU_IOCR_PC0_MSK (0xfu)
+
+
+#define IFX_SCU_IOCR_PC0_OFF (4u)
+
+
+#define IFX_SCU_IOCR_PC1_LEN (4u)
+
+
+#define IFX_SCU_IOCR_PC1_MSK (0xfu)
+
+
+#define IFX_SCU_IOCR_PC1_OFF (12u)
+
+
+#define IFX_SCU_LBISTCTRL0_LBISTREQ_LEN (1u)
+
+
+#define IFX_SCU_LBISTCTRL0_LBISTREQ_MSK (0x1u)
+
+
+#define IFX_SCU_LBISTCTRL0_LBISTREQ_OFF (0u)
+
+
+#define IFX_SCU_LBISTCTRL0_LBISTREQP_LEN (1u)
+
+
+#define IFX_SCU_LBISTCTRL0_LBISTREQP_MSK (0x1u)
+
+
+#define IFX_SCU_LBISTCTRL0_LBISTREQP_OFF (1u)
+
+
+#define IFX_SCU_LBISTCTRL0_PATTERNS_LEN (14u)
+
+
+#define IFX_SCU_LBISTCTRL0_PATTERNS_MSK (0x3fffu)
+
+
+#define IFX_SCU_LBISTCTRL0_PATTERNS_OFF (2u)
+
+
+#define IFX_SCU_LBISTCTRL1_BODY_LEN (1u)
+
+
+#define IFX_SCU_LBISTCTRL1_BODY_MSK (0x1u)
+
+
+#define IFX_SCU_LBISTCTRL1_BODY_OFF (27u)
+
+
+#define IFX_SCU_LBISTCTRL1_LBISTFREQU_LEN (4u)
+
+
+#define IFX_SCU_LBISTCTRL1_LBISTFREQU_MSK (0xfu)
+
+
+#define IFX_SCU_LBISTCTRL1_LBISTFREQU_OFF (28u)
+
+
+#define IFX_SCU_LBISTCTRL1_SEED_LEN (23u)
+
+
+#define IFX_SCU_LBISTCTRL1_SEED_MSK (0x7fffffu)
+
+
+#define IFX_SCU_LBISTCTRL1_SEED_OFF (0u)
+
+
+#define IFX_SCU_LBISTCTRL1_SPLITSH_LEN (3u)
+
+
+#define IFX_SCU_LBISTCTRL1_SPLITSH_MSK (0x7u)
+
+
+#define IFX_SCU_LBISTCTRL1_SPLITSH_OFF (24u)
+
+
+#define IFX_SCU_LBISTCTRL2_LBISTDONE_LEN (1u)
+
+
+#define IFX_SCU_LBISTCTRL2_LBISTDONE_MSK (0x1u)
+
+
+#define IFX_SCU_LBISTCTRL2_LBISTDONE_OFF (31u)
+
+
+#define IFX_SCU_LBISTCTRL2_SIGNATURE_LEN (24u)
+
+
+#define IFX_SCU_LBISTCTRL2_SIGNATURE_MSK (0xffffffu)
+
+
+#define IFX_SCU_LBISTCTRL2_SIGNATURE_OFF (0u)
+
+
+#define IFX_SCU_LCLCON_LS_LEN (1u)
+
+
+#define IFX_SCU_LCLCON_LS_MSK (0x1u)
+
+
+#define IFX_SCU_LCLCON_LS_OFF (16u)
+
+
+#define IFX_SCU_LCLCON_LSEN_LEN (1u)
+
+
+#define IFX_SCU_LCLCON_LSEN_MSK (0x1u)
+
+
+#define IFX_SCU_LCLCON_LSEN_OFF (31u)
+
+
+#define IFX_SCU_LCLTEST_LCLT0_LEN (1u)
+
+
+#define IFX_SCU_LCLTEST_LCLT0_MSK (0x1u)
+
+
+#define IFX_SCU_LCLTEST_LCLT0_OFF (0u)
+
+
+#define IFX_SCU_LCLTEST_LCLT1_LEN (1u)
+
+
+#define IFX_SCU_LCLTEST_LCLT1_MSK (0x1u)
+
+
+#define IFX_SCU_LCLTEST_LCLT1_OFF (1u)
+
+
+#define IFX_SCU_MANID_DEPT_LEN (5u)
+
+
+#define IFX_SCU_MANID_DEPT_MSK (0x1fu)
+
+
+#define IFX_SCU_MANID_DEPT_OFF (0u)
+
+
+#define IFX_SCU_MANID_MANUF_LEN (11u)
+
+
+#define IFX_SCU_MANID_MANUF_MSK (0x7ffu)
+
+
+#define IFX_SCU_MANID_MANUF_OFF (5u)
+
+
+#define IFX_SCU_OMR_PCL0_LEN (1u)
+
+
+#define IFX_SCU_OMR_PCL0_MSK (0x1u)
+
+
+#define IFX_SCU_OMR_PCL0_OFF (16u)
+
+
+#define IFX_SCU_OMR_PCL1_LEN (1u)
+
+
+#define IFX_SCU_OMR_PCL1_MSK (0x1u)
+
+
+#define IFX_SCU_OMR_PCL1_OFF (17u)
+
+
+#define IFX_SCU_OMR_PS0_LEN (1u)
+
+
+#define IFX_SCU_OMR_PS0_MSK (0x1u)
+
+
+#define IFX_SCU_OMR_PS0_OFF (0u)
+
+
+#define IFX_SCU_OMR_PS1_LEN (1u)
+
+
+#define IFX_SCU_OMR_PS1_MSK (0x1u)
+
+
+#define IFX_SCU_OMR_PS1_OFF (1u)
+
+
+#define IFX_SCU_OSCCON_APREN_LEN (1u)
+
+
+#define IFX_SCU_OSCCON_APREN_MSK (0x1u)
+
+
+#define IFX_SCU_OSCCON_APREN_OFF (23u)
+
+
+#define IFX_SCU_OSCCON_CAP0EN_LEN (1u)
+
+
+#define IFX_SCU_OSCCON_CAP0EN_MSK (0x1u)
+
+
+#define IFX_SCU_OSCCON_CAP0EN_OFF (24u)
+
+
+#define IFX_SCU_OSCCON_CAP1EN_LEN (1u)
+
+
+#define IFX_SCU_OSCCON_CAP1EN_MSK (0x1u)
+
+
+#define IFX_SCU_OSCCON_CAP1EN_OFF (25u)
+
+
+#define IFX_SCU_OSCCON_CAP2EN_LEN (1u)
+
+
+#define IFX_SCU_OSCCON_CAP2EN_MSK (0x1u)
+
+
+#define IFX_SCU_OSCCON_CAP2EN_OFF (26u)
+
+
+#define IFX_SCU_OSCCON_CAP3EN_LEN (1u)
+
+
+#define IFX_SCU_OSCCON_CAP3EN_MSK (0x1u)
+
+
+#define IFX_SCU_OSCCON_CAP3EN_OFF (27u)
+
+
+#define IFX_SCU_OSCCON_GAINSEL_LEN (2u)
+
+
+#define IFX_SCU_OSCCON_GAINSEL_MSK (0x3u)
+
+
+#define IFX_SCU_OSCCON_GAINSEL_OFF (3u)
+
+
+#define IFX_SCU_OSCCON_MODE_LEN (2u)
+
+
+#define IFX_SCU_OSCCON_MODE_MSK (0x3u)
+
+
+#define IFX_SCU_OSCCON_MODE_OFF (5u)
+
+
+#define IFX_SCU_OSCCON_OSCRES_LEN (1u)
+
+
+#define IFX_SCU_OSCCON_OSCRES_MSK (0x1u)
+
+
+#define IFX_SCU_OSCCON_OSCRES_OFF (2u)
+
+
+#define IFX_SCU_OSCCON_OSCVAL_LEN (5u)
+
+
+#define IFX_SCU_OSCCON_OSCVAL_MSK (0x1fu)
+
+
+#define IFX_SCU_OSCCON_OSCVAL_OFF (16u)
+
+
+#define IFX_SCU_OSCCON_PLLHV_LEN (1u)
+
+
+#define IFX_SCU_OSCCON_PLLHV_MSK (0x1u)
+
+
+#define IFX_SCU_OSCCON_PLLHV_OFF (8u)
+
+
+#define IFX_SCU_OSCCON_PLLLV_LEN (1u)
+
+
+#define IFX_SCU_OSCCON_PLLLV_MSK (0x1u)
+
+
+#define IFX_SCU_OSCCON_PLLLV_OFF (1u)
+
+
+#define IFX_SCU_OSCCON_SHBY_LEN (1u)
+
+
+#define IFX_SCU_OSCCON_SHBY_MSK (0x1u)
+
+
+#define IFX_SCU_OSCCON_SHBY_OFF (7u)
+
+
+#define IFX_SCU_OSCCON_X1D_LEN (1u)
+
+
+#define IFX_SCU_OSCCON_X1D_MSK (0x1u)
+
+
+#define IFX_SCU_OSCCON_X1D_OFF (10u)
+
+
+#define IFX_SCU_OSCCON_X1DEN_LEN (1u)
+
+
+#define IFX_SCU_OSCCON_X1DEN_MSK (0x1u)
+
+
+#define IFX_SCU_OSCCON_X1DEN_OFF (11u)
+
+
+#define IFX_SCU_OUT_P0_LEN (1u)
+
+
+#define IFX_SCU_OUT_P0_MSK (0x1u)
+
+
+#define IFX_SCU_OUT_P0_OFF (0u)
+
+
+#define IFX_SCU_OUT_P1_LEN (1u)
+
+
+#define IFX_SCU_OUT_P1_MSK (0x1u)
+
+
+#define IFX_SCU_OUT_P1_OFF (1u)
+
+
+#define IFX_SCU_OVCCON_CSEL0_LEN (1u)
+
+
+#define IFX_SCU_OVCCON_CSEL0_MSK (0x1u)
+
+
+#define IFX_SCU_OVCCON_CSEL0_OFF (0u)
+
+
+#define IFX_SCU_OVCCON_CSEL1_LEN (1u)
+
+
+#define IFX_SCU_OVCCON_CSEL1_MSK (0x1u)
+
+
+#define IFX_SCU_OVCCON_CSEL1_OFF (1u)
+
+
+#define IFX_SCU_OVCCON_CSEL2_LEN (1u)
+
+
+#define IFX_SCU_OVCCON_CSEL2_MSK (0x1u)
+
+
+#define IFX_SCU_OVCCON_CSEL2_OFF (2u)
+
+
+#define IFX_SCU_OVCCON_DCINVAL_LEN (1u)
+
+
+#define IFX_SCU_OVCCON_DCINVAL_MSK (0x1u)
+
+
+#define IFX_SCU_OVCCON_DCINVAL_OFF (18u)
+
+
+#define IFX_SCU_OVCCON_OVCONF_LEN (1u)
+
+
+#define IFX_SCU_OVCCON_OVCONF_MSK (0x1u)
+
+
+#define IFX_SCU_OVCCON_OVCONF_OFF (24u)
+
+
+#define IFX_SCU_OVCCON_OVSTP_LEN (1u)
+
+
+#define IFX_SCU_OVCCON_OVSTP_MSK (0x1u)
+
+
+#define IFX_SCU_OVCCON_OVSTP_OFF (17u)
+
+
+#define IFX_SCU_OVCCON_OVSTRT_LEN (1u)
+
+
+#define IFX_SCU_OVCCON_OVSTRT_MSK (0x1u)
+
+
+#define IFX_SCU_OVCCON_OVSTRT_OFF (16u)
+
+
+#define IFX_SCU_OVCCON_POVCONF_LEN (1u)
+
+
+#define IFX_SCU_OVCCON_POVCONF_MSK (0x1u)
+
+
+#define IFX_SCU_OVCCON_POVCONF_OFF (25u)
+
+
+#define IFX_SCU_OVCENABLE_OVEN0_LEN (1u)
+
+
+#define IFX_SCU_OVCENABLE_OVEN0_MSK (0x1u)
+
+
+#define IFX_SCU_OVCENABLE_OVEN0_OFF (0u)
+
+
+#define IFX_SCU_OVCENABLE_OVEN1_LEN (1u)
+
+
+#define IFX_SCU_OVCENABLE_OVEN1_MSK (0x1u)
+
+
+#define IFX_SCU_OVCENABLE_OVEN1_OFF (1u)
+
+
+#define IFX_SCU_OVCENABLE_OVEN2_LEN (1u)
+
+
+#define IFX_SCU_OVCENABLE_OVEN2_MSK (0x1u)
+
+
+#define IFX_SCU_OVCENABLE_OVEN2_OFF (2u)
+
+
+#define IFX_SCU_PDISC_PDIS0_LEN (1u)
+
+
+#define IFX_SCU_PDISC_PDIS0_MSK (0x1u)
+
+
+#define IFX_SCU_PDISC_PDIS0_OFF (0u)
+
+
+#define IFX_SCU_PDISC_PDIS1_LEN (1u)
+
+
+#define IFX_SCU_PDISC_PDIS1_MSK (0x1u)
+
+
+#define IFX_SCU_PDISC_PDIS1_OFF (1u)
+
+
+#define IFX_SCU_PDR_PD0_LEN (3u)
+
+
+#define IFX_SCU_PDR_PD0_MSK (0x7u)
+
+
+#define IFX_SCU_PDR_PD0_OFF (0u)
+
+
+#define IFX_SCU_PDR_PD1_LEN (3u)
+
+
+#define IFX_SCU_PDR_PD1_MSK (0x7u)
+
+
+#define IFX_SCU_PDR_PD1_OFF (4u)
+
+
+#define IFX_SCU_PDR_PL0_LEN (1u)
+
+
+#define IFX_SCU_PDR_PL0_MSK (0x1u)
+
+
+#define IFX_SCU_PDR_PL0_OFF (3u)
+
+
+#define IFX_SCU_PDR_PL1_LEN (1u)
+
+
+#define IFX_SCU_PDR_PL1_MSK (0x1u)
+
+
+#define IFX_SCU_PDR_PL1_OFF (7u)
+
+
+#define IFX_SCU_PDRR_PDR0_LEN (1u)
+
+
+#define IFX_SCU_PDRR_PDR0_MSK (0x1u)
+
+
+#define IFX_SCU_PDRR_PDR0_OFF (0u)
+
+
+#define IFX_SCU_PDRR_PDR1_LEN (1u)
+
+
+#define IFX_SCU_PDRR_PDR1_MSK (0x1u)
+
+
+#define IFX_SCU_PDRR_PDR1_OFF (1u)
+
+
+#define IFX_SCU_PDRR_PDR2_LEN (1u)
+
+
+#define IFX_SCU_PDRR_PDR2_MSK (0x1u)
+
+
+#define IFX_SCU_PDRR_PDR2_OFF (2u)
+
+
+#define IFX_SCU_PDRR_PDR3_LEN (1u)
+
+
+#define IFX_SCU_PDRR_PDR3_MSK (0x1u)
+
+
+#define IFX_SCU_PDRR_PDR3_OFF (3u)
+
+
+#define IFX_SCU_PDRR_PDR4_LEN (1u)
+
+
+#define IFX_SCU_PDRR_PDR4_MSK (0x1u)
+
+
+#define IFX_SCU_PDRR_PDR4_OFF (4u)
+
+
+#define IFX_SCU_PDRR_PDR5_LEN (1u)
+
+
+#define IFX_SCU_PDRR_PDR5_MSK (0x1u)
+
+
+#define IFX_SCU_PDRR_PDR5_OFF (5u)
+
+
+#define IFX_SCU_PDRR_PDR6_LEN (1u)
+
+
+#define IFX_SCU_PDRR_PDR6_MSK (0x1u)
+
+
+#define IFX_SCU_PDRR_PDR6_OFF (6u)
+
+
+#define IFX_SCU_PDRR_PDR7_LEN (1u)
+
+
+#define IFX_SCU_PDRR_PDR7_MSK (0x1u)
+
+
+#define IFX_SCU_PDRR_PDR7_OFF (7u)
+
+
+#define IFX_SCU_PLLCON0_CLRFINDIS_LEN (1u)
+
+
+#define IFX_SCU_PLLCON0_CLRFINDIS_MSK (0x1u)
+
+
+#define IFX_SCU_PLLCON0_CLRFINDIS_OFF (5u)
+
+
+#define IFX_SCU_PLLCON0_MODEN_LEN (1u)
+
+
+#define IFX_SCU_PLLCON0_MODEN_MSK (0x1u)
+
+
+#define IFX_SCU_PLLCON0_MODEN_OFF (2u)
+
+
+#define IFX_SCU_PLLCON0_NDIV_LEN (7u)
+
+
+#define IFX_SCU_PLLCON0_NDIV_MSK (0x7fu)
+
+
+#define IFX_SCU_PLLCON0_NDIV_OFF (9u)
+
+
+#define IFX_SCU_PLLCON0_OSCDISCDIS_LEN (1u)
+
+
+#define IFX_SCU_PLLCON0_OSCDISCDIS_MSK (0x1u)
+
+
+#define IFX_SCU_PLLCON0_OSCDISCDIS_OFF (6u)
+
+
+#define IFX_SCU_PLLCON0_PDIV_LEN (4u)
+
+
+#define IFX_SCU_PLLCON0_PDIV_MSK (0xfu)
+
+
+#define IFX_SCU_PLLCON0_PDIV_OFF (24u)
+
+
+#define IFX_SCU_PLLCON0_PLLPWD_LEN (1u)
+
+
+#define IFX_SCU_PLLCON0_PLLPWD_MSK (0x1u)
+
+
+#define IFX_SCU_PLLCON0_PLLPWD_OFF (16u)
+
+
+#define IFX_SCU_PLLCON0_RESLD_LEN (1u)
+
+
+#define IFX_SCU_PLLCON0_RESLD_MSK (0x1u)
+
+
+#define IFX_SCU_PLLCON0_RESLD_OFF (18u)
+
+
+#define IFX_SCU_PLLCON0_SETFINDIS_LEN (1u)
+
+
+#define IFX_SCU_PLLCON0_SETFINDIS_MSK (0x1u)
+
+
+#define IFX_SCU_PLLCON0_SETFINDIS_OFF (4u)
+
+
+#define IFX_SCU_PLLCON0_VCOBYP_LEN (1u)
+
+
+#define IFX_SCU_PLLCON0_VCOBYP_MSK (0x1u)
+
+
+#define IFX_SCU_PLLCON0_VCOBYP_OFF (0u)
+
+
+#define IFX_SCU_PLLCON0_VCOPWD_LEN (1u)
+
+
+#define IFX_SCU_PLLCON0_VCOPWD_MSK (0x1u)
+
+
+#define IFX_SCU_PLLCON0_VCOPWD_OFF (1u)
+
+
+#define IFX_SCU_PLLCON1_K1DIV_LEN (7u)
+
+
+#define IFX_SCU_PLLCON1_K1DIV_MSK (0x7fu)
+
+
+#define IFX_SCU_PLLCON1_K1DIV_OFF (16u)
+
+
+#define IFX_SCU_PLLCON1_K2DIV_LEN (7u)
+
+
+#define IFX_SCU_PLLCON1_K2DIV_MSK (0x7fu)
+
+
+#define IFX_SCU_PLLCON1_K2DIV_OFF (0u)
+
+
+#define IFX_SCU_PLLCON1_K3DIV_LEN (7u)
+
+
+#define IFX_SCU_PLLCON1_K3DIV_MSK (0x7fu)
+
+
+#define IFX_SCU_PLLCON1_K3DIV_OFF (8u)
+
+
+#define IFX_SCU_PLLCON2_MODCFG_LEN (16u)
+
+
+#define IFX_SCU_PLLCON2_MODCFG_MSK (0xffffu)
+
+
+#define IFX_SCU_PLLCON2_MODCFG_OFF (0u)
+
+
+#define IFX_SCU_PLLERAYCON0_CLRFINDIS_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYCON0_CLRFINDIS_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYCON0_CLRFINDIS_OFF (5u)
+
+
+#define IFX_SCU_PLLERAYCON0_NDIV_LEN (5u)
+
+
+#define IFX_SCU_PLLERAYCON0_NDIV_MSK (0x1fu)
+
+
+#define IFX_SCU_PLLERAYCON0_NDIV_OFF (9u)
+
+
+#define IFX_SCU_PLLERAYCON0_OSCDISCDIS_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYCON0_OSCDISCDIS_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYCON0_OSCDISCDIS_OFF (6u)
+
+
+#define IFX_SCU_PLLERAYCON0_PDIV_LEN (4u)
+
+
+#define IFX_SCU_PLLERAYCON0_PDIV_MSK (0xfu)
+
+
+#define IFX_SCU_PLLERAYCON0_PDIV_OFF (24u)
+
+
+#define IFX_SCU_PLLERAYCON0_PLLPWD_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYCON0_PLLPWD_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYCON0_PLLPWD_OFF (16u)
+
+
+#define IFX_SCU_PLLERAYCON0_RESLD_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYCON0_RESLD_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYCON0_RESLD_OFF (18u)
+
+
+#define IFX_SCU_PLLERAYCON0_SETFINDIS_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYCON0_SETFINDIS_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYCON0_SETFINDIS_OFF (4u)
+
+
+#define IFX_SCU_PLLERAYCON0_VCOBYP_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYCON0_VCOBYP_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYCON0_VCOBYP_OFF (0u)
+
+
+#define IFX_SCU_PLLERAYCON0_VCOPWD_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYCON0_VCOPWD_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYCON0_VCOPWD_OFF (1u)
+
+
+#define IFX_SCU_PLLERAYCON1_K1DIV_LEN (7u)
+
+
+#define IFX_SCU_PLLERAYCON1_K1DIV_MSK (0x7fu)
+
+
+#define IFX_SCU_PLLERAYCON1_K1DIV_OFF (16u)
+
+
+#define IFX_SCU_PLLERAYCON1_K2DIV_LEN (7u)
+
+
+#define IFX_SCU_PLLERAYCON1_K2DIV_MSK (0x7fu)
+
+
+#define IFX_SCU_PLLERAYCON1_K2DIV_OFF (0u)
+
+
+#define IFX_SCU_PLLERAYCON1_K3DIV_LEN (4u)
+
+
+#define IFX_SCU_PLLERAYCON1_K3DIV_MSK (0xfu)
+
+
+#define IFX_SCU_PLLERAYCON1_K3DIV_OFF (8u)
+
+
+#define IFX_SCU_PLLERAYSTAT_FINDIS_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_FINDIS_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_FINDIS_OFF (3u)
+
+
+#define IFX_SCU_PLLERAYSTAT_K1RDY_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_K1RDY_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_K1RDY_OFF (4u)
+
+
+#define IFX_SCU_PLLERAYSTAT_K2RDY_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_K2RDY_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_K2RDY_OFF (5u)
+
+
+#define IFX_SCU_PLLERAYSTAT_PWDSTAT_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_PWDSTAT_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_PWDSTAT_OFF (1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_VCOBYST_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_VCOBYST_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_VCOBYST_OFF (0u)
+
+
+#define IFX_SCU_PLLERAYSTAT_VCOLOCK_LEN (1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_VCOLOCK_MSK (0x1u)
+
+
+#define IFX_SCU_PLLERAYSTAT_VCOLOCK_OFF (2u)
+
+
+#define IFX_SCU_PLLSTAT_FINDIS_LEN (1u)
+
+
+#define IFX_SCU_PLLSTAT_FINDIS_MSK (0x1u)
+
+
+#define IFX_SCU_PLLSTAT_FINDIS_OFF (3u)
+
+
+#define IFX_SCU_PLLSTAT_K1RDY_LEN (1u)
+
+
+#define IFX_SCU_PLLSTAT_K1RDY_MSK (0x1u)
+
+
+#define IFX_SCU_PLLSTAT_K1RDY_OFF (4u)
+
+
+#define IFX_SCU_PLLSTAT_K2RDY_LEN (1u)
+
+
+#define IFX_SCU_PLLSTAT_K2RDY_MSK (0x1u)
+
+
+#define IFX_SCU_PLLSTAT_K2RDY_OFF (5u)
+
+
+#define IFX_SCU_PLLSTAT_MODRUN_LEN (1u)
+
+
+#define IFX_SCU_PLLSTAT_MODRUN_MSK (0x1u)
+
+
+#define IFX_SCU_PLLSTAT_MODRUN_OFF (7u)
+
+
+#define IFX_SCU_PLLSTAT_VCOBYST_LEN (1u)
+
+
+#define IFX_SCU_PLLSTAT_VCOBYST_MSK (0x1u)
+
+
+#define IFX_SCU_PLLSTAT_VCOBYST_OFF (0u)
+
+
+#define IFX_SCU_PLLSTAT_VCOLOCK_LEN (1u)
+
+
+#define IFX_SCU_PLLSTAT_VCOLOCK_MSK (0x1u)
+
+
+#define IFX_SCU_PLLSTAT_VCOLOCK_OFF (2u)
+
+
+#define IFX_SCU_PMCSR_PMST_LEN (3u)
+
+
+#define IFX_SCU_PMCSR_PMST_MSK (0x7u)
+
+
+#define IFX_SCU_PMCSR_PMST_OFF (8u)
+
+
+#define IFX_SCU_PMCSR_REQSLP_LEN (2u)
+
+
+#define IFX_SCU_PMCSR_REQSLP_MSK (0x3u)
+
+
+#define IFX_SCU_PMCSR_REQSLP_OFF (0u)
+
+
+#define IFX_SCU_PMCSR_SMUSLP_LEN (1u)
+
+
+#define IFX_SCU_PMCSR_SMUSLP_MSK (0x1u)
+
+
+#define IFX_SCU_PMCSR_SMUSLP_OFF (2u)
+
+
+#define IFX_SCU_PMSWCR0_BLNKFIL_LEN (3u)
+
+
+#define IFX_SCU_PMSWCR0_BLNKFIL_MSK (0x7u)
+
+
+#define IFX_SCU_PMSWCR0_BLNKFIL_OFF (26u)
+
+
+#define IFX_SCU_PMSWCR0_DCDCSYNC_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_DCDCSYNC_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_DCDCSYNC_OFF (25u)
+
+
+#define IFX_SCU_PMSWCR0_ESR0DFEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_ESR0DFEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_ESR0DFEN_OFF (4u)
+
+
+#define IFX_SCU_PMSWCR0_ESR0EDCON_LEN (2u)
+
+
+#define IFX_SCU_PMSWCR0_ESR0EDCON_MSK (0x3u)
+
+
+#define IFX_SCU_PMSWCR0_ESR0EDCON_OFF (5u)
+
+
+#define IFX_SCU_PMSWCR0_ESR0TRIST_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_ESR0TRIST_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_ESR0TRIST_OFF (29u)
+
+
+#define IFX_SCU_PMSWCR0_ESR1DFEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_ESR1DFEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_ESR1DFEN_OFF (7u)
+
+
+#define IFX_SCU_PMSWCR0_ESR1EDCON_LEN (2u)
+
+
+#define IFX_SCU_PMSWCR0_ESR1EDCON_MSK (0x3u)
+
+
+#define IFX_SCU_PMSWCR0_ESR1EDCON_OFF (8u)
+
+
+#define IFX_SCU_PMSWCR0_ESR1WKEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_ESR1WKEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_ESR1WKEN_OFF (1u)
+
+
+#define IFX_SCU_PMSWCR0_LCK_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_LCK_OFF (31u)
+
+
+#define IFX_SCU_PMSWCR0_PINADFEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_PINADFEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_PINADFEN_OFF (10u)
+
+
+#define IFX_SCU_PMSWCR0_PINAEDCON_LEN (2u)
+
+
+#define IFX_SCU_PMSWCR0_PINAEDCON_MSK (0x3u)
+
+
+#define IFX_SCU_PMSWCR0_PINAEDCON_OFF (11u)
+
+
+#define IFX_SCU_PMSWCR0_PINAWKEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_PINAWKEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_PINAWKEN_OFF (2u)
+
+
+#define IFX_SCU_PMSWCR0_PINBDFEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_PINBDFEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_PINBDFEN_OFF (13u)
+
+
+#define IFX_SCU_PMSWCR0_PINBEDCON_LEN (2u)
+
+
+#define IFX_SCU_PMSWCR0_PINBEDCON_MSK (0x3u)
+
+
+#define IFX_SCU_PMSWCR0_PINBEDCON_OFF (14u)
+
+
+#define IFX_SCU_PMSWCR0_PINBWKEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_PINBWKEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_PINBWKEN_OFF (3u)
+
+
+#define IFX_SCU_PMSWCR0_PORSTDF_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_PORSTDF_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_PORSTDF_OFF (23u)
+
+
+#define IFX_SCU_PMSWCR0_PWRWKEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_PWRWKEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_PWRWKEN_OFF (24u)
+
+
+#define IFX_SCU_PMSWCR0_STBYRAMSEL_LEN (2u)
+
+
+#define IFX_SCU_PMSWCR0_STBYRAMSEL_MSK (0x3u)
+
+
+#define IFX_SCU_PMSWCR0_STBYRAMSEL_OFF (17u)
+
+
+#define IFX_SCU_PMSWCR0_TRISTEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_TRISTEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_TRISTEN_OFF (21u)
+
+
+#define IFX_SCU_PMSWCR0_TRISTREQ_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR0_TRISTREQ_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR0_TRISTREQ_OFF (22u)
+
+
+#define IFX_SCU_PMSWCR1_CPUIDLSEL_LEN (3u)
+
+
+#define IFX_SCU_PMSWCR1_CPUIDLSEL_MSK (0x7u)
+
+
+#define IFX_SCU_PMSWCR1_CPUIDLSEL_OFF (8u)
+
+
+#define IFX_SCU_PMSWCR1_CPUSEL_LEN (3u)
+
+
+#define IFX_SCU_PMSWCR1_CPUSEL_MSK (0x7u)
+
+
+#define IFX_SCU_PMSWCR1_CPUSEL_OFF (24u)
+
+
+#define IFX_SCU_PMSWCR1_IRADIS_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR1_IRADIS_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR1_IRADIS_OFF (12u)
+
+
+#define IFX_SCU_PMSWCR1_STBYEV_LEN (3u)
+
+
+#define IFX_SCU_PMSWCR1_STBYEV_MSK (0x7u)
+
+
+#define IFX_SCU_PMSWCR1_STBYEV_OFF (28u)
+
+
+#define IFX_SCU_PMSWCR1_STBYEVEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWCR1_STBYEVEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWCR1_STBYEVEN_OFF (27u)
+
+
+#define IFX_SCU_PMSWSTAT_BLNKFIL_LEN (3u)
+
+
+#define IFX_SCU_PMSWSTAT_BLNKFIL_MSK (0x7u)
+
+
+#define IFX_SCU_PMSWSTAT_BLNKFIL_OFF (24u)
+
+
+#define IFX_SCU_PMSWSTAT_ESR0TRIST_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_ESR0TRIST_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_ESR0TRIST_OFF (27u)
+
+
+#define IFX_SCU_PMSWSTAT_ESR1OVRUN_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_ESR1OVRUN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_ESR1OVRUN_OFF (3u)
+
+
+#define IFX_SCU_PMSWSTAT_ESR1WKEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_ESR1WKEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_ESR1WKEN_OFF (20u)
+
+
+#define IFX_SCU_PMSWSTAT_ESR1WKP_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_ESR1WKP_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_ESR1WKP_OFF (2u)
+
+
+#define IFX_SCU_PMSWSTAT_HWCFGEVR_LEN (3u)
+
+
+#define IFX_SCU_PMSWSTAT_HWCFGEVR_MSK (0x7u)
+
+
+#define IFX_SCU_PMSWSTAT_HWCFGEVR_OFF (10u)
+
+
+#define IFX_SCU_PMSWSTAT_PINAOVRUN_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_PINAOVRUN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_PINAOVRUN_OFF (5u)
+
+
+#define IFX_SCU_PMSWSTAT_PINAWKEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_PINAWKEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_PINAWKEN_OFF (21u)
+
+
+#define IFX_SCU_PMSWSTAT_PINAWKP_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_PINAWKP_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_PINAWKP_OFF (4u)
+
+
+#define IFX_SCU_PMSWSTAT_PINBOVRUN_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_PINBOVRUN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_PINBOVRUN_OFF (7u)
+
+
+#define IFX_SCU_PMSWSTAT_PINBWKEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_PINBWKEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_PINBWKEN_OFF (22u)
+
+
+#define IFX_SCU_PMSWSTAT_PINBWKP_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_PINBWKP_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_PINBWKP_OFF (6u)
+
+
+#define IFX_SCU_PMSWSTAT_PORSTDF_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_PORSTDF_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_PORSTDF_OFF (9u)
+
+
+#define IFX_SCU_PMSWSTAT_PWRWKEN_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_PWRWKEN_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_PWRWKEN_OFF (23u)
+
+
+#define IFX_SCU_PMSWSTAT_PWRWKP_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_PWRWKP_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_PWRWKP_OFF (8u)
+
+
+#define IFX_SCU_PMSWSTAT_STBYRAM_LEN (2u)
+
+
+#define IFX_SCU_PMSWSTAT_STBYRAM_MSK (0x3u)
+
+
+#define IFX_SCU_PMSWSTAT_STBYRAM_OFF (13u)
+
+
+#define IFX_SCU_PMSWSTAT_TRIST_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTAT_TRIST_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTAT_TRIST_OFF (15u)
+
+
+#define IFX_SCU_PMSWSTATCLR_ESR1OVRUNCLR_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_ESR1OVRUNCLR_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_ESR1OVRUNCLR_OFF (3u)
+
+
+#define IFX_SCU_PMSWSTATCLR_ESR1WKPCLR_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_ESR1WKPCLR_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_ESR1WKPCLR_OFF (2u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PINAOVRUNCLR_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PINAOVRUNCLR_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PINAOVRUNCLR_OFF (5u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PINAWKPCLR_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PINAWKPCLR_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PINAWKPCLR_OFF (4u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PINBOVRUNCLR_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PINBOVRUNCLR_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PINBOVRUNCLR_OFF (7u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PINBWKPCLR_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PINBWKPCLR_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PINBWKPCLR_OFF (6u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PWRWKPCLR_LEN (1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PWRWKPCLR_MSK (0x1u)
+
+
+#define IFX_SCU_PMSWSTATCLR_PWRWKPCLR_OFF (8u)
+
+
+#define IFX_SCU_RSTCON2_CLRC_LEN (1u)
+
+
+#define IFX_SCU_RSTCON2_CLRC_MSK (0x1u)
+
+
+#define IFX_SCU_RSTCON2_CLRC_OFF (1u)
+
+
+#define IFX_SCU_RSTCON2_CSS0_LEN (1u)
+
+
+#define IFX_SCU_RSTCON2_CSS0_MSK (0x1u)
+
+
+#define IFX_SCU_RSTCON2_CSS0_OFF (12u)
+
+
+#define IFX_SCU_RSTCON2_CSS1_LEN (1u)
+
+
+#define IFX_SCU_RSTCON2_CSS1_MSK (0x1u)
+
+
+#define IFX_SCU_RSTCON2_CSS1_OFF (13u)
+
+
+#define IFX_SCU_RSTCON2_CSS2_LEN (1u)
+
+
+#define IFX_SCU_RSTCON2_CSS2_MSK (0x1u)
+
+
+#define IFX_SCU_RSTCON2_CSS2_OFF (14u)
+
+
+#define IFX_SCU_RSTCON2_USRINFO_LEN (16u)
+
+
+#define IFX_SCU_RSTCON2_USRINFO_MSK (0xffffu)
+
+
+#define IFX_SCU_RSTCON2_USRINFO_OFF (16u)
+
+
+#define IFX_SCU_RSTCON_ESR0_LEN (2u)
+
+
+#define IFX_SCU_RSTCON_ESR0_MSK (0x3u)
+
+
+#define IFX_SCU_RSTCON_ESR0_OFF (0u)
+
+
+#define IFX_SCU_RSTCON_ESR1_LEN (2u)
+
+
+#define IFX_SCU_RSTCON_ESR1_MSK (0x3u)
+
+
+#define IFX_SCU_RSTCON_ESR1_OFF (2u)
+
+
+#define IFX_SCU_RSTCON_SMU_LEN (2u)
+
+
+#define IFX_SCU_RSTCON_SMU_MSK (0x3u)
+
+
+#define IFX_SCU_RSTCON_SMU_OFF (6u)
+
+
+#define IFX_SCU_RSTCON_STM0_LEN (2u)
+
+
+#define IFX_SCU_RSTCON_STM0_MSK (0x3u)
+
+
+#define IFX_SCU_RSTCON_STM0_OFF (10u)
+
+
+#define IFX_SCU_RSTCON_STM1_LEN (2u)
+
+
+#define IFX_SCU_RSTCON_STM1_MSK (0x3u)
+
+
+#define IFX_SCU_RSTCON_STM1_OFF (12u)
+
+
+#define IFX_SCU_RSTCON_STM2_LEN (2u)
+
+
+#define IFX_SCU_RSTCON_STM2_MSK (0x3u)
+
+
+#define IFX_SCU_RSTCON_STM2_OFF (14u)
+
+
+#define IFX_SCU_RSTCON_SW_LEN (2u)
+
+
+#define IFX_SCU_RSTCON_SW_MSK (0x3u)
+
+
+#define IFX_SCU_RSTCON_SW_OFF (8u)
+
+
+#define IFX_SCU_RSTSTAT_CB0_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_CB0_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_CB0_OFF (18u)
+
+
+#define IFX_SCU_RSTSTAT_CB1_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_CB1_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_CB1_OFF (19u)
+
+
+#define IFX_SCU_RSTSTAT_CB3_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_CB3_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_CB3_OFF (20u)
+
+
+#define IFX_SCU_RSTSTAT_ESR0_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_ESR0_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_ESR0_OFF (0u)
+
+
+#define IFX_SCU_RSTSTAT_ESR1_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_ESR1_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_ESR1_OFF (1u)
+
+
+#define IFX_SCU_RSTSTAT_EVR13_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_EVR13_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_EVR13_OFF (23u)
+
+
+#define IFX_SCU_RSTSTAT_EVR33_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_EVR33_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_EVR33_OFF (24u)
+
+
+#define IFX_SCU_RSTSTAT_PORST_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_PORST_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_PORST_OFF (16u)
+
+
+#define IFX_SCU_RSTSTAT_SMU_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_SMU_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_SMU_OFF (3u)
+
+
+#define IFX_SCU_RSTSTAT_STBYR_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_STBYR_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_STBYR_OFF (28u)
+
+
+#define IFX_SCU_RSTSTAT_STM0_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_STM0_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_STM0_OFF (5u)
+
+
+#define IFX_SCU_RSTSTAT_STM1_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_STM1_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_STM1_OFF (6u)
+
+
+#define IFX_SCU_RSTSTAT_STM2_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_STM2_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_STM2_OFF (7u)
+
+
+#define IFX_SCU_RSTSTAT_SW_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_SW_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_SW_OFF (4u)
+
+
+#define IFX_SCU_RSTSTAT_SWD_LEN (1u)
+
+
+#define IFX_SCU_RSTSTAT_SWD_MSK (0x1u)
+
+
+#define IFX_SCU_RSTSTAT_SWD_OFF (25u)
+
+
+#define IFX_SCU_SAFECON_HBT_LEN (1u)
+
+
+#define IFX_SCU_SAFECON_HBT_MSK (0x1u)
+
+
+#define IFX_SCU_SAFECON_HBT_OFF (0u)
+
+
+#define IFX_SCU_STSTAT_FTM_LEN (7u)
+
+
+#define IFX_SCU_STSTAT_FTM_MSK (0x7fu)
+
+
+#define IFX_SCU_STSTAT_FTM_OFF (8u)
+
+
+#define IFX_SCU_STSTAT_HWCFG_LEN (8u)
+
+
+#define IFX_SCU_STSTAT_HWCFG_MSK (0xffu)
+
+
+#define IFX_SCU_STSTAT_HWCFG_OFF (0u)
+
+
+#define IFX_SCU_STSTAT_LUDIS_LEN (1u)
+
+
+#define IFX_SCU_STSTAT_LUDIS_MSK (0x1u)
+
+
+#define IFX_SCU_STSTAT_LUDIS_OFF (17u)
+
+
+#define IFX_SCU_STSTAT_MODE_LEN (1u)
+
+
+#define IFX_SCU_STSTAT_MODE_MSK (0x1u)
+
+
+#define IFX_SCU_STSTAT_MODE_OFF (15u)
+
+
+#define IFX_SCU_STSTAT_RAMINT_LEN (1u)
+
+
+#define IFX_SCU_STSTAT_RAMINT_MSK (0x1u)
+
+
+#define IFX_SCU_STSTAT_RAMINT_OFF (24u)
+
+
+#define IFX_SCU_STSTAT_SPDEN_LEN (1u)
+
+
+#define IFX_SCU_STSTAT_SPDEN_MSK (0x1u)
+
+
+#define IFX_SCU_STSTAT_SPDEN_OFF (20u)
+
+
+#define IFX_SCU_STSTAT_TRSTL_LEN (1u)
+
+
+#define IFX_SCU_STSTAT_TRSTL_MSK (0x1u)
+
+
+#define IFX_SCU_STSTAT_TRSTL_OFF (19u)
+
+
+#define IFX_SCU_SWRSTCON_SWRSTREQ_LEN (1u)
+
+
+#define IFX_SCU_SWRSTCON_SWRSTREQ_MSK (0x1u)
+
+
+#define IFX_SCU_SWRSTCON_SWRSTREQ_OFF (1u)
+
+
+#define IFX_SCU_SYSCON_CCTRIG0_LEN (1u)
+
+
+#define IFX_SCU_SYSCON_CCTRIG0_MSK (0x1u)
+
+
+#define IFX_SCU_SYSCON_CCTRIG0_OFF (0u)
+
+
+#define IFX_SCU_SYSCON_DATM_LEN (1u)
+
+
+#define IFX_SCU_SYSCON_DATM_MSK (0x1u)
+
+
+#define IFX_SCU_SYSCON_DATM_OFF (8u)
+
+
+#define IFX_SCU_SYSCON_RAMINTM_LEN (2u)
+
+
+#define IFX_SCU_SYSCON_RAMINTM_MSK (0x3u)
+
+
+#define IFX_SCU_SYSCON_RAMINTM_OFF (2u)
+
+
+#define IFX_SCU_SYSCON_SETLUDIS_LEN (1u)
+
+
+#define IFX_SCU_SYSCON_SETLUDIS_MSK (0x1u)
+
+
+#define IFX_SCU_SYSCON_SETLUDIS_OFF (4u)
+
+
+#define IFX_SCU_TRAPCLR_ESR0T_LEN (1u)
+
+
+#define IFX_SCU_TRAPCLR_ESR0T_MSK (0x1u)
+
+
+#define IFX_SCU_TRAPCLR_ESR0T_OFF (0u)
+
+
+#define IFX_SCU_TRAPCLR_ESR1T_LEN (1u)
+
+
+#define IFX_SCU_TRAPCLR_ESR1T_MSK (0x1u)
+
+
+#define IFX_SCU_TRAPCLR_ESR1T_OFF (1u)
+
+
+#define IFX_SCU_TRAPCLR_SMUT_LEN (1u)
+
+
+#define IFX_SCU_TRAPCLR_SMUT_MSK (0x1u)
+
+
+#define IFX_SCU_TRAPCLR_SMUT_OFF (3u)
+
+
+#define IFX_SCU_TRAPDIS_ESR0T_LEN (1u)
+
+
+#define IFX_SCU_TRAPDIS_ESR0T_MSK (0x1u)
+
+
+#define IFX_SCU_TRAPDIS_ESR0T_OFF (0u)
+
+
+#define IFX_SCU_TRAPDIS_ESR1T_LEN (1u)
+
+
+#define IFX_SCU_TRAPDIS_ESR1T_MSK (0x1u)
+
+
+#define IFX_SCU_TRAPDIS_ESR1T_OFF (1u)
+
+
+#define IFX_SCU_TRAPDIS_SMUT_LEN (1u)
+
+
+#define IFX_SCU_TRAPDIS_SMUT_MSK (0x1u)
+
+
+#define IFX_SCU_TRAPDIS_SMUT_OFF (3u)
+
+
+#define IFX_SCU_TRAPSET_ESR0T_LEN (1u)
+
+
+#define IFX_SCU_TRAPSET_ESR0T_MSK (0x1u)
+
+
+#define IFX_SCU_TRAPSET_ESR0T_OFF (0u)
+
+
+#define IFX_SCU_TRAPSET_ESR1T_LEN (1u)
+
+
+#define IFX_SCU_TRAPSET_ESR1T_MSK (0x1u)
+
+
+#define IFX_SCU_TRAPSET_ESR1T_OFF (1u)
+
+
+#define IFX_SCU_TRAPSET_SMUT_LEN (1u)
+
+
+#define IFX_SCU_TRAPSET_SMUT_MSK (0x1u)
+
+
+#define IFX_SCU_TRAPSET_SMUT_OFF (3u)
+
+
+#define IFX_SCU_TRAPSTAT_ESR0T_LEN (1u)
+
+
+#define IFX_SCU_TRAPSTAT_ESR0T_MSK (0x1u)
+
+
+#define IFX_SCU_TRAPSTAT_ESR0T_OFF (0u)
+
+
+#define IFX_SCU_TRAPSTAT_ESR1T_LEN (1u)
+
+
+#define IFX_SCU_TRAPSTAT_ESR1T_MSK (0x1u)
+
+
+#define IFX_SCU_TRAPSTAT_ESR1T_OFF (1u)
+
+
+#define IFX_SCU_TRAPSTAT_SMUT_LEN (1u)
+
+
+#define IFX_SCU_TRAPSTAT_SMUT_MSK (0x1u)
+
+
+#define IFX_SCU_TRAPSTAT_SMUT_OFF (3u)
+
+
+#define IFX_SCU_WDTCPU_CON0_ENDINIT_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_CON0_ENDINIT_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_CON0_ENDINIT_OFF (0u)
+
+
+#define IFX_SCU_WDTCPU_CON0_LCK_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_CON0_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_CON0_LCK_OFF (1u)
+
+
+#define IFX_SCU_WDTCPU_CON0_PW_LEN (14u)
+
+
+#define IFX_SCU_WDTCPU_CON0_PW_MSK (0x3fffu)
+
+
+#define IFX_SCU_WDTCPU_CON0_PW_OFF (2u)
+
+
+#define IFX_SCU_WDTCPU_CON0_REL_LEN (16u)
+
+
+#define IFX_SCU_WDTCPU_CON0_REL_MSK (0xffffu)
+
+
+#define IFX_SCU_WDTCPU_CON0_REL_OFF (16u)
+
+
+#define IFX_SCU_WDTCPU_CON1_DR_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_CON1_DR_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_CON1_DR_OFF (3u)
+
+
+#define IFX_SCU_WDTCPU_CON1_IR0_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_CON1_IR0_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_CON1_IR0_OFF (2u)
+
+
+#define IFX_SCU_WDTCPU_CON1_IR1_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_CON1_IR1_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_CON1_IR1_OFF (5u)
+
+
+#define IFX_SCU_WDTCPU_CON1_PAR_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_CON1_PAR_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_CON1_PAR_OFF (7u)
+
+
+#define IFX_SCU_WDTCPU_CON1_TCR_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_CON1_TCR_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_CON1_TCR_OFF (8u)
+
+
+#define IFX_SCU_WDTCPU_CON1_TCTR_LEN (7u)
+
+
+#define IFX_SCU_WDTCPU_CON1_TCTR_MSK (0x7fu)
+
+
+#define IFX_SCU_WDTCPU_CON1_TCTR_OFF (9u)
+
+
+#define IFX_SCU_WDTCPU_CON1_UR_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_CON1_UR_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_CON1_UR_OFF (6u)
+
+
+#define IFX_SCU_WDTCPU_SR_AE_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_SR_AE_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_SR_AE_OFF (0u)
+
+
+#define IFX_SCU_WDTCPU_SR_DS_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_SR_DS_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_SR_DS_OFF (3u)
+
+
+#define IFX_SCU_WDTCPU_SR_IS0_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_SR_IS0_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_SR_IS0_OFF (2u)
+
+
+#define IFX_SCU_WDTCPU_SR_IS1_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_SR_IS1_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_SR_IS1_OFF (5u)
+
+
+#define IFX_SCU_WDTCPU_SR_OE_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_SR_OE_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_SR_OE_OFF (1u)
+
+
+#define IFX_SCU_WDTCPU_SR_PAS_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_SR_PAS_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_SR_PAS_OFF (7u)
+
+
+#define IFX_SCU_WDTCPU_SR_TCS_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_SR_TCS_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_SR_TCS_OFF (8u)
+
+
+#define IFX_SCU_WDTCPU_SR_TCT_LEN (7u)
+
+
+#define IFX_SCU_WDTCPU_SR_TCT_MSK (0x7fu)
+
+
+#define IFX_SCU_WDTCPU_SR_TCT_OFF (9u)
+
+
+#define IFX_SCU_WDTCPU_SR_TIM_LEN (16u)
+
+
+#define IFX_SCU_WDTCPU_SR_TIM_MSK (0xffffu)
+
+
+#define IFX_SCU_WDTCPU_SR_TIM_OFF (16u)
+
+
+#define IFX_SCU_WDTCPU_SR_TO_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_SR_TO_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_SR_TO_OFF (4u)
+
+
+#define IFX_SCU_WDTCPU_SR_US_LEN (1u)
+
+
+#define IFX_SCU_WDTCPU_SR_US_MSK (0x1u)
+
+
+#define IFX_SCU_WDTCPU_SR_US_OFF (6u)
+
+
+#define IFX_SCU_WDTS_CON0_ENDINIT_LEN (1u)
+
+
+#define IFX_SCU_WDTS_CON0_ENDINIT_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_CON0_ENDINIT_OFF (0u)
+
+
+#define IFX_SCU_WDTS_CON0_LCK_LEN (1u)
+
+
+#define IFX_SCU_WDTS_CON0_LCK_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_CON0_LCK_OFF (1u)
+
+
+#define IFX_SCU_WDTS_CON0_PW_LEN (14u)
+
+
+#define IFX_SCU_WDTS_CON0_PW_MSK (0x3fffu)
+
+
+#define IFX_SCU_WDTS_CON0_PW_OFF (2u)
+
+
+#define IFX_SCU_WDTS_CON0_REL_LEN (16u)
+
+
+#define IFX_SCU_WDTS_CON0_REL_MSK (0xffffu)
+
+
+#define IFX_SCU_WDTS_CON0_REL_OFF (16u)
+
+
+#define IFX_SCU_WDTS_CON1_CLRIRF_LEN (1u)
+
+
+#define IFX_SCU_WDTS_CON1_CLRIRF_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_CON1_CLRIRF_OFF (0u)
+
+
+#define IFX_SCU_WDTS_CON1_DR_LEN (1u)
+
+
+#define IFX_SCU_WDTS_CON1_DR_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_CON1_DR_OFF (3u)
+
+
+#define IFX_SCU_WDTS_CON1_IR0_LEN (1u)
+
+
+#define IFX_SCU_WDTS_CON1_IR0_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_CON1_IR0_OFF (2u)
+
+
+#define IFX_SCU_WDTS_CON1_IR1_LEN (1u)
+
+
+#define IFX_SCU_WDTS_CON1_IR1_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_CON1_IR1_OFF (5u)
+
+
+#define IFX_SCU_WDTS_CON1_PAR_LEN (1u)
+
+
+#define IFX_SCU_WDTS_CON1_PAR_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_CON1_PAR_OFF (7u)
+
+
+#define IFX_SCU_WDTS_CON1_TCR_LEN (1u)
+
+
+#define IFX_SCU_WDTS_CON1_TCR_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_CON1_TCR_OFF (8u)
+
+
+#define IFX_SCU_WDTS_CON1_TCTR_LEN (7u)
+
+
+#define IFX_SCU_WDTS_CON1_TCTR_MSK (0x7fu)
+
+
+#define IFX_SCU_WDTS_CON1_TCTR_OFF (9u)
+
+
+#define IFX_SCU_WDTS_CON1_UR_LEN (1u)
+
+
+#define IFX_SCU_WDTS_CON1_UR_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_CON1_UR_OFF (6u)
+
+
+#define IFX_SCU_WDTS_SR_AE_LEN (1u)
+
+
+#define IFX_SCU_WDTS_SR_AE_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_SR_AE_OFF (0u)
+
+
+#define IFX_SCU_WDTS_SR_DS_LEN (1u)
+
+
+#define IFX_SCU_WDTS_SR_DS_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_SR_DS_OFF (3u)
+
+
+#define IFX_SCU_WDTS_SR_IS0_LEN (1u)
+
+
+#define IFX_SCU_WDTS_SR_IS0_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_SR_IS0_OFF (2u)
+
+
+#define IFX_SCU_WDTS_SR_IS1_LEN (1u)
+
+
+#define IFX_SCU_WDTS_SR_IS1_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_SR_IS1_OFF (5u)
+
+
+#define IFX_SCU_WDTS_SR_OE_LEN (1u)
+
+
+#define IFX_SCU_WDTS_SR_OE_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_SR_OE_OFF (1u)
+
+
+#define IFX_SCU_WDTS_SR_PAS_LEN (1u)
+
+
+#define IFX_SCU_WDTS_SR_PAS_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_SR_PAS_OFF (7u)
+
+
+#define IFX_SCU_WDTS_SR_TCS_LEN (1u)
+
+
+#define IFX_SCU_WDTS_SR_TCS_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_SR_TCS_OFF (8u)
+
+
+#define IFX_SCU_WDTS_SR_TCT_LEN (7u)
+
+
+#define IFX_SCU_WDTS_SR_TCT_MSK (0x7fu)
+
+
+#define IFX_SCU_WDTS_SR_TCT_OFF (9u)
+
+
+#define IFX_SCU_WDTS_SR_TIM_LEN (16u)
+
+
+#define IFX_SCU_WDTS_SR_TIM_MSK (0xffffu)
+
+
+#define IFX_SCU_WDTS_SR_TIM_OFF (16u)
+
+
+#define IFX_SCU_WDTS_SR_TO_LEN (1u)
+
+
+#define IFX_SCU_WDTS_SR_TO_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_SR_TO_OFF (4u)
+
+
+#define IFX_SCU_WDTS_SR_US_LEN (1u)
+
+
+#define IFX_SCU_WDTS_SR_US_MSK (0x1u)
+
+
+#define IFX_SCU_WDTS_SR_US_OFF (6u)
+# 54 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 2 3
+# 1 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\IfxFlash_bf.h" 1 3
+# 28 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\IfxFlash_bf.h" 3
+#define IFXFLASH_BF_H 1
+
+
+
+
+
+
+#define IFX_FLASH_ACCEN0_EN0_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN0_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN0_OFF (0u)
+
+
+#define IFX_FLASH_ACCEN0_EN10_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN10_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN10_OFF (10u)
+
+
+#define IFX_FLASH_ACCEN0_EN11_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN11_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN11_OFF (11u)
+
+
+#define IFX_FLASH_ACCEN0_EN12_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN12_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN12_OFF (12u)
+
+
+#define IFX_FLASH_ACCEN0_EN13_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN13_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN13_OFF (13u)
+
+
+#define IFX_FLASH_ACCEN0_EN14_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN14_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN14_OFF (14u)
+
+
+#define IFX_FLASH_ACCEN0_EN15_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN15_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN15_OFF (15u)
+
+
+#define IFX_FLASH_ACCEN0_EN16_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN16_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN16_OFF (16u)
+
+
+#define IFX_FLASH_ACCEN0_EN17_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN17_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN17_OFF (17u)
+
+
+#define IFX_FLASH_ACCEN0_EN18_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN18_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN18_OFF (18u)
+
+
+#define IFX_FLASH_ACCEN0_EN19_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN19_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN19_OFF (19u)
+
+
+#define IFX_FLASH_ACCEN0_EN1_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN1_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN1_OFF (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN20_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN20_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN20_OFF (20u)
+
+
+#define IFX_FLASH_ACCEN0_EN21_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN21_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN21_OFF (21u)
+
+
+#define IFX_FLASH_ACCEN0_EN22_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN22_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN22_OFF (22u)
+
+
+#define IFX_FLASH_ACCEN0_EN23_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN23_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN23_OFF (23u)
+
+
+#define IFX_FLASH_ACCEN0_EN24_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN24_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN24_OFF (24u)
+
+
+#define IFX_FLASH_ACCEN0_EN25_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN25_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN25_OFF (25u)
+
+
+#define IFX_FLASH_ACCEN0_EN26_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN26_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN26_OFF (26u)
+
+
+#define IFX_FLASH_ACCEN0_EN27_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN27_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN27_OFF (27u)
+
+
+#define IFX_FLASH_ACCEN0_EN28_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN28_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN28_OFF (28u)
+
+
+#define IFX_FLASH_ACCEN0_EN29_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN29_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN29_OFF (29u)
+
+
+#define IFX_FLASH_ACCEN0_EN2_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN2_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN2_OFF (2u)
+
+
+#define IFX_FLASH_ACCEN0_EN30_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN30_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN30_OFF (30u)
+
+
+#define IFX_FLASH_ACCEN0_EN31_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN31_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN31_OFF (31u)
+
+
+#define IFX_FLASH_ACCEN0_EN3_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN3_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN3_OFF (3u)
+
+
+#define IFX_FLASH_ACCEN0_EN4_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN4_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN4_OFF (4u)
+
+
+#define IFX_FLASH_ACCEN0_EN5_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN5_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN5_OFF (5u)
+
+
+#define IFX_FLASH_ACCEN0_EN6_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN6_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN6_OFF (6u)
+
+
+#define IFX_FLASH_ACCEN0_EN7_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN7_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN7_OFF (7u)
+
+
+#define IFX_FLASH_ACCEN0_EN8_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN8_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN8_OFF (8u)
+
+
+#define IFX_FLASH_ACCEN0_EN9_LEN (1u)
+
+
+#define IFX_FLASH_ACCEN0_EN9_MSK (0x1u)
+
+
+#define IFX_FLASH_ACCEN0_EN9_OFF (9u)
+
+
+#define IFX_FLASH_CBAB_CFG_CLR_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_CFG_CLR_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_CFG_CLR_OFF (8u)
+
+
+#define IFX_FLASH_CBAB_CFG_DIS_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_CFG_DIS_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_CFG_DIS_OFF (9u)
+
+
+#define IFX_FLASH_CBAB_CFG_SEL_LEN (6u)
+
+
+#define IFX_FLASH_CBAB_CFG_SEL_MSK (0x3fu)
+
+
+#define IFX_FLASH_CBAB_CFG_SEL_OFF (0u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD0_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD0_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD0_OFF (0u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD1_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD1_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD1_OFF (1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD2_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD2_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD2_OFF (2u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD3_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD3_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD3_OFF (3u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD4_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD4_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD4_OFF (4u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD5_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD5_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD5_OFF (5u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD6_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD6_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD6_OFF (6u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD7_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD7_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD7_OFF (7u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD8_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD8_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD8_OFF (8u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD9_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD9_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_STAT_VLD9_OFF (9u)
+
+
+#define IFX_FLASH_CBAB_TOP_ADDR_LEN (19u)
+
+
+#define IFX_FLASH_CBAB_TOP_ADDR_MSK (0x7ffffu)
+
+
+#define IFX_FLASH_CBAB_TOP_ADDR_OFF (5u)
+
+
+#define IFX_FLASH_CBAB_TOP_CLR_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_TOP_CLR_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_TOP_CLR_OFF (31u)
+
+
+#define IFX_FLASH_CBAB_TOP_ERR_LEN (6u)
+
+
+#define IFX_FLASH_CBAB_TOP_ERR_MSK (0x3fu)
+
+
+#define IFX_FLASH_CBAB_TOP_ERR_OFF (24u)
+
+
+#define IFX_FLASH_CBAB_TOP_VLD_LEN (1u)
+
+
+#define IFX_FLASH_CBAB_TOP_VLD_MSK (0x1u)
+
+
+#define IFX_FLASH_CBAB_TOP_VLD_OFF (30u)
+
+
+#define IFX_FLASH_COMM0_STATUS_LEN (8u)
+
+
+#define IFX_FLASH_COMM0_STATUS_MSK (0xffu)
+
+
+#define IFX_FLASH_COMM0_STATUS_OFF (0u)
+
+
+#define IFX_FLASH_COMM1_DATA_LEN (8u)
+
+
+#define IFX_FLASH_COMM1_DATA_MSK (0xffu)
+
+
+#define IFX_FLASH_COMM1_DATA_OFF (8u)
+
+
+#define IFX_FLASH_COMM1_STATUS_LEN (8u)
+
+
+#define IFX_FLASH_COMM1_STATUS_MSK (0xffu)
+
+
+#define IFX_FLASH_COMM1_STATUS_OFF (0u)
+
+
+#define IFX_FLASH_COMM2_DATA_LEN (8u)
+
+
+#define IFX_FLASH_COMM2_DATA_MSK (0xffu)
+
+
+#define IFX_FLASH_COMM2_DATA_OFF (8u)
+
+
+#define IFX_FLASH_COMM2_STATUS_LEN (8u)
+
+
+#define IFX_FLASH_COMM2_STATUS_MSK (0xffu)
+
+
+#define IFX_FLASH_COMM2_STATUS_OFF (0u)
+
+
+#define IFX_FLASH_ECCRD_ECCORDIS_LEN (1u)
+
+
+#define IFX_FLASH_ECCRD_ECCORDIS_MSK (0x1u)
+
+
+#define IFX_FLASH_ECCRD_ECCORDIS_OFF (31u)
+
+
+#define IFX_FLASH_ECCRD_EDCERRINJ_LEN (1u)
+
+
+#define IFX_FLASH_ECCRD_EDCERRINJ_MSK (0x1u)
+
+
+#define IFX_FLASH_ECCRD_EDCERRINJ_OFF (30u)
+
+
+#define IFX_FLASH_ECCRD_RCODE_LEN (22u)
+
+
+#define IFX_FLASH_ECCRD_RCODE_MSK (0x3fffffu)
+
+
+#define IFX_FLASH_ECCRD_RCODE_OFF (0u)
+
+
+#define IFX_FLASH_ECCRP_ECCORDIS_LEN (1u)
+
+
+#define IFX_FLASH_ECCRP_ECCORDIS_MSK (0x1u)
+
+
+#define IFX_FLASH_ECCRP_ECCORDIS_OFF (31u)
+
+
+#define IFX_FLASH_ECCRP_EDCERRINJ_LEN (1u)
+
+
+#define IFX_FLASH_ECCRP_EDCERRINJ_MSK (0x1u)
+
+
+#define IFX_FLASH_ECCRP_EDCERRINJ_OFF (30u)
+
+
+#define IFX_FLASH_ECCRP_RCODE_LEN (22u)
+
+
+#define IFX_FLASH_ECCRP_RCODE_MSK (0x3fffffu)
+
+
+#define IFX_FLASH_ECCRP_RCODE_OFF (0u)
+
+
+#define IFX_FLASH_ECCW_DECENCDIS_LEN (1u)
+
+
+#define IFX_FLASH_ECCW_DECENCDIS_MSK (0x1u)
+
+
+#define IFX_FLASH_ECCW_DECENCDIS_OFF (30u)
+
+
+#define IFX_FLASH_ECCW_PECENCDIS_LEN (1u)
+
+
+#define IFX_FLASH_ECCW_PECENCDIS_MSK (0x1u)
+
+
+#define IFX_FLASH_ECCW_PECENCDIS_OFF (31u)
+
+
+#define IFX_FLASH_ECCW_WCODE_LEN (22u)
+
+
+#define IFX_FLASH_ECCW_WCODE_MSK (0x3fffffu)
+
+
+#define IFX_FLASH_ECCW_WCODE_OFF (0u)
+
+
+#define IFX_FLASH_FCON_EOBM_LEN (1u)
+
+
+#define IFX_FLASH_FCON_EOBM_MSK (0x1u)
+
+
+#define IFX_FLASH_FCON_EOBM_OFF (31u)
+
+
+#define IFX_FLASH_FCON_ESLDIS_LEN (1u)
+
+
+#define IFX_FLASH_FCON_ESLDIS_MSK (0x1u)
+
+
+#define IFX_FLASH_FCON_ESLDIS_OFF (16u)
+
+
+#define IFX_FLASH_FCON_IDLE_LEN (1u)
+
+
+#define IFX_FLASH_FCON_IDLE_MSK (0x1u)
+
+
+#define IFX_FLASH_FCON_IDLE_OFF (15u)
+
+
+#define IFX_FLASH_FCON_NSAFECC_LEN (1u)
+
+
+#define IFX_FLASH_FCON_NSAFECC_MSK (0x1u)
+
+
+#define IFX_FLASH_FCON_NSAFECC_OFF (18u)
+
+
+#define IFX_FLASH_FCON_PR5V_LEN (1u)
+
+
+#define IFX_FLASH_FCON_PR5V_MSK (0x1u)
+
+
+#define IFX_FLASH_FCON_PR5V_OFF (30u)
+
+
+#define IFX_FLASH_FCON_PROERM_LEN (1u)
+
+
+#define IFX_FLASH_FCON_PROERM_MSK (0x1u)
+
+
+#define IFX_FLASH_FCON_PROERM_OFF (26u)
+
+
+#define IFX_FLASH_FCON_RES21_LEN (2u)
+
+
+#define IFX_FLASH_FCON_RES21_MSK (0x3u)
+
+
+#define IFX_FLASH_FCON_RES21_OFF (20u)
+
+
+#define IFX_FLASH_FCON_RES23_LEN (2u)
+
+
+#define IFX_FLASH_FCON_RES23_MSK (0x3u)
+
+
+#define IFX_FLASH_FCON_RES23_OFF (22u)
+
+
+#define IFX_FLASH_FCON_SLEEP_LEN (1u)
+
+
+#define IFX_FLASH_FCON_SLEEP_MSK (0x1u)
+
+
+#define IFX_FLASH_FCON_SLEEP_OFF (17u)
+
+
+#define IFX_FLASH_FCON_SQERM_LEN (1u)
+
+
+#define IFX_FLASH_FCON_SQERM_MSK (0x1u)
+
+
+#define IFX_FLASH_FCON_SQERM_OFF (25u)
+
+
+#define IFX_FLASH_FCON_STALL_LEN (1u)
+
+
+#define IFX_FLASH_FCON_STALL_MSK (0x1u)
+
+
+#define IFX_FLASH_FCON_STALL_OFF (19u)
+
+
+#define IFX_FLASH_FCON_VOPERM_LEN (1u)
+
+
+#define IFX_FLASH_FCON_VOPERM_MSK (0x1u)
+
+
+#define IFX_FLASH_FCON_VOPERM_OFF (24u)
+
+
+#define IFX_FLASH_FCON_WSDFLASH_LEN (6u)
+
+
+#define IFX_FLASH_FCON_WSDFLASH_MSK (0x3fu)
+
+
+#define IFX_FLASH_FCON_WSDFLASH_OFF (6u)
+
+
+#define IFX_FLASH_FCON_WSECDF_LEN (3u)
+
+
+#define IFX_FLASH_FCON_WSECDF_MSK (0x7u)
+
+
+#define IFX_FLASH_FCON_WSECDF_OFF (12u)
+
+
+#define IFX_FLASH_FCON_WSECPF_LEN (2u)
+
+
+#define IFX_FLASH_FCON_WSECPF_MSK (0x3u)
+
+
+#define IFX_FLASH_FCON_WSECPF_OFF (4u)
+
+
+#define IFX_FLASH_FCON_WSPFLASH_LEN (4u)
+
+
+#define IFX_FLASH_FCON_WSPFLASH_MSK (0xfu)
+
+
+#define IFX_FLASH_FCON_WSPFLASH_OFF (0u)
+
+
+#define IFX_FLASH_FPRO_DCFP_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_DCFP_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_DCFP_OFF (16u)
+
+
+#define IFX_FLASH_FPRO_DDFD_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_DDFD_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_DDFD_OFF (20u)
+
+
+#define IFX_FLASH_FPRO_DDFP_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_DDFP_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_DDFP_OFF (17u)
+
+
+#define IFX_FLASH_FPRO_DDFPX_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_DDFPX_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_DDFPX_OFF (18u)
+
+
+#define IFX_FLASH_FPRO_ENPE_LEN (2u)
+
+
+#define IFX_FLASH_FPRO_ENPE_MSK (0x3u)
+
+
+#define IFX_FLASH_FPRO_ENPE_OFF (22u)
+
+
+#define IFX_FLASH_FPRO_PRODISD_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_PRODISD_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_PRODISD_OFF (3u)
+
+
+#define IFX_FLASH_FPRO_PRODISDBG_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_PRODISDBG_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_PRODISDBG_OFF (9u)
+
+
+#define IFX_FLASH_FPRO_PRODISP_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_PRODISP_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_PRODISP_OFF (1u)
+
+
+#define IFX_FLASH_FPRO_PROIND_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_PROIND_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_PROIND_OFF (2u)
+
+
+#define IFX_FLASH_FPRO_PROINDBG_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_PROINDBG_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_PROINDBG_OFF (8u)
+
+
+#define IFX_FLASH_FPRO_PROINHSM_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_PROINHSM_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_PROINHSM_OFF (10u)
+
+
+#define IFX_FLASH_FPRO_PROINHSMCOTP_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_PROINHSMCOTP_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_PROINHSMCOTP_OFF (4u)
+
+
+#define IFX_FLASH_FPRO_PROINOTP_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_PROINOTP_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_PROINOTP_OFF (6u)
+
+
+#define IFX_FLASH_FPRO_PROINP_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_PROINP_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_PROINP_OFF (0u)
+
+
+#define IFX_FLASH_FPRO_RES5_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_RES5_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_RES5_OFF (5u)
+
+
+#define IFX_FLASH_FPRO_RES7_LEN (1u)
+
+
+#define IFX_FLASH_FPRO_RES7_MSK (0x1u)
+
+
+#define IFX_FLASH_FPRO_RES7_OFF (7u)
+
+
+#define IFX_FLASH_FSR_D0BUSY_LEN (1u)
+
+
+#define IFX_FLASH_FSR_D0BUSY_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_D0BUSY_OFF (1u)
+
+
+#define IFX_FLASH_FSR_D1BUSY_LEN (1u)
+
+
+#define IFX_FLASH_FSR_D1BUSY_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_D1BUSY_OFF (2u)
+
+
+#define IFX_FLASH_FSR_DFDBER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_DFDBER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_DFDBER_OFF (19u)
+
+
+#define IFX_FLASH_FSR_DFMBER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_DFMBER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_DFMBER_OFF (21u)
+
+
+#define IFX_FLASH_FSR_DFPAGE_LEN (1u)
+
+
+#define IFX_FLASH_FSR_DFPAGE_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_DFPAGE_OFF (10u)
+
+
+#define IFX_FLASH_FSR_DFSBER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_DFSBER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_DFSBER_OFF (18u)
+
+
+#define IFX_FLASH_FSR_DFTBER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_DFTBER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_DFTBER_OFF (20u)
+
+
+#define IFX_FLASH_FSR_ERASE_LEN (1u)
+
+
+#define IFX_FLASH_FSR_ERASE_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_ERASE_OFF (8u)
+
+
+#define IFX_FLASH_FSR_EVER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_EVER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_EVER_OFF (26u)
+
+
+#define IFX_FLASH_FSR_FABUSY_LEN (1u)
+
+
+#define IFX_FLASH_FSR_FABUSY_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_FABUSY_OFF (0u)
+
+
+#define IFX_FLASH_FSR_OPER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_OPER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_OPER_OFF (11u)
+
+
+#define IFX_FLASH_FSR_ORIER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_ORIER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_ORIER_OFF (30u)
+
+
+#define IFX_FLASH_FSR_P0BUSY_LEN (1u)
+
+
+#define IFX_FLASH_FSR_P0BUSY_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_P0BUSY_OFF (3u)
+
+
+#define IFX_FLASH_FSR_P1BUSY_LEN (1u)
+
+
+#define IFX_FLASH_FSR_P1BUSY_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_P1BUSY_OFF (4u)
+
+
+#define IFX_FLASH_FSR_PFDBER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_PFDBER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_PFDBER_OFF (15u)
+
+
+#define IFX_FLASH_FSR_PFMBER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_PFMBER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_PFMBER_OFF (16u)
+
+
+#define IFX_FLASH_FSR_PFPAGE_LEN (1u)
+
+
+#define IFX_FLASH_FSR_PFPAGE_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_PFPAGE_OFF (9u)
+
+
+#define IFX_FLASH_FSR_PFSBER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_PFSBER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_PFSBER_OFF (14u)
+
+
+#define IFX_FLASH_FSR_PROER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_PROER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_PROER_OFF (13u)
+
+
+#define IFX_FLASH_FSR_PROG_LEN (1u)
+
+
+#define IFX_FLASH_FSR_PROG_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_PROG_OFF (7u)
+
+
+#define IFX_FLASH_FSR_PVER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_PVER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_PVER_OFF (25u)
+
+
+#define IFX_FLASH_FSR_RES17_LEN (1u)
+
+
+#define IFX_FLASH_FSR_RES17_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_RES17_OFF (17u)
+
+
+#define IFX_FLASH_FSR_RES5_LEN (1u)
+
+
+#define IFX_FLASH_FSR_RES5_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_RES5_OFF (5u)
+
+
+#define IFX_FLASH_FSR_RES6_LEN (1u)
+
+
+#define IFX_FLASH_FSR_RES6_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_RES6_OFF (6u)
+
+
+#define IFX_FLASH_FSR_SLM_LEN (1u)
+
+
+#define IFX_FLASH_FSR_SLM_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_SLM_OFF (28u)
+
+
+#define IFX_FLASH_FSR_SPND_LEN (1u)
+
+
+#define IFX_FLASH_FSR_SPND_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_SPND_OFF (27u)
+
+
+#define IFX_FLASH_FSR_SQER_LEN (1u)
+
+
+#define IFX_FLASH_FSR_SQER_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_SQER_OFF (12u)
+
+
+#define IFX_FLASH_FSR_SRIADDERR_LEN (1u)
+
+
+#define IFX_FLASH_FSR_SRIADDERR_MSK (0x1u)
+
+
+#define IFX_FLASH_FSR_SRIADDERR_OFF (22u)
+
+
+#define IFX_FLASH_HSMFCON_EOBM_LEN (1u)
+
+
+#define IFX_FLASH_HSMFCON_EOBM_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMFCON_EOBM_OFF (31u)
+
+
+#define IFX_FLASH_HSMFCON_LCKHSMUCB_LEN (2u)
+
+
+#define IFX_FLASH_HSMFCON_LCKHSMUCB_MSK (0x3u)
+
+
+#define IFX_FLASH_HSMFCON_LCKHSMUCB_OFF (0u)
+
+
+#define IFX_FLASH_HSMFCON_SQERM_LEN (1u)
+
+
+#define IFX_FLASH_HSMFCON_SQERM_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMFCON_SQERM_OFF (25u)
+
+
+#define IFX_FLASH_HSMFCON_VOPERM_LEN (1u)
+
+
+#define IFX_FLASH_HSMFCON_VOPERM_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMFCON_VOPERM_OFF (24u)
+
+
+#define IFX_FLASH_HSMFSR_D1BUSY_LEN (1u)
+
+
+#define IFX_FLASH_HSMFSR_D1BUSY_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMFSR_D1BUSY_OFF (2u)
+
+
+#define IFX_FLASH_HSMFSR_DFPAGE_LEN (1u)
+
+
+#define IFX_FLASH_HSMFSR_DFPAGE_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMFSR_DFPAGE_OFF (10u)
+
+
+#define IFX_FLASH_HSMFSR_ERASE_LEN (1u)
+
+
+#define IFX_FLASH_HSMFSR_ERASE_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMFSR_ERASE_OFF (8u)
+
+
+#define IFX_FLASH_HSMFSR_EVER_LEN (1u)
+
+
+#define IFX_FLASH_HSMFSR_EVER_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMFSR_EVER_OFF (26u)
+
+
+#define IFX_FLASH_HSMFSR_OPER_LEN (1u)
+
+
+#define IFX_FLASH_HSMFSR_OPER_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMFSR_OPER_OFF (11u)
+
+
+#define IFX_FLASH_HSMFSR_PROG_LEN (1u)
+
+
+#define IFX_FLASH_HSMFSR_PROG_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMFSR_PROG_OFF (7u)
+
+
+#define IFX_FLASH_HSMFSR_PVER_LEN (1u)
+
+
+#define IFX_FLASH_HSMFSR_PVER_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMFSR_PVER_OFF (25u)
+
+
+#define IFX_FLASH_HSMFSR_SPND_LEN (1u)
+
+
+#define IFX_FLASH_HSMFSR_SPND_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMFSR_SPND_OFF (27u)
+
+
+#define IFX_FLASH_HSMFSR_SQER_LEN (1u)
+
+
+#define IFX_FLASH_HSMFSR_SQER_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMFSR_SQER_OFF (12u)
+
+
+#define IFX_FLASH_HSMMARD_SELD1_LEN (1u)
+
+
+#define IFX_FLASH_HSMMARD_SELD1_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMMARD_SELD1_OFF (1u)
+
+
+#define IFX_FLASH_HSMMARD_SPND_LEN (1u)
+
+
+#define IFX_FLASH_HSMMARD_SPND_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMMARD_SPND_OFF (3u)
+
+
+#define IFX_FLASH_HSMMARD_SPNDERR_LEN (1u)
+
+
+#define IFX_FLASH_HSMMARD_SPNDERR_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMMARD_SPNDERR_OFF (4u)
+
+
+#define IFX_FLASH_HSMRRAD_ADD_LEN (29u)
+
+
+#define IFX_FLASH_HSMRRAD_ADD_MSK (0x1fffffffu)
+
+
+#define IFX_FLASH_HSMRRAD_ADD_OFF (3u)
+
+
+#define IFX_FLASH_HSMRRCT_BUSY_LEN (1u)
+
+
+#define IFX_FLASH_HSMRRCT_BUSY_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMRRCT_BUSY_OFF (2u)
+
+
+#define IFX_FLASH_HSMRRCT_CNT_LEN (16u)
+
+
+#define IFX_FLASH_HSMRRCT_CNT_MSK (0xffffu)
+
+
+#define IFX_FLASH_HSMRRCT_CNT_OFF (16u)
+
+
+#define IFX_FLASH_HSMRRCT_DONE_LEN (1u)
+
+
+#define IFX_FLASH_HSMRRCT_DONE_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMRRCT_DONE_OFF (3u)
+
+
+#define IFX_FLASH_HSMRRCT_EOBM_LEN (1u)
+
+
+#define IFX_FLASH_HSMRRCT_EOBM_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMRRCT_EOBM_OFF (8u)
+
+
+#define IFX_FLASH_HSMRRCT_ERR_LEN (1u)
+
+
+#define IFX_FLASH_HSMRRCT_ERR_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMRRCT_ERR_OFF (4u)
+
+
+#define IFX_FLASH_HSMRRCT_STP_LEN (1u)
+
+
+#define IFX_FLASH_HSMRRCT_STP_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMRRCT_STP_OFF (1u)
+
+
+#define IFX_FLASH_HSMRRCT_STRT_LEN (1u)
+
+
+#define IFX_FLASH_HSMRRCT_STRT_MSK (0x1u)
+
+
+#define IFX_FLASH_HSMRRCT_STRT_OFF (0u)
+
+
+#define IFX_FLASH_HSMRRD0_DATA_LEN (32u)
+
+
+#define IFX_FLASH_HSMRRD0_DATA_MSK (0xffffffffu)
+
+
+#define IFX_FLASH_HSMRRD0_DATA_OFF (0u)
+
+
+#define IFX_FLASH_HSMRRD1_DATA_LEN (32u)
+
+
+#define IFX_FLASH_HSMRRD1_DATA_MSK (0xffffffffu)
+
+
+#define IFX_FLASH_HSMRRD1_DATA_OFF (0u)
+
+
+#define IFX_FLASH_ID_MOD_REV_LEN (8u)
+
+
+#define IFX_FLASH_ID_MOD_REV_MSK (0xffu)
+
+
+#define IFX_FLASH_ID_MOD_REV_OFF (0u)
+
+
+#define IFX_FLASH_ID_MOD_TYPE_LEN (8u)
+
+
+#define IFX_FLASH_ID_MOD_TYPE_MSK (0xffu)
+
+
+#define IFX_FLASH_ID_MOD_TYPE_OFF (8u)
+
+
+#define IFX_FLASH_ID_MODNUMBER_LEN (16u)
+
+
+#define IFX_FLASH_ID_MODNUMBER_MSK (0xffffu)
+
+
+#define IFX_FLASH_ID_MODNUMBER_OFF (16u)
+
+
+#define IFX_FLASH_MARD_HMARGIN_LEN (1u)
+
+
+#define IFX_FLASH_MARD_HMARGIN_MSK (0x1u)
+
+
+#define IFX_FLASH_MARD_HMARGIN_OFF (0u)
+
+
+#define IFX_FLASH_MARD_SELD0_LEN (1u)
+
+
+#define IFX_FLASH_MARD_SELD0_MSK (0x1u)
+
+
+#define IFX_FLASH_MARD_SELD0_OFF (1u)
+
+
+#define IFX_FLASH_MARD_SPND_LEN (1u)
+
+
+#define IFX_FLASH_MARD_SPND_MSK (0x1u)
+
+
+#define IFX_FLASH_MARD_SPND_OFF (3u)
+
+
+#define IFX_FLASH_MARD_SPNDERR_LEN (1u)
+
+
+#define IFX_FLASH_MARD_SPNDERR_MSK (0x1u)
+
+
+#define IFX_FLASH_MARD_SPNDERR_OFF (4u)
+
+
+#define IFX_FLASH_MARD_TRAPDIS_LEN (1u)
+
+
+#define IFX_FLASH_MARD_TRAPDIS_MSK (0x1u)
+
+
+#define IFX_FLASH_MARD_TRAPDIS_OFF (15u)
+
+
+#define IFX_FLASH_MARP_RES2_LEN (1u)
+
+
+#define IFX_FLASH_MARP_RES2_MSK (0x1u)
+
+
+#define IFX_FLASH_MARP_RES2_OFF (2u)
+
+
+#define IFX_FLASH_MARP_RES3_LEN (1u)
+
+
+#define IFX_FLASH_MARP_RES3_MSK (0x1u)
+
+
+#define IFX_FLASH_MARP_RES3_OFF (3u)
+
+
+#define IFX_FLASH_MARP_SELP0_LEN (1u)
+
+
+#define IFX_FLASH_MARP_SELP0_MSK (0x1u)
+
+
+#define IFX_FLASH_MARP_SELP0_OFF (0u)
+
+
+#define IFX_FLASH_MARP_SELP1_LEN (1u)
+
+
+#define IFX_FLASH_MARP_SELP1_MSK (0x1u)
+
+
+#define IFX_FLASH_MARP_SELP1_OFF (1u)
+
+
+#define IFX_FLASH_MARP_TRAPDIS_LEN (1u)
+
+
+#define IFX_FLASH_MARP_TRAPDIS_MSK (0x1u)
+
+
+#define IFX_FLASH_MARP_TRAPDIS_OFF (15u)
+
+
+#define IFX_FLASH_PROCOND_APREN_LEN (1u)
+
+
+#define IFX_FLASH_PROCOND_APREN_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCOND_APREN_OFF (11u)
+
+
+#define IFX_FLASH_PROCOND_CAP0EN_LEN (1u)
+
+
+#define IFX_FLASH_PROCOND_CAP0EN_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCOND_CAP0EN_OFF (12u)
+
+
+#define IFX_FLASH_PROCOND_CAP1EN_LEN (1u)
+
+
+#define IFX_FLASH_PROCOND_CAP1EN_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCOND_CAP1EN_OFF (13u)
+
+
+#define IFX_FLASH_PROCOND_CAP2EN_LEN (1u)
+
+
+#define IFX_FLASH_PROCOND_CAP2EN_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCOND_CAP2EN_OFF (14u)
+
+
+#define IFX_FLASH_PROCOND_CAP3EN_LEN (1u)
+
+
+#define IFX_FLASH_PROCOND_CAP3EN_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCOND_CAP3EN_OFF (15u)
+
+
+#define IFX_FLASH_PROCOND_ESR0CNT_LEN (12u)
+
+
+#define IFX_FLASH_PROCOND_ESR0CNT_MSK (0xfffu)
+
+
+#define IFX_FLASH_PROCOND_ESR0CNT_OFF (16u)
+
+
+#define IFX_FLASH_PROCOND_L_LEN (1u)
+
+
+#define IFX_FLASH_PROCOND_L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCOND_L_OFF (0u)
+
+
+#define IFX_FLASH_PROCOND_MODE_LEN (2u)
+
+
+#define IFX_FLASH_PROCOND_MODE_MSK (0x3u)
+
+
+#define IFX_FLASH_PROCOND_MODE_OFF (9u)
+
+
+#define IFX_FLASH_PROCOND_NSAFECC_LEN (1u)
+
+
+#define IFX_FLASH_PROCOND_NSAFECC_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCOND_NSAFECC_OFF (1u)
+
+
+#define IFX_FLASH_PROCOND_OSCCFG_LEN (1u)
+
+
+#define IFX_FLASH_PROCOND_OSCCFG_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCOND_OSCCFG_OFF (8u)
+
+
+#define IFX_FLASH_PROCOND_RAMIN_LEN (2u)
+
+
+#define IFX_FLASH_PROCOND_RAMIN_MSK (0x3u)
+
+
+#define IFX_FLASH_PROCOND_RAMIN_OFF (2u)
+
+
+#define IFX_FLASH_PROCOND_RAMINSEL_LEN (4u)
+
+
+#define IFX_FLASH_PROCOND_RAMINSEL_MSK (0xfu)
+
+
+#define IFX_FLASH_PROCOND_RAMINSEL_OFF (4u)
+
+
+#define IFX_FLASH_PROCOND_RES29_LEN (2u)
+
+
+#define IFX_FLASH_PROCOND_RES29_MSK (0x3u)
+
+
+#define IFX_FLASH_PROCOND_RES29_OFF (28u)
+
+
+#define IFX_FLASH_PROCOND_RES30_LEN (1u)
+
+
+#define IFX_FLASH_PROCOND_RES30_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCOND_RES30_OFF (30u)
+
+
+#define IFX_FLASH_PROCOND_RPRO_LEN (1u)
+
+
+#define IFX_FLASH_PROCOND_RPRO_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCOND_RPRO_OFF (31u)
+
+
+#define IFX_FLASH_PROCONDBG_DBGIFLCK_LEN (1u)
+
+
+#define IFX_FLASH_PROCONDBG_DBGIFLCK_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONDBG_DBGIFLCK_OFF (1u)
+
+
+#define IFX_FLASH_PROCONDBG_EDM_LEN (2u)
+
+
+#define IFX_FLASH_PROCONDBG_EDM_MSK (0x3u)
+
+
+#define IFX_FLASH_PROCONDBG_EDM_OFF (2u)
+
+
+#define IFX_FLASH_PROCONDBG_OCDSDIS_LEN (1u)
+
+
+#define IFX_FLASH_PROCONDBG_OCDSDIS_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONDBG_OCDSDIS_OFF (0u)
+
+
+#define IFX_FLASH_PROCONHSM_DBGIFLCK_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSM_DBGIFLCK_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSM_DBGIFLCK_OFF (1u)
+
+
+#define IFX_FLASH_PROCONHSM_HSMDBGDIS_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSM_HSMDBGDIS_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSM_HSMDBGDIS_OFF (0u)
+
+
+#define IFX_FLASH_PROCONHSM_HSMTSTDIS_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSM_HSMTSTDIS_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSM_HSMTSTDIS_OFF (3u)
+
+
+#define IFX_FLASH_PROCONHSM_RES15_LEN (12u)
+
+
+#define IFX_FLASH_PROCONHSM_RES15_MSK (0xfffu)
+
+
+#define IFX_FLASH_PROCONHSM_RES15_OFF (4u)
+
+
+#define IFX_FLASH_PROCONHSM_TSTIFLCK_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSM_TSTIFLCK_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSM_TSTIFLCK_OFF (2u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_BLKFLAN_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_BLKFLAN_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_BLKFLAN_OFF (13u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_DESTDBG_LEN (2u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_DESTDBG_MSK (0x3u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_DESTDBG_OFF (11u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSM16X_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSM16X_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSM16X_OFF (4u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSM17X_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSM17X_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSM17X_OFF (5u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSM6X_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSM6X_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSM6X_OFF (3u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSMBOOTEN_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSMBOOTEN_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSMBOOTEN_OFF (0u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSMDX_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSMDX_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSMDX_OFF (2u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSMENPINS_LEN (2u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSMENPINS_MSK (0x3u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSMENPINS_OFF (7u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSMENRES_LEN (2u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSMENRES_MSK (0x3u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_HSMENRES_OFF (9u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_S16ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_S16ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_S16ROM_OFF (16u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_S17ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_S17ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_S17ROM_OFF (17u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_S6ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_S6ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_S6ROM_OFF (6u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_SSWWAIT_LEN (1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_SSWWAIT_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONHSMCOTP_SSWWAIT_OFF (1u)
+
+
+#define IFX_FLASH_PROCONOTP_BML_LEN (2u)
+
+
+#define IFX_FLASH_PROCONOTP_BML_MSK (0x3u)
+
+
+#define IFX_FLASH_PROCONOTP_BML_OFF (29u)
+
+
+#define IFX_FLASH_PROCONOTP_S0ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S0ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S0ROM_OFF (0u)
+
+
+#define IFX_FLASH_PROCONOTP_S10ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S10ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S10ROM_OFF (10u)
+
+
+#define IFX_FLASH_PROCONOTP_S11ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S11ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S11ROM_OFF (11u)
+
+
+#define IFX_FLASH_PROCONOTP_S12ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S12ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S12ROM_OFF (12u)
+
+
+#define IFX_FLASH_PROCONOTP_S13ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S13ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S13ROM_OFF (13u)
+
+
+#define IFX_FLASH_PROCONOTP_S14ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S14ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S14ROM_OFF (14u)
+
+
+#define IFX_FLASH_PROCONOTP_S15ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S15ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S15ROM_OFF (15u)
+
+
+#define IFX_FLASH_PROCONOTP_S16ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S16ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S16ROM_OFF (16u)
+
+
+#define IFX_FLASH_PROCONOTP_S17ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S17ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S17ROM_OFF (17u)
+
+
+#define IFX_FLASH_PROCONOTP_S18ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S18ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S18ROM_OFF (18u)
+
+
+#define IFX_FLASH_PROCONOTP_S19ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S19ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S19ROM_OFF (19u)
+
+
+#define IFX_FLASH_PROCONOTP_S1ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S1ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S1ROM_OFF (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S20ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S20ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S20ROM_OFF (20u)
+
+
+#define IFX_FLASH_PROCONOTP_S21ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S21ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S21ROM_OFF (21u)
+
+
+#define IFX_FLASH_PROCONOTP_S22ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S22ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S22ROM_OFF (22u)
+
+
+#define IFX_FLASH_PROCONOTP_S23ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S23ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S23ROM_OFF (23u)
+
+
+#define IFX_FLASH_PROCONOTP_S24ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S24ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S24ROM_OFF (24u)
+
+
+#define IFX_FLASH_PROCONOTP_S25ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S25ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S25ROM_OFF (25u)
+
+
+#define IFX_FLASH_PROCONOTP_S26ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S26ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S26ROM_OFF (26u)
+
+
+#define IFX_FLASH_PROCONOTP_S2ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S2ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S2ROM_OFF (2u)
+
+
+#define IFX_FLASH_PROCONOTP_S3ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S3ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S3ROM_OFF (3u)
+
+
+#define IFX_FLASH_PROCONOTP_S4ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S4ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S4ROM_OFF (4u)
+
+
+#define IFX_FLASH_PROCONOTP_S5ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S5ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S5ROM_OFF (5u)
+
+
+#define IFX_FLASH_PROCONOTP_S6ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S6ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S6ROM_OFF (6u)
+
+
+#define IFX_FLASH_PROCONOTP_S7ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S7ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S7ROM_OFF (7u)
+
+
+#define IFX_FLASH_PROCONOTP_S8ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S8ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S8ROM_OFF (8u)
+
+
+#define IFX_FLASH_PROCONOTP_S9ROM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_S9ROM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_S9ROM_OFF (9u)
+
+
+#define IFX_FLASH_PROCONOTP_TP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONOTP_TP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONOTP_TP_OFF (31u)
+
+
+#define IFX_FLASH_PROCONP_RPRO_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_RPRO_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_RPRO_OFF (31u)
+
+
+#define IFX_FLASH_PROCONP_S0L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S0L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S0L_OFF (0u)
+
+
+#define IFX_FLASH_PROCONP_S10L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S10L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S10L_OFF (10u)
+
+
+#define IFX_FLASH_PROCONP_S11L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S11L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S11L_OFF (11u)
+
+
+#define IFX_FLASH_PROCONP_S12L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S12L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S12L_OFF (12u)
+
+
+#define IFX_FLASH_PROCONP_S13L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S13L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S13L_OFF (13u)
+
+
+#define IFX_FLASH_PROCONP_S14L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S14L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S14L_OFF (14u)
+
+
+#define IFX_FLASH_PROCONP_S15L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S15L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S15L_OFF (15u)
+
+
+#define IFX_FLASH_PROCONP_S16L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S16L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S16L_OFF (16u)
+
+
+#define IFX_FLASH_PROCONP_S17L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S17L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S17L_OFF (17u)
+
+
+#define IFX_FLASH_PROCONP_S18L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S18L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S18L_OFF (18u)
+
+
+#define IFX_FLASH_PROCONP_S19L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S19L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S19L_OFF (19u)
+
+
+#define IFX_FLASH_PROCONP_S1L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S1L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S1L_OFF (1u)
+
+
+#define IFX_FLASH_PROCONP_S20L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S20L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S20L_OFF (20u)
+
+
+#define IFX_FLASH_PROCONP_S21L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S21L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S21L_OFF (21u)
+
+
+#define IFX_FLASH_PROCONP_S22L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S22L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S22L_OFF (22u)
+
+
+#define IFX_FLASH_PROCONP_S23L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S23L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S23L_OFF (23u)
+
+
+#define IFX_FLASH_PROCONP_S24L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S24L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S24L_OFF (24u)
+
+
+#define IFX_FLASH_PROCONP_S25L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S25L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S25L_OFF (25u)
+
+
+#define IFX_FLASH_PROCONP_S26L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S26L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S26L_OFF (26u)
+
+
+#define IFX_FLASH_PROCONP_S2L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S2L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S2L_OFF (2u)
+
+
+#define IFX_FLASH_PROCONP_S3L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S3L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S3L_OFF (3u)
+
+
+#define IFX_FLASH_PROCONP_S4L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S4L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S4L_OFF (4u)
+
+
+#define IFX_FLASH_PROCONP_S5L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S5L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S5L_OFF (5u)
+
+
+#define IFX_FLASH_PROCONP_S6L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S6L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S6L_OFF (6u)
+
+
+#define IFX_FLASH_PROCONP_S7L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S7L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S7L_OFF (7u)
+
+
+#define IFX_FLASH_PROCONP_S8L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S8L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S8L_OFF (8u)
+
+
+#define IFX_FLASH_PROCONP_S9L_LEN (1u)
+
+
+#define IFX_FLASH_PROCONP_S9L_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONP_S9L_OFF (9u)
+
+
+#define IFX_FLASH_PROCONWOP_DATM_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_DATM_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_DATM_OFF (31u)
+
+
+#define IFX_FLASH_PROCONWOP_S0WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S0WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S0WOP_OFF (0u)
+
+
+#define IFX_FLASH_PROCONWOP_S10WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S10WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S10WOP_OFF (10u)
+
+
+#define IFX_FLASH_PROCONWOP_S11WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S11WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S11WOP_OFF (11u)
+
+
+#define IFX_FLASH_PROCONWOP_S12WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S12WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S12WOP_OFF (12u)
+
+
+#define IFX_FLASH_PROCONWOP_S13WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S13WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S13WOP_OFF (13u)
+
+
+#define IFX_FLASH_PROCONWOP_S14WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S14WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S14WOP_OFF (14u)
+
+
+#define IFX_FLASH_PROCONWOP_S15WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S15WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S15WOP_OFF (15u)
+
+
+#define IFX_FLASH_PROCONWOP_S16WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S16WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S16WOP_OFF (16u)
+
+
+#define IFX_FLASH_PROCONWOP_S17WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S17WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S17WOP_OFF (17u)
+
+
+#define IFX_FLASH_PROCONWOP_S18WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S18WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S18WOP_OFF (18u)
+
+
+#define IFX_FLASH_PROCONWOP_S19WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S19WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S19WOP_OFF (19u)
+
+
+#define IFX_FLASH_PROCONWOP_S1WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S1WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S1WOP_OFF (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S20WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S20WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S20WOP_OFF (20u)
+
+
+#define IFX_FLASH_PROCONWOP_S21WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S21WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S21WOP_OFF (21u)
+
+
+#define IFX_FLASH_PROCONWOP_S22WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S22WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S22WOP_OFF (22u)
+
+
+#define IFX_FLASH_PROCONWOP_S23WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S23WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S23WOP_OFF (23u)
+
+
+#define IFX_FLASH_PROCONWOP_S24WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S24WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S24WOP_OFF (24u)
+
+
+#define IFX_FLASH_PROCONWOP_S25WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S25WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S25WOP_OFF (25u)
+
+
+#define IFX_FLASH_PROCONWOP_S26WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S26WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S26WOP_OFF (26u)
+
+
+#define IFX_FLASH_PROCONWOP_S2WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S2WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S2WOP_OFF (2u)
+
+
+#define IFX_FLASH_PROCONWOP_S3WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S3WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S3WOP_OFF (3u)
+
+
+#define IFX_FLASH_PROCONWOP_S4WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S4WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S4WOP_OFF (4u)
+
+
+#define IFX_FLASH_PROCONWOP_S5WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S5WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S5WOP_OFF (5u)
+
+
+#define IFX_FLASH_PROCONWOP_S6WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S6WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S6WOP_OFF (6u)
+
+
+#define IFX_FLASH_PROCONWOP_S7WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S7WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S7WOP_OFF (7u)
+
+
+#define IFX_FLASH_PROCONWOP_S8WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S8WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S8WOP_OFF (8u)
+
+
+#define IFX_FLASH_PROCONWOP_S9WOP_LEN (1u)
+
+
+#define IFX_FLASH_PROCONWOP_S9WOP_MSK (0x1u)
+
+
+#define IFX_FLASH_PROCONWOP_S9WOP_OFF (9u)
+
+
+#define IFX_FLASH_RDB_CFG0_TAG_LEN (6u)
+
+
+#define IFX_FLASH_RDB_CFG0_TAG_MSK (0x3fu)
+
+
+#define IFX_FLASH_RDB_CFG0_TAG_OFF (0u)
+
+
+#define IFX_FLASH_RDB_CFG1_TAG_LEN (6u)
+
+
+#define IFX_FLASH_RDB_CFG1_TAG_MSK (0x3fu)
+
+
+#define IFX_FLASH_RDB_CFG1_TAG_OFF (0u)
+
+
+#define IFX_FLASH_RDB_CFG2_TAG_LEN (6u)
+
+
+#define IFX_FLASH_RDB_CFG2_TAG_MSK (0x3fu)
+
+
+#define IFX_FLASH_RDB_CFG2_TAG_OFF (0u)
+
+
+#define IFX_FLASH_RRAD_ADD_LEN (29u)
+
+
+#define IFX_FLASH_RRAD_ADD_MSK (0x1fffffffu)
+
+
+#define IFX_FLASH_RRAD_ADD_OFF (3u)
+
+
+#define IFX_FLASH_RRCT_BUSY_LEN (1u)
+
+
+#define IFX_FLASH_RRCT_BUSY_MSK (0x1u)
+
+
+#define IFX_FLASH_RRCT_BUSY_OFF (2u)
+
+
+#define IFX_FLASH_RRCT_CNT_LEN (16u)
+
+
+#define IFX_FLASH_RRCT_CNT_MSK (0xffffu)
+
+
+#define IFX_FLASH_RRCT_CNT_OFF (16u)
+
+
+#define IFX_FLASH_RRCT_DONE_LEN (1u)
+
+
+#define IFX_FLASH_RRCT_DONE_MSK (0x1u)
+
+
+#define IFX_FLASH_RRCT_DONE_OFF (3u)
+
+
+#define IFX_FLASH_RRCT_EOBM_LEN (1u)
+
+
+#define IFX_FLASH_RRCT_EOBM_MSK (0x1u)
+
+
+#define IFX_FLASH_RRCT_EOBM_OFF (8u)
+
+
+#define IFX_FLASH_RRCT_ERR_LEN (1u)
+
+
+#define IFX_FLASH_RRCT_ERR_MSK (0x1u)
+
+
+#define IFX_FLASH_RRCT_ERR_OFF (4u)
+
+
+#define IFX_FLASH_RRCT_STP_LEN (1u)
+
+
+#define IFX_FLASH_RRCT_STP_MSK (0x1u)
+
+
+#define IFX_FLASH_RRCT_STP_OFF (1u)
+
+
+#define IFX_FLASH_RRCT_STRT_LEN (1u)
+
+
+#define IFX_FLASH_RRCT_STRT_MSK (0x1u)
+
+
+#define IFX_FLASH_RRCT_STRT_OFF (0u)
+
+
+#define IFX_FLASH_RRD0_DATA_LEN (32u)
+
+
+#define IFX_FLASH_RRD0_DATA_MSK (0xffffffffu)
+
+
+#define IFX_FLASH_RRD0_DATA_OFF (0u)
+
+
+#define IFX_FLASH_RRD1_DATA_LEN (32u)
+
+
+#define IFX_FLASH_RRD1_DATA_MSK (0xffffffffu)
+
+
+#define IFX_FLASH_RRD1_DATA_OFF (0u)
+
+
+#define IFX_FLASH_UBAB_CFG_CLR_LEN (1u)
+
+
+#define IFX_FLASH_UBAB_CFG_CLR_MSK (0x1u)
+
+
+#define IFX_FLASH_UBAB_CFG_CLR_OFF (8u)
+
+
+#define IFX_FLASH_UBAB_CFG_DIS_LEN (1u)
+
+
+#define IFX_FLASH_UBAB_CFG_DIS_MSK (0x1u)
+
+
+#define IFX_FLASH_UBAB_CFG_DIS_OFF (9u)
+
+
+#define IFX_FLASH_UBAB_CFG_SEL_LEN (6u)
+
+
+#define IFX_FLASH_UBAB_CFG_SEL_MSK (0x3fu)
+
+
+#define IFX_FLASH_UBAB_CFG_SEL_OFF (0u)
+
+
+#define IFX_FLASH_UBAB_STAT_VLD0_LEN (1u)
+
+
+#define IFX_FLASH_UBAB_STAT_VLD0_MSK (0x1u)
+
+
+#define IFX_FLASH_UBAB_STAT_VLD0_OFF (0u)
+
+
+#define IFX_FLASH_UBAB_TOP_ADDR_LEN (19u)
+
+
+#define IFX_FLASH_UBAB_TOP_ADDR_MSK (0x7ffffu)
+
+
+#define IFX_FLASH_UBAB_TOP_ADDR_OFF (5u)
+
+
+#define IFX_FLASH_UBAB_TOP_CLR_LEN (1u)
+
+
+#define IFX_FLASH_UBAB_TOP_CLR_MSK (0x1u)
+
+
+#define IFX_FLASH_UBAB_TOP_CLR_OFF (31u)
+
+
+#define IFX_FLASH_UBAB_TOP_ERR_LEN (6u)
+
+
+#define IFX_FLASH_UBAB_TOP_ERR_MSK (0x3fu)
+
+
+#define IFX_FLASH_UBAB_TOP_ERR_OFF (24u)
+
+
+#define IFX_FLASH_UBAB_TOP_VLD_LEN (1u)
+
+
+#define IFX_FLASH_UBAB_TOP_VLD_MSK (0x1u)
+
+
+#define IFX_FLASH_UBAB_TOP_VLD_OFF (30u)
+# 55 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 2 3
+# 69 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_VCO_BASE_FREQUENCY (100000000.0)
+#define IFXSCU_EVR_OSC_FREQUENCY (100000000.0)
+
+
+
+
+#define IFXSCU_PLL_FREERUNNING_FREQUENCY (100000000.0)
+# 88 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_16MHZ_80MHZ { (8 - 1), 0.000100, 0 },
+# 98 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_16MHZ_133MHZ { (7 - 1), 0.000100, 0 }, { (6 - 1), 0.000100, 0 },
+# 113 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_16MHZ_160MHZ { (5 - 1), 0.000100, 0 }, { (4 - 1), 0.000100, 0 }
+# 128 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_16MHZ_200MHZ { (6 - 1), 0.000100, 0 }, { (5 - 1), 0.000100, 0 }, { (4 - 1), 0.000100, 0 }
+# 148 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_16MHZ_240MHZ { (5 - 1), 0.000100, 0 }, { (4 - 1), 0.000100, 0 }, { (3 - 1), 0.000100, 0 }
+# 169 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_20MHZ_80MHZ { (8 - 1), 0.000100, 0 },
+# 179 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_20MHZ_133MHZ { (7 - 1), 0.000100, 0 }, { (6 - 1), 0.000100, 0 },
+# 194 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_20MHZ_160MHZ { (5 - 1), 0.000100, 0 }, { (4 - 1), 0.000100, 0 }
+# 209 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_20MHZ_200MHZ { (5 - 1), 0.000100, 0 }, { (4 - 1), 0.000100, 0 }, { (3 - 1), 0.000100, 0 }
+# 229 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_20MHZ_240MHZ { (5 - 1), 0.000100, 0 }, { (4 - 1), 0.000100, 0 }, { (3 - 1), 0.000100, 0 }
+# 249 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_20MHZ_300MHZ { (4 - 1), 0.000100, 0 }, { (3 - 1), 0.000100, 0 }, { (2 - 1), 0.000100, 0 }
+# 270 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_40MHZ_80MHZ { (8 - 1), 0.000100, 0 },
+# 280 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_40MHZ_133MHZ { (7 - 1), 0.000100, 0 }, { (6 - 1), 0.000100, 0 },
+# 295 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_40MHZ_160MHZ { (5 - 1), 0.000100, 0 }, { (4 - 1), 0.000100, 0 }
+# 310 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_40MHZ_200MHZ { (5 - 1), 0.000100, 0 }, { (4 - 1), 0.000100, 0 }, { (3 - 1), 0.000100, 0 }
+# 330 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_40MHZ_240MHZ { (5 - 1), 0.000100, 0 }, { (4 - 1), 0.000100, 0 }, { (3 - 1), 0.000100, 0 }
+# 350 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_40MHZ_300MHZ { (4 - 1), 0.000100, 0 }, { (3 - 1), 0.000100, 0 }, { (2 - 1), 0.000100, 0 }
+# 371 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_8MHZ_80MHZ { (5 - 1), 0.000100, 0 },
+# 381 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_8MHZ_160MHZ { (4 - 1), 0.000100, 0 }, { (3 - 1), 0.000100, 0 },
+# 396 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_8MHZ_200MHZ { (5 - 1), 0.000100, 0 }, { (4 - 1), 0.000100, 0 }, { (3 - 1), 0.000100, 0 },
+# 424 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_INITIAL_STEP_16MHZ_80MHZ {(1 - 1), (40 - 1), (7 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_16MHZ_133MHZ {(1 - 1), (50 - 1), (8 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_16MHZ_160MHZ {(1 - 1), (40 - 1), (6 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_16MHZ_200MHZ {(1 - 1), (50 - 1), (8 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_16MHZ_240MHZ {(1 - 1), (45 - 1), (7 - 1), 0.000200F}
+# 461 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_INITIAL_STEP_20MHZ_80MHZ {(2 - 1), (64 - 1), (7 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_20MHZ_133MHZ {(2 - 1), (80 - 1), (8 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_20MHZ_160MHZ {(2 - 1), (64 - 1), (6 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_20MHZ_200MHZ {(2 - 1), (60 - 1), (6 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_20MHZ_240MHZ {(2 - 1), (72 - 1), (7 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_20MHZ_300MHZ {(2 - 1), (60 - 1), (6 - 1), 0.000200F}
+# 505 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_INITIAL_STEP_40MHZ_80MHZ {(4 - 1), (64 - 1), (7 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_40MHZ_133MHZ {(4 - 1), (80 - 1), (8 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_40MHZ_160MHZ {(4 - 1), (64 - 1), (6 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_40MHZ_200MHZ {(4 - 1), (60 - 1), (6 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_40MHZ_240MHZ {(4 - 1), (72 - 1), (7 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_40MHZ_300MHZ {(4 - 1), (60 - 1), (6 - 1), 0.000200F}
+# 549 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_INITIAL_STEP_8MHZ_80MHZ {(1 - 1), (50 - 1), (5 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_8MHZ_160MHZ {(1 - 1), (60 - 1), (5 - 1), 0.000200F}
+
+
+
+
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_8MHZ_200MHZ {(1 - 1), (75 - 1), (6 - 1), 0.000200F}
+# 578 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_MAXDIV_80MHZ (1)
+
+
+
+
+#define IFXSCU_CFG_MAXDIV_133MHZ (1)
+
+
+
+
+#define IFXSCU_CFG_MAXDIV_160MHZ (1)
+
+
+
+
+#define IFXSCU_CFG_MAXDIV_200MHZ (1)
+
+
+
+
+#define IFXSCU_CFG_MAXDIV_240MHZ (1)
+
+
+
+
+#define IFXSCU_CFG_MAXDIV_300MHZ (1)
+
+
+
+
+#define IFXSCU_CFG_SRIDIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ)
+
+
+
+
+#define IFXSCU_CFG_SRIDIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ)
+
+
+
+
+#define IFXSCU_CFG_SRIDIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ)
+
+
+
+
+#define IFXSCU_CFG_SRIDIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ)
+
+
+
+
+#define IFXSCU_CFG_SRIDIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ)
+
+
+
+
+#define IFXSCU_CFG_SRIDIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ)
+
+
+
+
+#define IFXSCU_CFG_BAUD1DIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ)
+
+
+
+
+#define IFXSCU_CFG_BAUD1DIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_BAUD1DIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_BAUD1DIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_BAUD1DIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_BAUD1DIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_BAUD2DIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ)
+
+
+
+
+#define IFXSCU_CFG_BAUD2DIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ)
+
+
+
+
+#define IFXSCU_CFG_BAUD2DIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ)
+
+
+
+
+#define IFXSCU_CFG_BAUD2DIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ)
+
+
+
+
+#define IFXSCU_CFG_BAUD2DIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ)
+
+
+
+
+#define IFXSCU_CFG_BAUD2DIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ)
+
+
+
+
+#define IFXSCU_CFG_SPBDIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_SPBDIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_SPBDIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_SPBDIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_SPBDIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_SPBDIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_FSI2DIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ)
+
+
+
+
+#define IFXSCU_CFG_FSI2DIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ)
+
+
+
+
+#define IFXSCU_CFG_FSI2DIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ)
+
+
+
+
+#define IFXSCU_CFG_FSI2DIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ)
+
+
+
+
+#define IFXSCU_CFG_FSI2DIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ)
+
+
+
+
+#define IFXSCU_CFG_FSI2DIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ)
+
+
+
+
+#define IFXSCU_CFG_FSIDIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ)
+
+
+
+
+#define IFXSCU_CFG_FSIDIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_FSIDIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_FSIDIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_FSIDIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_FSIDIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_CANDIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ)
+
+
+
+
+#define IFXSCU_CFG_CANDIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_CANDIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_CANDIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_CANDIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_CANDIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_ERAYDIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ)
+
+
+
+
+#define IFXSCU_CFG_ERAYDIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_ERAYDIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_ERAYDIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_ERAYDIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_ERAYDIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ * 4)
+
+
+
+
+#define IFXSCU_CFG_STMDIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ)
+
+
+
+
+#define IFXSCU_CFG_STMDIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_STMDIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_STMDIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_STMDIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_STMDIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_GTMDIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ)
+
+
+
+
+#define IFXSCU_CFG_GTMDIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_GTMDIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_GTMDIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_GTMDIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_GTMDIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_ETHDIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_ETHDIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_ETHDIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ * 4)
+
+
+
+
+#define IFXSCU_CFG_ETHDIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ * 4)
+
+
+
+
+#define IFXSCU_CFG_ETHDIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ * 5)
+
+
+
+
+#define IFXSCU_CFG_ETHDIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ * 6)
+
+
+
+
+#define IFXSCU_CFG_ASCLINFDIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ)
+
+
+
+
+#define IFXSCU_CFG_ASCLINFDIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ)
+
+
+
+
+#define IFXSCU_CFG_ASCLINFDIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ)
+
+
+
+
+#define IFXSCU_CFG_ASCLINFDIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ)
+
+
+
+
+#define IFXSCU_CFG_ASCLINFDIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ)
+
+
+
+
+#define IFXSCU_CFG_ASCLINFDIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ)
+
+
+
+
+#define IFXSCU_CFG_ASCLINSDIV_80MHZ (IFXSCU_CFG_MAXDIV_80MHZ)
+
+
+
+
+#define IFXSCU_CFG_ASCLINSDIV_133MHZ (IFXSCU_CFG_MAXDIV_133MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_ASCLINSDIV_160MHZ (IFXSCU_CFG_MAXDIV_160MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_ASCLINSDIV_200MHZ (IFXSCU_CFG_MAXDIV_200MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_ASCLINSDIV_240MHZ (IFXSCU_CFG_MAXDIV_240MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_ASCLINSDIV_300MHZ (IFXSCU_CFG_MAXDIV_300MHZ * 3)
+
+
+
+
+#define IFXSCU_CFG_BBBDIV_80MHZ (IFXSCU_CFG_SRIDIV_80MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_BBBDIV_133MHZ (IFXSCU_CFG_SRIDIV_133MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_BBBDIV_160MHZ (IFXSCU_CFG_SRIDIV_160MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_BBBDIV_200MHZ (IFXSCU_CFG_SRIDIV_200MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_BBBDIV_240MHZ (IFXSCU_CFG_SRIDIV_240MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_BBBDIV_300MHZ (IFXSCU_CFG_SRIDIV_300MHZ * 2)
+
+
+
+
+#define IFXSCU_CFG_CPU0DIV_80MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU0DIV_133MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU0DIV_160MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU0DIV_200MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU0DIV_240MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU0DIV_300MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU1DIV_80MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU1DIV_133MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU1DIV_160MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU1DIV_200MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU1DIV_240MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU1DIV_300MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU2DIV_80MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU2DIV_133MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU2DIV_160MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU2DIV_200MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU2DIV_240MHZ (0)
+
+
+
+
+#define IFXSCU_CFG_CPU2DIV_300MHZ (0)
+# 1122 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_FLASH_FCON_WSPFLASH_80MHZ (3 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSPFLASH_133MHZ (4 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSPFLASH_160MHZ (5 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSPFLASH_200MHZ (6 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSPFLASH_240MHZ (8 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSPFLASH_300MHZ (9 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSECPF_80MHZ (1 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSECPF_133MHZ (2 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSECPF_160MHZ (2 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSECPF_200MHZ (2 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSECPF_240MHZ (3 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSECPF_300MHZ (3 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSDFLASH_80MHZ (8 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSDFLASH_133MHZ (7 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSDFLASH_160MHZ (8 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSDFLASH_200MHZ (10 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSDFLASH_240MHZ (8 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSDFLASH_300MHZ (10 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSECDF_80MHZ (2 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSECDF_133MHZ (2 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSECDF_160MHZ (2 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSECDF_200MHZ (2 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSECDF_240MHZ (2 - 1)
+
+
+
+
+#define IFXSCU_CFG_FLASH_FCON_WSECDF_300MHZ (2 - 1)
+
+
+
+#define IFXSCU_CFG_FLASH_WAITSTATE_MSK ( (IFX_FLASH_FCON_WSPFLASH_MSK << IFX_FLASH_FCON_WSPFLASH_OFF) | (IFX_FLASH_FCON_WSECPF_MSK << IFX_FLASH_FCON_WSECPF_OFF) | (IFX_FLASH_FCON_WSDFLASH_MSK << IFX_FLASH_FCON_WSDFLASH_OFF) | (IFX_FLASH_FCON_WSECDF_MSK << IFX_FLASH_FCON_WSECDF_OFF))
+
+
+
+
+
+
+#define IFXSCU_CFG_FLASH_WAITSTATE_VAL_BASIC_(pllFreq) ( (IFXSCU_CFG_FLASH_FCON_WSPFLASH_ ##pllFreq << IFX_FLASH_FCON_WSPFLASH_OFF) | (IFXSCU_CFG_FLASH_FCON_WSECPF_ ##pllFreq << IFX_FLASH_FCON_WSECPF_OFF) | (IFXSCU_CFG_FLASH_FCON_WSDFLASH_ ##pllFreq << IFX_FLASH_FCON_WSDFLASH_OFF) | (IFXSCU_CFG_FLASH_FCON_WSECDF_ ##pllFreq << IFX_FLASH_FCON_WSECDF_OFF))
+
+
+
+
+
+
+#define IFXSCU_CFG_FLASH_WAITSTATE_VAL_BASIC(pllFreq) IFXSCU_CFG_FLASH_WAITSTATE_VAL_BASIC_(pllFreq)
+
+#define IFXSCU_CFG_FLASH_WAITSTATE_VAL IFXSCU_CFG_FLASH_WAITSTATE_VAL_BASIC(IFXSCU_CFG_PLL_FREQ)
+
+
+#define IFXSCU_CFG_CCUCON0_MASK ( (IFX_SCU_CCUCON0_BAUD1DIV_MSK << IFX_SCU_CCUCON0_BAUD1DIV_OFF) | (IFX_SCU_CCUCON0_BAUD2DIV_MSK << IFX_SCU_CCUCON0_BAUD2DIV_OFF) | (IFX_SCU_CCUCON0_SRIDIV_MSK << IFX_SCU_CCUCON0_SRIDIV_OFF) | (IFX_SCU_CCUCON0_SPBDIV_MSK << IFX_SCU_CCUCON0_SPBDIV_OFF) | (IFX_SCU_CCUCON0_FSI2DIV_MSK << IFX_SCU_CCUCON0_FSI2DIV_OFF) | (IFX_SCU_CCUCON0_FSIDIV_MSK << IFX_SCU_CCUCON0_FSIDIV_OFF))
+# 1269 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_CCUCON0_BASIC_(pllFreq) (uint32)( (IFXSCU_CFG_BAUD1DIV_ ##pllFreq << IFX_SCU_CCUCON0_BAUD1DIV_OFF) | (IFXSCU_CFG_BAUD2DIV_ ##pllFreq << IFX_SCU_CCUCON0_BAUD2DIV_OFF) | (IFXSCU_CFG_SRIDIV_ ##pllFreq << IFX_SCU_CCUCON0_SRIDIV_OFF) | (IFXSCU_CFG_SPBDIV_ ##pllFreq << IFX_SCU_CCUCON0_SPBDIV_OFF) | (IFXSCU_CFG_FSI2DIV_ ##pllFreq << IFX_SCU_CCUCON0_FSI2DIV_OFF) | (IFXSCU_CFG_FSIDIV_ ##pllFreq << IFX_SCU_CCUCON0_FSIDIV_OFF))
+# 1278 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_CCUCON0_BASIC(pllFreq) IFXSCU_CFG_CCUCON0_BASIC_(pllFreq)
+
+#define IFXSCU_CFG_CCUCON0 IFXSCU_CFG_CCUCON0_BASIC(IFXSCU_CFG_PLL_FREQ)
+
+
+#define IFXSCU_CFG_CCUCON1_MASK ( (IFX_SCU_CCUCON1_CANDIV_MSK << IFX_SCU_CCUCON1_CANDIV_OFF) | (IFX_SCU_CCUCON1_ERAYDIV_MSK << IFX_SCU_CCUCON1_ERAYDIV_OFF) | (IFX_SCU_CCUCON1_STMDIV_MSK << IFX_SCU_CCUCON1_STMDIV_OFF) | (IFX_SCU_CCUCON1_GTMDIV_MSK << IFX_SCU_CCUCON1_GTMDIV_OFF) | (IFX_SCU_CCUCON1_ETHDIV_MSK << IFX_SCU_CCUCON1_ETHDIV_OFF) | (IFX_SCU_CCUCON1_ASCLINFDIV_MSK << IFX_SCU_CCUCON1_ASCLINFDIV_OFF) | (IFX_SCU_CCUCON1_ASCLINSDIV_MSK << IFX_SCU_CCUCON1_ASCLINSDIV_OFF))
+# 1293 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_CCUCON1_BASIC_(pllFreq) (uint32)( (IFXSCU_CFG_CANDIV_ ##pllFreq << IFX_SCU_CCUCON1_CANDIV_OFF) | (IFXSCU_CFG_ERAYDIV_80MHZ << IFX_SCU_CCUCON1_ERAYDIV_OFF) | (IFXSCU_CFG_STMDIV_ ##pllFreq << IFX_SCU_CCUCON1_STMDIV_OFF) | (IFXSCU_CFG_GTMDIV_ ##pllFreq << IFX_SCU_CCUCON1_GTMDIV_OFF) | (IFXSCU_CFG_ETHDIV_ ##pllFreq << IFX_SCU_CCUCON1_ETHDIV_OFF) | (IFXSCU_CFG_ASCLINFDIV_ ##pllFreq << IFX_SCU_CCUCON1_ASCLINFDIV_OFF) | (IFXSCU_CFG_ASCLINSDIV_ ##pllFreq << IFX_SCU_CCUCON1_ASCLINSDIV_OFF))
+# 1303 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_CCUCON1_BASIC(pllFreq) IFXSCU_CFG_CCUCON1_BASIC_(pllFreq)
+
+#define IFXSCU_CFG_CCUCON1 IFXSCU_CFG_CCUCON1_BASIC(IFXSCU_CFG_PLL_FREQ)
+
+
+#define IFXSCU_CFG_CCUCON2_MASK ( (IFX_SCU_CCUCON2_BBBDIV_MSK << IFX_SCU_CCUCON2_BBBDIV_OFF))
+
+
+
+#define IFXSCU_CFG_CCUCON2_BASIC_(pllFreq) (uint32)( (IFXSCU_CFG_BBBDIV_ ##pllFreq << IFX_SCU_CCUCON2_BBBDIV_OFF))
+
+
+
+#define IFXSCU_CFG_CCUCON2_BASIC(pllFreq) IFXSCU_CFG_CCUCON2_BASIC_(pllFreq)
+
+#define IFXSCU_CFG_CCUCON2 IFXSCU_CFG_CCUCON2_BASIC(IFXSCU_CFG_PLL_FREQ)
+
+
+#define IFXSCU_CFG_CCUCON5_MASK ( (IFX_SCU_CCUCON5_MAXDIV_MSK << IFX_SCU_CCUCON5_MAXDIV_OFF))
+
+
+
+#define IFXSCU_CFG_CCUCON5_BASIC_(pllFreq) (uint32)( (IFXSCU_CFG_MAXDIV_ ##pllFreq << IFX_SCU_CCUCON5_MAXDIV_OFF))
+
+
+
+#define IFXSCU_CFG_CCUCON5_BASIC(pllFreq) IFXSCU_CFG_CCUCON5_BASIC_(pllFreq)
+
+#define IFXSCU_CFG_CCUCON5 IFXSCU_CFG_CCUCON5_BASIC(IFXSCU_CFG_PLL_FREQ)
+
+
+#define IFXSCU_CFG_CCUCON6_MASK ( (IFX_SCU_CCUCON6_CPU0DIV_MSK << IFX_SCU_CCUCON6_CPU0DIV_OFF))
+
+
+
+#define IFXSCU_CFG_CCUCON6_BASIC_(pllFreq) (uint32)( (IFXSCU_CFG_CPU0DIV_ ##pllFreq << IFX_SCU_CCUCON6_CPU0DIV_OFF))
+
+
+
+#define IFXSCU_CFG_CCUCON6_BASIC(pllFreq) IFXSCU_CFG_CCUCON6_BASIC_(pllFreq)
+
+#define IFXSCU_CFG_CCUCON6 IFXSCU_CFG_CCUCON6_BASIC(IFXSCU_CFG_PLL_FREQ)
+
+
+#define IFXSCU_CFG_CCUCON7_MASK ( (IFX_SCU_CCUCON7_CPU1DIV_MSK << IFX_SCU_CCUCON7_CPU1DIV_OFF))
+
+
+
+#define IFXSCU_CFG_CCUCON7_BASIC_(pllFreq) (uint32)( (IFXSCU_CFG_CPU1DIV_ ##pllFreq << IFX_SCU_CCUCON7_CPU1DIV_OFF))
+
+
+
+#define IFXSCU_CFG_CCUCON7_BASIC(pllFreq) IFXSCU_CFG_CCUCON7_BASIC_(pllFreq)
+
+#define IFXSCU_CFG_CCUCON7 IFXSCU_CFG_CCUCON7_BASIC(IFXSCU_CFG_PLL_FREQ)
+
+
+#define IFXSCU_CFG_CCUCON8_MASK ( (IFX_SCU_CCUCON8_CPU2DIV_MSK << IFX_SCU_CCUCON8_CPU2DIV_OFF))
+
+
+
+#define IFXSCU_CFG_CCUCON8_BASIC_(pllFreq) (uint32)( (IFXSCU_CFG_CPU2DIV_ ##pllFreq << IFX_SCU_CCUCON8_CPU2DIV_OFF))
+
+
+
+#define IFXSCU_CFG_CCUCON8_BASIC(pllFreq) IFXSCU_CFG_CCUCON8_BASIC_(pllFreq)
+
+#define IFXSCU_CFG_CCUCON8 IFXSCU_CFG_CCUCON8_BASIC(IFXSCU_CFG_PLL_FREQ)
+
+#define IFXSCU_CFG_CLK_DISTRIBUTION { {IFXSCU_CFG_CCUCON0, IFXSCU_CFG_CCUCON0_MASK}, {IFXSCU_CFG_CCUCON1, IFXSCU_CFG_CCUCON1_MASK}, {IFXSCU_CFG_CCUCON2, IFXSCU_CFG_CCUCON2_MASK}, {IFXSCU_CFG_CCUCON5, IFXSCU_CFG_CCUCON5_MASK}, {IFXSCU_CFG_CCUCON6, IFXSCU_CFG_CCUCON6_MASK}, {IFXSCU_CFG_CCUCON7, IFXSCU_CFG_CCUCON7_MASK}, {IFXSCU_CFG_CCUCON8, IFXSCU_CFG_CCUCON8_MASK} }
+# 1386 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_STEPS_BASIC_(xtalFreq,pllFreq) IFXSCU_CFG_PLL_STEPS_ ##xtalFreq ##_ ##pllFreq
+#define IFXSCU_CFG_PLL_STEPS_BASIC(xtalFreq,pllFreq) IFXSCU_CFG_PLL_STEPS_BASIC_(xtalFreq, pllFreq)
+#define IFXSCU_CFG_PLL_STEPS IFXSCU_CFG_PLL_STEPS_BASIC(IFXSCU_CFG_XTAL_FREQ, IFXSCU_CFG_PLL_FREQ)
+
+
+#define IFXSCU_CFG_PLL_INITIAL_STEP_BASIC_(xtalFreq,pllFreq) IFXSCU_CFG_PLL_INITIAL_STEP_ ##xtalFreq ##_ ##pllFreq
+#define IFXSCU_CFG_PLL_INITIAL_STEP_BASIC(xtalFreq,pllFreq) IFXSCU_CFG_PLL_INITIAL_STEP_BASIC_(xtalFreq, pllFreq)
+#define IFXSCU_CFG_PLL_INITIAL_STEP IFXSCU_CFG_PLL_INITIAL_STEP_BASIC(IFXSCU_CFG_XTAL_FREQ, IFXSCU_CFG_PLL_FREQ)
+
+#define IFXSCU_CFG_FLASH_WAITSTATE {IFXSCU_CFG_FLASH_WAITSTATE_VAL, IFXSCU_CFG_FLASH_WAITSTATE_MSK}
+
+
+
+
+#define IFXSCU_CFG_XTAL_FREQ 20MHZ
+# 1419 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+#define IFXSCU_CFG_PLL_FREQ 200MHZ
+# 1429 "c:\\hightec\\toolchains\\tricore\\v4.9.3.0-infineon-1.0\\tricore\\include\\tc27xd\\ifxscu_cfg.h" 3
+typedef enum
+{
+    IfxScu_CCUCON0_CLKSEL_fBack = 0,
+    IfxScu_CCUCON0_CLKSEL_fPll = 1
+} IfxScu_CCUCON0_CLKSEL;
+
+
+typedef enum
+{
+    IfxScu_CCUCON1_INSEL_fOsc1 = 0,
+    IfxScu_CCUCON1_INSEL_fOsc0 = 1
+} IfxScu_CCUCON1_INSEL;
+
+
+typedef enum
+{
+    IfxScu_WDTCON1_IR_divBy16384 = 0,
+    IfxScu_WDTCON1_IR_divBy256 = 1,
+    IfxScu_WDTCON1_IR_divBy64 = 2
+} IfxScu_WDTCON1_IR;
+
+typedef enum
+{
+    IfxScu_PMCSR_REQSLP_Run = 0U,
+    IfxScu_PMCSR_REQSLP_Idle = 1U,
+    IfxScu_PMCSR_REQSLP_Sleep = 2U,
+    IfxScu_PMCSR_REQSLP_Stby = 3U
+} IfxScu_PMCSR_REQSLP;
+# 47 "C:\\RTDRUI~1\\TC275_~1\\bsw\\IfxScu_cfg.c" 2
