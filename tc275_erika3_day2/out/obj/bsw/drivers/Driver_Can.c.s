@@ -61,11 +61,11 @@ CAN_RX_HND:
 	.loc 1 91 0
 	jnz	%d15, .L1
 	.loc 1 93 0
-	movh.a	%a15, hi:led_king
+	movh.a	%a15, hi:bodystatus_ok
 	.loc 1 94 0
 	mov	%d4, 14
 	.loc 1 93 0
-	st.b	[%a15] lo:led_king, %d15
+	st.b	[%a15] lo:bodystatus_ok, %d15
 	.loc 1 94 0
 	j	ActivateTask
 .LVL6:
@@ -94,11 +94,11 @@ CAN_RX_HND:
 .LBB18:
 	.loc 1 88 0
 	mov	%d15, 1
-	movh.a	%a15, hi:led_king
+	movh.a	%a15, hi:bodystatus_ok
 	.loc 1 89 0
 	mov	%d4, 14
 	.loc 1 88 0
-	st.b	[%a15] lo:led_king, %d15
+	st.b	[%a15] lo:bodystatus_ok, %d15
 	.loc 1 89 0
 	j	ActivateTask
 .LVL8:
@@ -107,17 +107,17 @@ CAN_RX_HND:
 .LFE362:
 	.size	CAN_RX_HND, .-CAN_RX_HND
 	.align 1
-	.global	getLEDKing
-	.type	getLEDKing, @function
-getLEDKing:
+	.global	getBodyStatus
+	.type	getBodyStatus, @function
+getBodyStatus:
 .LFB363:
 	.loc 1 106 0
 	.loc 1 108 0
-	movh.a	%a15, hi:led_king
-	ld.b	%d2, [%a15] lo:led_king
+	movh.a	%a15, hi:bodystatus_ok
+	ld.b	%d2, [%a15] lo:bodystatus_ok
 	ret
 .LFE363:
-	.size	getLEDKing, .-getLEDKing
+	.size	getBodyStatus, .-getBodyStatus
 	.align 1
 	.global	getTunnelStatus
 	.type	getTunnelStatus, @function
@@ -389,10 +389,10 @@ u32nuTemp1.10892:
 	.size	tunnel_ok, 1
 tunnel_ok:
 	.zero	1
-	.global	led_king
-	.type	led_king, @object
-	.size	led_king, 1
-led_king:
+	.global	bodystatus_ok
+	.type	bodystatus_ok, @object
+	.size	bodystatus_ok, 1
+bodystatus_ok:
 	.zero	1
 	.global	stRxMsgData
 	.align 2
@@ -509,7 +509,7 @@ stEcu1Can:
 	.file 19 "C:\\Users\\user\\ECLIPS~1\\TC275_~1\\erika\\inc/ee_oo_api_osek.h"
 .section .debug_info,"",@progbits
 .Ldebug_info0:
-	.uaword	0x775b
+	.uaword	0x7763
 	.uahalf	0x3
 	.uaword	.Ldebug_abbrev0
 	.byte	0x4
@@ -11287,7 +11287,7 @@ stEcu1Can:
 	.uleb128 0x32
 	.uaword	.LVL8
 	.byte	0x1
-	.uaword	0x7509
+	.uaword	0x7511
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x54
@@ -11297,7 +11297,7 @@ stEcu1Can:
 	.byte	0
 	.uleb128 0x34
 	.uaword	.LVL0
-	.uaword	0x752b
+	.uaword	0x7533
 	.uaword	0x7039
 	.uleb128 0x33
 	.byte	0x1
@@ -11314,7 +11314,7 @@ stEcu1Can:
 	.byte	0
 	.uleb128 0x34
 	.uaword	.LVL2
-	.uaword	0x752b
+	.uaword	0x7533
 	.uaword	0x7059
 	.uleb128 0x33
 	.byte	0x1
@@ -11332,7 +11332,7 @@ stEcu1Can:
 	.uleb128 0x35
 	.uaword	.LVL6
 	.byte	0x1
-	.uaword	0x7509
+	.uaword	0x7511
 	.uaword	0x706d
 	.uleb128 0x33
 	.byte	0x1
@@ -11342,7 +11342,7 @@ stEcu1Can:
 	.byte	0
 	.uleb128 0x36
 	.uaword	.LVL7
-	.uaword	0x7509
+	.uaword	0x7511
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x54
@@ -11352,7 +11352,7 @@ stEcu1Can:
 	.byte	0
 	.uleb128 0x37
 	.byte	0x1
-	.string	"getLEDKing"
+	.string	"getBodyStatus"
 	.byte	0x1
 	.byte	0x6a
 	.byte	0x1
@@ -11385,7 +11385,7 @@ stEcu1Can:
 	.byte	0x1
 	.byte	0x9c
 	.byte	0x1
-	.uaword	0x7336
+	.uaword	0x7339
 	.uleb128 0x39
 	.string	"canConfig"
 	.byte	0x1
@@ -11408,7 +11408,7 @@ stEcu1Can:
 	.uaword	.LBE25
 	.byte	0x1
 	.byte	0x91
-	.uaword	0x7196
+	.uaword	0x7199
 	.uleb128 0x3b
 	.uaword	0x6f4a
 	.byte	0x8
@@ -11440,8 +11440,8 @@ stEcu1Can:
 	.sleb128 -204
 	.uleb128 0x34
 	.uaword	.LVL14
-	.uaword	0x7568
-	.uaword	0x717d
+	.uaword	0x7570
+	.uaword	0x7180
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x65
@@ -11457,7 +11457,7 @@ stEcu1Can:
 	.byte	0
 	.uleb128 0x36
 	.uaword	.LVL15
-	.uaword	0x75a6
+	.uaword	0x75ae
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x65
@@ -11479,7 +11479,7 @@ stEcu1Can:
 	.uaword	.LBE27
 	.byte	0x1
 	.byte	0x94
-	.uaword	0x721b
+	.uaword	0x721e
 	.uleb128 0x3b
 	.uaword	0x6f4a
 	.byte	0x8
@@ -11511,8 +11511,8 @@ stEcu1Can:
 	.sleb128 -204
 	.uleb128 0x34
 	.uaword	.LVL16
-	.uaword	0x7568
-	.uaword	0x7201
+	.uaword	0x7570
+	.uaword	0x7204
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x65
@@ -11528,7 +11528,7 @@ stEcu1Can:
 	.byte	0
 	.uleb128 0x36
 	.uaword	.LVL17
-	.uaword	0x75a6
+	.uaword	0x75ae
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x65
@@ -11550,7 +11550,7 @@ stEcu1Can:
 	.uaword	.LBE29
 	.byte	0x1
 	.byte	0x95
-	.uaword	0x72a1
+	.uaword	0x72a4
 	.uleb128 0x3b
 	.uaword	0x6f4a
 	.byte	0x8
@@ -11582,8 +11582,8 @@ stEcu1Can:
 	.sleb128 -204
 	.uleb128 0x34
 	.uaword	.LVL18
-	.uaword	0x7568
-	.uaword	0x7286
+	.uaword	0x7570
+	.uaword	0x7289
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x65
@@ -11600,7 +11600,7 @@ stEcu1Can:
 	.uleb128 0x32
 	.uaword	.LVL19
 	.byte	0x1
-	.uaword	0x75a6
+	.uaword	0x75ae
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x65
@@ -11618,8 +11618,8 @@ stEcu1Can:
 	.byte	0
 	.uleb128 0x34
 	.uaword	.LVL9
-	.uaword	0x75e7
-	.uaword	0x72c9
+	.uaword	0x75ef
+	.uaword	0x72cc
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x56
@@ -11645,8 +11645,8 @@ stEcu1Can:
 	.byte	0
 	.uleb128 0x34
 	.uaword	.LVL10
-	.uaword	0x7618
-	.uaword	0x72e8
+	.uaword	0x7620
+	.uaword	0x72eb
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x65
@@ -11662,8 +11662,8 @@ stEcu1Can:
 	.byte	0
 	.uleb128 0x34
 	.uaword	.LVL11
-	.uaword	0x7655
-	.uaword	0x7303
+	.uaword	0x765d
+	.uaword	0x7306
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x65
@@ -11679,8 +11679,8 @@ stEcu1Can:
 	.byte	0
 	.uleb128 0x34
 	.uaword	.LVL12
-	.uaword	0x769b
-	.uaword	0x731e
+	.uaword	0x76a3
+	.uaword	0x7321
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x65
@@ -11696,7 +11696,7 @@ stEcu1Can:
 	.byte	0
 	.uleb128 0x36
 	.uaword	.LVL13
-	.uaword	0x76d7
+	.uaword	0x76df
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x65
@@ -11722,18 +11722,18 @@ stEcu1Can:
 	.byte	0x1
 	.byte	0x9c
 	.byte	0x1
-	.uaword	0x73d9
+	.uaword	0x73dc
 	.uleb128 0x3f
 	.uaword	.LASF27
 	.byte	0x1
 	.byte	0xb5
-	.uaword	0x73d9
+	.uaword	0x73dc
 	.byte	0x1
 	.uleb128 0x3f
 	.uaword	.LASF28
 	.byte	0x1
 	.byte	0xb6
-	.uaword	0x73d9
+	.uaword	0x73dc
 	.byte	0
 	.uleb128 0x3e
 	.uaword	.LBB31
@@ -11752,7 +11752,7 @@ stEcu1Can:
 	.uaword	.LBE32
 	.byte	0x1
 	.byte	0xbd
-	.uaword	0x73c1
+	.uaword	0x73c4
 	.uleb128 0x3b
 	.uaword	0x6eed
 	.byte	0x8
@@ -11771,7 +11771,7 @@ stEcu1Can:
 	.byte	0
 	.uleb128 0x36
 	.uaword	.LVL23
-	.uaword	0x7716
+	.uaword	0x771e
 	.uleb128 0x33
 	.byte	0x1
 	.byte	0x65
@@ -11791,7 +11791,7 @@ stEcu1Can:
 	.uaword	0x5b7
 	.uleb128 0xd
 	.uaword	0x69e
-	.uaword	0x73ee
+	.uaword	0x73f1
 	.uleb128 0xe
 	.uaword	0x6b8
 	.byte	0x2
@@ -11800,11 +11800,11 @@ stEcu1Can:
 	.string	"IfxCpu_cfg_indexMap"
 	.byte	0x9
 	.byte	0xa7
-	.uaword	0x740b
+	.uaword	0x740e
 	.byte	0x1
 	.byte	0x1
 	.uleb128 0x1e
-	.uaword	0x73de
+	.uaword	0x73e1
 	.uleb128 0x41
 	.string	"IfxMultican_RXD0B_P20_7_IN"
 	.byte	0xf
@@ -11841,7 +11841,7 @@ stEcu1Can:
 	.uaword	.LASF27
 	.byte	0x1
 	.byte	0x24
-	.uaword	0x73d9
+	.uaword	0x73dc
 	.byte	0x1
 	.byte	0x5
 	.byte	0x3
@@ -11850,14 +11850,14 @@ stEcu1Can:
 	.uaword	.LASF28
 	.byte	0x1
 	.byte	0x25
-	.uaword	0x73d9
+	.uaword	0x73dc
 	.byte	0x1
 	.byte	0x5
 	.byte	0x3
 	.uaword	dataHigh
 	.uleb128 0xd
 	.uaword	0x65a1
-	.uaword	0x74c0
+	.uaword	0x74c3
 	.uleb128 0xe
 	.uaword	0x6b8
 	.byte	0x9
@@ -11866,20 +11866,20 @@ stEcu1Can:
 	.string	"stRxMsgData"
 	.byte	0x1
 	.byte	0x27
-	.uaword	0x74b0
+	.uaword	0x74b3
 	.byte	0x1
 	.byte	0x5
 	.byte	0x3
 	.uaword	stRxMsgData
 	.uleb128 0x42
-	.string	"led_king"
+	.string	"bodystatus_ok"
 	.byte	0x1
 	.byte	0x29
 	.uaword	0x5e2
 	.byte	0x1
 	.byte	0x5
 	.byte	0x3
-	.uaword	led_king
+	.uaword	bodystatus_ok
 	.uleb128 0x42
 	.string	"tunnel_ok"
 	.byte	0x1
@@ -11897,7 +11897,7 @@ stEcu1Can:
 	.byte	0x1
 	.uaword	0x567
 	.byte	0x1
-	.uaword	0x752b
+	.uaword	0x7533
 	.uleb128 0x21
 	.uaword	0x31b
 	.byte	0
@@ -11909,7 +11909,7 @@ stEcu1Can:
 	.byte	0x1
 	.uaword	0x653e
 	.byte	0x1
-	.uaword	0x7568
+	.uaword	0x7570
 	.uleb128 0x21
 	.uaword	0x6f8d
 	.uleb128 0x21
@@ -11922,9 +11922,9 @@ stEcu1Can:
 	.uahalf	0x495
 	.byte	0x1
 	.byte	0x1
-	.uaword	0x75a0
+	.uaword	0x75a8
 	.uleb128 0x21
-	.uaword	0x75a0
+	.uaword	0x75a8
 	.uleb128 0x21
 	.uaword	0x6a3c
 	.byte	0
@@ -11939,15 +11939,15 @@ stEcu1Can:
 	.byte	0x1
 	.uaword	0x653e
 	.byte	0x1
-	.uaword	0x75dc
+	.uaword	0x75e4
 	.uleb128 0x21
 	.uaword	0x6f8d
 	.uleb128 0x21
-	.uaword	0x75dc
+	.uaword	0x75e4
 	.byte	0
 	.uleb128 0x7
 	.byte	0x4
-	.uaword	0x75e2
+	.uaword	0x75ea
 	.uleb128 0x1e
 	.uaword	0x6b62
 	.uleb128 0x45
@@ -11957,7 +11957,7 @@ stEcu1Can:
 	.uahalf	0x21f
 	.byte	0x1
 	.byte	0x1
-	.uaword	0x7618
+	.uaword	0x7620
 	.uleb128 0x21
 	.uaword	0x276
 	.uleb128 0x21
@@ -11974,9 +11974,9 @@ stEcu1Can:
 	.uahalf	0x3d2
 	.byte	0x1
 	.byte	0x1
-	.uaword	0x764f
+	.uaword	0x7657
 	.uleb128 0x21
-	.uaword	0x764f
+	.uaword	0x7657
 	.uleb128 0x21
 	.uaword	0x5f68
 	.byte	0
@@ -11991,18 +11991,18 @@ stEcu1Can:
 	.byte	0x1
 	.uaword	0x653e
 	.byte	0x1
-	.uaword	0x768a
+	.uaword	0x7692
 	.uleb128 0x21
-	.uaword	0x768a
+	.uaword	0x7692
 	.uleb128 0x21
-	.uaword	0x7690
+	.uaword	0x7698
 	.byte	0
 	.uleb128 0x7
 	.byte	0x4
 	.uaword	0x6959
 	.uleb128 0x7
 	.byte	0x4
-	.uaword	0x7696
+	.uaword	0x769e
 	.uleb128 0x1e
 	.uaword	0x69d6
 	.uleb128 0x45
@@ -12012,11 +12012,11 @@ stEcu1Can:
 	.uahalf	0x41a
 	.byte	0x1
 	.byte	0x1
-	.uaword	0x76d1
+	.uaword	0x76d9
 	.uleb128 0x21
-	.uaword	0x76d1
+	.uaword	0x76d9
 	.uleb128 0x21
-	.uaword	0x768a
+	.uaword	0x7692
 	.byte	0
 	.uleb128 0x7
 	.byte	0x4
@@ -12029,15 +12029,15 @@ stEcu1Can:
 	.byte	0x1
 	.uaword	0x653e
 	.byte	0x1
-	.uaword	0x770b
+	.uaword	0x7713
 	.uleb128 0x21
 	.uaword	0x6a3c
 	.uleb128 0x21
-	.uaword	0x770b
+	.uaword	0x7713
 	.byte	0
 	.uleb128 0x7
 	.byte	0x4
-	.uaword	0x7711
+	.uaword	0x7719
 	.uleb128 0x1e
 	.uaword	0x6d4a
 	.uleb128 0x44
@@ -12048,15 +12048,15 @@ stEcu1Can:
 	.byte	0x1
 	.uaword	0x653e
 	.byte	0x1
-	.uaword	0x7753
+	.uaword	0x775b
 	.uleb128 0x21
 	.uaword	0x6f8d
 	.uleb128 0x21
-	.uaword	0x7753
+	.uaword	0x775b
 	.byte	0
 	.uleb128 0x7
 	.byte	0x4
-	.uaword	0x7759
+	.uaword	0x7761
 	.uleb128 0x1e
 	.uaword	0x65a1
 	.byte	0
@@ -14572,7 +14572,7 @@ stEcu1Can:
 	.uleb128 0x76
 	.string	"OSEE_TC_CORE0_3_ISR_TID 0"
 	.byte	0
-.section .debug_macro,"G",@progbits,wm4.ee_applcfg.h.39.d44cbe7760c67535463e6f8ad88ce699,comdat
+.section .debug_macro,"G",@progbits,wm4.ee_applcfg.h.39.b0fe033b8a4362e91accfa974e06dfb9,comdat
 .Ldebug_macro2:
 	.uahalf	0x4
 	.byte	0
@@ -14623,7 +14623,7 @@ stEcu1Can:
 	.string	"ADC_Example (9U)"
 	.byte	0x1
 	.uleb128 0x42
-	.string	"OS_EE_Task_Init (10U)"
+	.string	"Task_Idle (10U)"
 	.byte	0x1
 	.uleb128 0x43
 	.string	"Task_Motor (11U)"

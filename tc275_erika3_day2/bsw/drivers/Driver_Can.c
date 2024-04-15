@@ -38,7 +38,7 @@ const uint32 dataHigh = 0x9abc0000;
 
 IfxMultican_Message stRxMsgData[10];//받은 메세지 저장한 배열
 
-char led_king=0;//왕눈이 LED 전역변수
+char bodystatus_ok=0;//Body 상태 표시 전역변수
 char tunnel_ok=0; //터널 모드(body로부터)전역변수
 
 
@@ -85,12 +85,12 @@ ISR(CAN_RX_HND){
 	           // u32nuTemp4=stRxMsgData[1].data[1]; //dataHigh -의미 없음
 	         if(u32nuTemp3==0x00010101){
 
-	        	 led_king=1;
+	        	 bodystatus_ok=1;
 	        	 ActivateTask(Display_BodyStatus);
 	         	 }
 	         else if(u32nuTemp3==0x00000000){
 
-	        	 led_king=0;
+	        	 bodystatus_ok=0;
 	        	 ActivateTask(Display_BodyStatus);
 	         }
 	         else{
@@ -103,8 +103,8 @@ ISR(CAN_RX_HND){
 }
 
 
-char getLEDKing(void){
-	return led_king;
+char getBodyStatus(void){
+	return bodystatus_ok;
 }
 char getTunnelStatus(void){
 	return tunnel_ok;

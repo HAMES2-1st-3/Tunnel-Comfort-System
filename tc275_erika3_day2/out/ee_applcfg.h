@@ -63,7 +63,7 @@ extern "C" {
 #define Buzzer_Example (7U)
 #define TOF_Example (8U)
 #define ADC_Example (9U)
-#define OS_EE_Task_Init (10U)
+#define Task_Idle (10U)
 #define Task_Motor (11U)
 #define Task_AEB (12U)
 #define LCD_IsIntunnel (13U)

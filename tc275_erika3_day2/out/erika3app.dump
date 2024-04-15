@@ -77,11 +77,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  20 .debug_aranges 00000d50  00000000  00000000  0001d9f0  2**3
                   CONTENTS, READONLY, DEBUGGING
- 21 .debug_info   000b2919  00000000  00000000  0001e740  2**0
+ 21 .debug_info   000b2918  00000000  00000000  0001e740  2**0
                   CONTENTS, READONLY, DEBUGGING
- 22 .debug_abbrev 0000b733  00000000  00000000  000d1059  2**0
+ 22 .debug_abbrev 0000b733  00000000  00000000  000d1058  2**0
                   CONTENTS, READONLY, DEBUGGING
- 23 .debug_line   000167f3  00000000  00000000  000dc78c  2**0
+ 23 .debug_line   000167f3  00000000  00000000  000dc78b  2**0
                   CONTENTS, READONLY, DEBUGGING
  24 .debug_frame  00002030  00000000  00000000  000f2f80  2**2
                   CONTENTS, READONLY, DEBUGGING
@@ -93,7 +93,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  28 .version_info 0007b65e  00000000  00000000  00113abe  2**0
                   CONTENTS, READONLY
- 29 .debug_macro  00287290  00000000  00000000  0018f11c  2**0
+ 29 .debug_macro  0028728a  00000000  00000000  0018f11c  2**0
                   CONTENTS, READONLY, DEBUGGING
 SYMBOL TABLE:
 80000020 l    d  .startup	00000000 .startup
@@ -305,7 +305,6 @@ SYMBOL TABLE:
 50100a00 g       .inttab	00000000 __interrupt_80
 8000acfa g     F .text	00000114 Init_GPIO
 50101b80 g       .inttab	00000000 __interrupt_220
-8000c474 g     F .text	00000074 FuncOS_EE_Task_Init
 80012156 g     F .text	0000001a .hidden __ashldi3
 50100080 g       .inttab	00000000 __interrupt_4
 50100260 g       .inttab	00000000 __interrupt_19
@@ -641,7 +640,6 @@ SYMBOL TABLE:
 50100ba0 g       .inttab	00000000 __interrupt_93
 800010a0 g       .traptab	00000000 osEE_tc_trap_assertion
 80002ba0 g       .inttab_cpu0	00000000 osEE_tc_isr_dummy_entry_93
-80009b18 g     F .text	0000000a getLEDKing
 80008000 g       *ABS*	00000000 __A1_MEM
 501003e0 g       .inttab	00000000 __interrupt_31
 70000b40 g     O .data	00000008 IfxPort_P32_6
@@ -848,7 +846,6 @@ b0008000 g     O *ABS*	00000000 _SMALL_DATA4_
 80003ea0 g       .inttab_cpu0	00000000 osEE_tc_isr_dummy_entry_245
 70000af8 g     O .data	00000008 IfxPort_P33_15
 8000d63c g     F .text	00000052 CancelAlarm
-700019a1 g     O .bss	00000001 led_king
 50101d60 g       .inttab	00000000 __interrupt_235
 800041b8 g     F .text	00000022 IfxMultican_MsgObj_getPendingId
 00002700 g       *ABS*	00000000 __TRICORE_DERIVATE_MEMORY_MAP__
@@ -1086,6 +1083,7 @@ b0008000 g     O *ABS*	00000000 _SMALL_DATA4_
 50100dc0 g       .inttab	00000000 __interrupt_110
 50101820 g       .inttab	00000000 __interrupt_193
 50100400 g       .inttab	00000000 __interrupt_32
+8000c474 g     F .text	00000074 FuncTask_Idle
 00018600 g       *ABS*	00000000 __USTACK0_OFFSET
 80009780 g     F .text	00000014 IfxScuWdt_getSafetyWatchdogPassword
 8000e3a0 g     F .text	00000106 _strtol_r
@@ -1112,6 +1110,7 @@ b0008000 g     O *ABS*	00000000 _SMALL_DATA4_
 80008000 g       *ABS*	00000000 __A8_MEM
 b0008000 g       *ABS*	00000000 __A9_MEM
 80003ce0 g       .inttab_cpu0	00000000 osEE_tc_isr_dummy_entry_231
+80009b18 g     F .text	0000000a getBodyStatus
 50101fa0 g       .inttab	00000000 __interrupt_253
 50100760 g       .inttab	00000000 __interrupt_59
 80009a80 g     F .text	00000098 CAN_RX_HND
@@ -1493,6 +1492,7 @@ b0008000 g       *ABS*	00000000 __A9_MEM
 800109d0 g     F .text	00000082 __multadd
 800109be g     F .text	00000012 _Bfree
 8000b0e2 g     F .text	00000042 write_instruction
+700019a1 g     O .bss	00000001 bodystatus_ok
 8000b378 g     F .text	00000082 Init_DCMotor
 00000000         *UND*	00000000 __do_global_ctors
 80008000 g     O *ABS*	00000000 _SMALL_DATA3_
@@ -23286,23 +23286,23 @@ IFX_INLINE void IfxCpu_enableInterrupts(void)
 80009ace:	1b 12 10 20 	addi %d2,%d2,257
 80009ad2:	be 2a       	jeq %d15,%d2,80009b06 <CAN_RX_HND+0x86>
 
-	        	 led_king=1;
+	        	 bodystatus_ok=1;
 	        	 ActivateTask(Display_BodyStatus);
 	         	 }
 	         else if(u32nuTemp3==0x00000000){
 80009ad4:	ee f5       	jnz %d15,80009abe <CAN_RX_HND+0x3e>
 
-	        	 led_king=0;
+	        	 bodystatus_ok=0;
 80009ad6:	91 00 00 f7 	movh.a %a15,28672
 	        	 ActivateTask(Display_BodyStatus);
 80009ada:	3b e0 00 40 	mov %d4,14
-	        	 led_king=1;
+	        	 bodystatus_ok=1;
 	        	 ActivateTask(Display_BodyStatus);
 	         	 }
 	         else if(u32nuTemp3==0x00000000){
 
-	        	 led_king=0;
-80009ade:	e9 ff a1 61 	st.b [%a15]6561 <700019a1 <led_king>>,%d15
+	        	 bodystatus_ok=0;
+80009ade:	e9 ff a1 61 	st.b [%a15]6561 <700019a1 <bodystatus_ok>>,%d15
 	        	 ActivateTask(Display_BodyStatus);
 80009ae2:	1d 00 2f 1b 	j 8000d140 <ActivateTask>
 
@@ -23345,7 +23345,7 @@ IFX_INLINE void IfxCpu_enableInterrupts(void)
 	           // u32nuTemp4=stRxMsgData[1].data[1]; //dataHigh -ì˜ë¯¸ ì—†ìŒ
 	         if(u32nuTemp3==0x00010101){
 
-	        	 led_king=1;
+	        	 bodystatus_ok=1;
 80009b06:	82 1f       	mov %d15,1
 80009b08:	91 00 00 f7 	movh.a %a15,28672
 	        	 ActivateTask(Display_BodyStatus);
@@ -23355,20 +23355,20 @@ IFX_INLINE void IfxCpu_enableInterrupts(void)
 	           // u32nuTemp4=stRxMsgData[1].data[1]; //dataHigh -ì˜ë¯¸ ì—†ìŒ
 	         if(u32nuTemp3==0x00010101){
 
-	        	 led_king=1;
-80009b10:	e9 ff a1 61 	st.b [%a15]6561 <700019a1 <led_king>>,%d15
+	        	 bodystatus_ok=1;
+80009b10:	e9 ff a1 61 	st.b [%a15]6561 <700019a1 <bodystatus_ok>>,%d15
 	        	 ActivateTask(Display_BodyStatus);
 80009b14:	1d 00 16 1b 	j 8000d140 <ActivateTask>
 
-80009b18 <getLEDKing>:
+80009b18 <getBodyStatus>:
 }
 
 
-char getLEDKing(void){
-	return led_king;
+char getBodyStatus(void){
+	return bodystatus_ok;
 }
 80009b18:	91 00 00 f7 	movh.a %a15,28672
-80009b1c:	79 f2 a1 61 	ld.b %d2,[%a15]6561 <700019a1 <led_king>>
+80009b1c:	79 f2 a1 61 	ld.b %d2,[%a15]6561 <700019a1 <bodystatus_ok>>
 80009b20:	00 90       	ret 
 
 80009b22 <getTunnelStatus>:
@@ -31827,19 +31827,19 @@ void _mtcr (const unsigned __regaddr, const unsigned __val)
 8000bf1c:	3c 00       	j 8000bf1c <SYSTEM_DbgBreak>
 
 8000bf1e <StartupHook>:
+#include "ee_api_types.h"
+#include "main.h"
+
 void StartupHook(void)
 {
-	//my_printf("Hello aaaorld!\n");
-	//ActivateTask(Task_Motor);
-	//ActivateTask(Blink_LED);
-	ActivateTask(OS_EE_Task_Init);
+	ActivateTask(Task_Idle);
 8000bf1e:	3b a0 00 40 	mov %d4,10
 8000bf22:	1d 00 0f 09 	j 8000d140 <ActivateTask>
 
 8000bf26 <FuncLCD_IsIntunnel>:
-int flag=0;
 int pwm=0;
 
+//¿ì¼±¼øÀ§ 3
 TASK(LCD_IsIntunnel){ //Sensor ECU·ÎºÎÅÍ CAN ¸Ş½ÃÁö ¼ö½Å½Ã ¼öÇàµÇ´Â TASK
 
 	char TunnelStatus=getTunnelStatus();
@@ -31897,7 +31897,7 @@ TASK(LCD_IsIntunnel){ //Sensor ECU·ÎºÎÅÍ CAN ¸Ş½ÃÁö ¼ö½Å½Ã ¼öÇàµÇ´Â TASK
 		delay_ms(200);
 8000bf7a:	3b 80 0c 40 	mov %d4,200
 8000bf7e:	6d ff 31 f6 	call 8000abe0 <delay_ms>
-		lcdprint_data("THE CARS ENTER");
+		lcdprint_data("THE CAR ENTERS");
 8000bf82:	91 00 00 48 	movh.a %a4,32768
 8000bf86:	d9 44 b4 00 	lea %a4,[%a4]2100 <80000834 <osEE_sdb_array+0x58>>
 8000bf8a:	6d ff ee f8 	call 8000b166 <lcdprint_data>
@@ -31929,13 +31929,13 @@ TASK(LCD_IsIntunnel){ //Sensor ECU·ÎºÎÅÍ CAN ¸Ş½ÃÁö ¼ö½Å½Ã ¼öÇàµÇ´Â TASK
 
 8000bfbe <FuncDisplay_BodyStatus>:
 }
-
+//¿ì¼±¼øÀ§ 2
 TASK(Display_BodyStatus){ //Body ECU·ÎºÎÅÍ CAN ¸Ş½ÃÁö ¼ö½Å½Ã ¼öÇàµÇ´Â TASK
 
-	char HeadLampStatus=getLEDKing(); //can¿¡¼­ ¹Ş¾Æ¿Í
-8000bfbe:	6d ff ad ed 	call 80009b18 <getLEDKing>
+	char BodyStatus=getBodyStatus(); //body »óÅÂ ¼ö½Å
+8000bfbe:	6d ff ad ed 	call 80009b18 <getBodyStatus>
 
-	if(HeadLampStatus){ //ÅÍ³Î ÁøÀÔÀ¸·Î Body ECUÀÇ Çìµå·¥ÇÁ ÄÑÁö¸é
+	if(BodyStatus){ //ÅÍ³Î ÁøÀÔÀ¸·Î Body ECU ¸ğµÎ ÀÛµ¿½Ã
 8000bfc2:	df 02 7f 80 	jne %d2,0,8000c0c0 <FuncDisplay_BodyStatus+0x102>
 		delay_ms(1300);
 		clear_two_lines();
@@ -31990,7 +31990,6 @@ TASK(Display_BodyStatus){ //Body ECU·ÎºÎÅÍ CAN ¸Ş½ÃÁö ¼ö½Å½Ã ¼öÇàµÇ´Â TASK
 		delay_ms(100);
 8000c034:	3b 40 06 40 	mov %d4,100
 8000c038:	6d ff d4 f5 	call 8000abe0 <delay_ms>
-		//
 
 		delay_ms(100);
 8000c03c:	3b 40 06 40 	mov %d4,100
@@ -32040,11 +32039,7 @@ TASK(Display_BodyStatus){ //Body ECU·ÎºÎÅÍ CAN ¸Ş½ÃÁö ¼ö½Å½Ã ¼öÇàµÇ´Â TASK
 8000c0b0:	6d ff 98 f5 	call 8000abe0 <delay_ms>
 		clear_two_lines();
 8000c0b4:	6d ff bb f8 	call 8000b22a <clear_two_lines>
-		//delay_ms(100);
-		//write_instruction(0x80); //Ã¹¹øÂ° ÁÙ ÀÌµ¿
-		//delay_ms(100);
-		//lcdprint_data("TUNNEL MODE: OFF");
-		//delay_ms(500);
+
 		clear_two_lines();
 8000c0b8:	6d ff b9 f8 	call 8000b22a <clear_two_lines>
 
@@ -32053,9 +32048,9 @@ TASK(Display_BodyStatus){ //Body ECU·ÎºÎÅÍ CAN ¸Ş½ÃÁö ¼ö½Å½Ã ¼öÇàµÇ´Â TASK
 	TerminateTask();
 8000c0bc:	1d 00 cf 08 	j 8000d25a <TerminateTask>
 
-	char HeadLampStatus=getLEDKing(); //can¿¡¼­ ¹Ş¾Æ¿Í
+	char BodyStatus=getBodyStatus(); //body »óÅÂ ¼ö½Å
 
-	if(HeadLampStatus){ //ÅÍ³Î ÁøÀÔÀ¸·Î Body ECUÀÇ Çìµå·¥ÇÁ ÄÑÁö¸é
+	if(BodyStatus){ //ÅÍ³Î ÁøÀÔÀ¸·Î Body ECU ¸ğµÎ ÀÛµ¿½Ã
 
 		setHeadlampLED(1);
 8000c0c0:	82 14       	mov %d4,1
@@ -32168,7 +32163,7 @@ TASK(Display_BodyStatus){ //Body ECU·ÎºÎÅÍ CAN ¸Ş½ÃÁö ¼ö½Å½Ã ¼öÇàµÇ´Â TASK
 8000c1ca:	6d ff 0b f5 	call 8000abe0 <delay_ms>
 		clear_two_lines();
 8000c1ce:	6d ff 2e f8 	call 8000b22a <clear_two_lines>
-		//delay_ms(500);
+
 		clear_two_lines();
 
 	}
@@ -32669,17 +32664,18 @@ TASK(ADC_Example)
 	}
 8000c472:	3c f5       	j 8000c45c <FuncADC_Example+0xe>
 
-8000c474 <FuncOS_EE_Task_Init>:
+8000c474 <FuncTask_Idle>:
 	TerminateTask();
 }
 
-TASK(OS_EE_Task_Init) //ÅÍ³Î ÁøÀÔ Àü°ú ÅÍ³Î Åë°ú ÈÄ ÅÍ³Î ¸ğµå Ç¥½Ã À¯Áö
+//Idle TASK ¿ì¼±¼øÀ§ 1
+TASK(Task_Idle) //ÅÍ³Î ÁøÀÔ Àü°ú ÅÍ³Î Åë°ú ÈÄ ÅÍ³Î ¸ğµå Ç¥½Ã À¯Áö
 {
 8000c474:	91 00 00 c8 	movh.a %a12,32768
 8000c478:	91 00 00 f8 	movh.a %a15,32768
 8000c47c:	d9 cc 89 50 	lea %a12,[%a12]2377 <80000949 <osEE_sdb_array+0x16d>>
 8000c480:	d9 ff 98 50 	lea %a15,[%a15]2392 <80000958 <osEE_sdb_array+0x17c>>
-8000c484:	3c 20       	j 8000c4c4 <FuncOS_EE_Task_Init+0x50>
+8000c484:	3c 20       	j 8000c4c4 <FuncTask_Idle+0x50>
 			delay_ms(50);
 			clear_lcdprint();
 			delay_ms(100);
@@ -32713,25 +32709,23 @@ TASK(OS_EE_Task_Init) //ÅÍ³Î ÁøÀÔ Àü°ú ÅÍ³Î Åë°ú ÈÄ ÅÍ³Î ¸ğµå Ç¥½Ã À¯Áö
 			delay_ms(100);
 8000c4bc:	3b 40 06 40 	mov %d4,100
 8000c4c0:	6d ff 90 f3 	call 8000abe0 <delay_ms>
-
-TASK(OS_EE_Task_Init) //ÅÍ³Î ÁøÀÔ Àü°ú ÅÍ³Î Åë°ú ÈÄ ÅÍ³Î ¸ğµå Ç¥½Ã À¯Áö
+//Idle TASK ¿ì¼±¼øÀ§ 1
+TASK(Task_Idle) //ÅÍ³Î ÁøÀÔ Àü°ú ÅÍ³Î Åë°ú ÈÄ ÅÍ³Î ¸ğµå Ç¥½Ã À¯Áö
 {
 	while(1){
 
 		if(getTunnelStatus()==1){ //ÅÍ³Î in
 8000c4c4:	6d ff 2f eb 	call 80009b22 <getTunnelStatus>
-			//clear_two_lines();
 
 			delay_ms(50);
 8000c4c8:	3b 20 03 40 	mov %d4,50
-
-TASK(OS_EE_Task_Init) //ÅÍ³Î ÁøÀÔ Àü°ú ÅÍ³Î Åë°ú ÈÄ ÅÍ³Î ¸ğµå Ç¥½Ã À¯Áö
+//Idle TASK ¿ì¼±¼øÀ§ 1
+TASK(Task_Idle) //ÅÍ³Î ÁøÀÔ Àü°ú ÅÍ³Î Åë°ú ÈÄ ÅÍ³Î ¸ğµå Ç¥½Ã À¯Áö
 {
 	while(1){
 
 		if(getTunnelStatus()==1){ //ÅÍ³Î in
-8000c4cc:	df 12 dd ff 	jne %d2,1,8000c486 <FuncOS_EE_Task_Init+0x12>
-			//clear_two_lines();
+8000c4cc:	df 12 dd ff 	jne %d2,1,8000c486 <FuncTask_Idle+0x12>
 
 			delay_ms(50);
 8000c4d0:	6d ff 88 f3 	call 8000abe0 <delay_ms>
@@ -32743,7 +32737,7 @@ TASK(OS_EE_Task_Init) //ÅÍ³Î ÁøÀÔ Àü°ú ÅÍ³Î Åë°ú ÈÄ ÅÍ³Î ¸ğµå Ç¥½Ã À¯Áö
 8000c4e0:	6d ff 80 f3 	call 8000abe0 <delay_ms>
 			lcdprint_data("TUNNEL MODE ON");
 8000c4e4:	40 c4       	mov.aa %a4,%a12
-8000c4e6:	3c db       	j 8000c49c <FuncOS_EE_Task_Init+0x28>
+8000c4e6:	3c db       	j 8000c49c <FuncTask_Idle+0x28>
 
 8000c4e8 <main>:
 	TerminateTask();

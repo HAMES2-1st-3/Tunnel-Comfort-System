@@ -40,7 +40,7 @@ DeclareTask(Ultrasonic_Example);
 DeclareTask(Buzzer_Example);
 DeclareTask(TOF_Example);
 DeclareTask(ADC_Example);
-DeclareTask(OS_EE_Task_Init);
+DeclareTask(Task_Idle);
 DeclareTask(Task_Motor);
 DeclareTask(Task_AEB);
 DeclareTask(LCD_IsIntunnel);

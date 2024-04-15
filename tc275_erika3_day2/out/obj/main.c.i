@@ -362,7 +362,7 @@
 #define Buzzer_Example (7U)
 #define TOF_Example (8U)
 #define ADC_Example (9U)
-#define OS_EE_Task_Init (10U)
+#define Task_Idle (10U)
 #define Task_Motor (11U)
 #define Task_AEB (12U)
 #define LCD_IsIntunnel (13U)
@@ -7676,7 +7676,7 @@ extern void FuncUltrasonic_Example ( void );
 extern void FuncBuzzer_Example ( void );
 extern void FuncTOF_Example ( void );
 extern void FuncADC_Example ( void );
-extern void FuncOS_EE_Task_Init ( void );
+extern void FuncTask_Idle ( void );
 extern void FuncTask_Motor ( void );
 extern void FuncTask_AEB ( void );
 extern void FuncLCD_IsIntunnel ( void );
@@ -171418,7 +171418,7 @@ extern void Driver_Can_TxTest(void);
 extern void CAN_RxInt0Handler(void);
 extern void CAN_RX_HND(void);
 
-extern char getLEDKing(void);
+extern char getBodyStatus(void);
 extern char getTunnelStatus(void);
 # 16 "C:\\Users\\user\\ECLIPS~1\\TC275_~1\\main.h" 2
 
@@ -172748,9 +172748,6 @@ extern unsigned char cmd;
 
 void StartupHook(void)
 {
-
-
-
  ActivateTask((10U));
 
 }
@@ -172764,7 +172761,7 @@ extern void FuncUltrasonic_Example ( void );
 extern void FuncBuzzer_Example ( void );
 extern void FuncTOF_Example ( void );
 extern void FuncADC_Example ( void );
-extern void FuncOS_EE_Task_Init ( void );
+extern void FuncTask_Idle ( void );
 extern void FuncTask_Motor ( void );
 extern void FuncTask_AEB ( void );
 extern void FuncLCD_IsIntunnel ( void );
@@ -172774,6 +172771,7 @@ unsigned char ch;
 unsigned char dir;
 int flag=0;
 int pwm=0;
+
 
 void FuncLCD_IsIntunnel ( void ){
 
@@ -172786,7 +172784,7 @@ void FuncLCD_IsIntunnel ( void ){
   delay_ms(200);
   write_instruction(0x80);
   delay_ms(200);
-  lcdprint_data("THE CARS ENTER");
+  lcdprint_data("THE CAR ENTERS");
 
   delay_ms(200);
   write_instruction(0xc0);
@@ -172816,9 +172814,9 @@ void FuncLCD_IsIntunnel ( void ){
 
 void FuncDisplay_BodyStatus ( void ){
 
- char HeadLampStatus=getLEDKing();
+ char BodyStatus=getBodyStatus();
 
- if(HeadLampStatus){
+ if(BodyStatus){
 
   setHeadlampLED(1);
   clear_two_lines();
@@ -172884,7 +172882,6 @@ void FuncDisplay_BodyStatus ( void ){
   write_instruction(0x80);
   delay_ms(100);
 
-
   delay_ms(100);
   lcdprint_data("RETURN TO");
   delay_ms(100);
@@ -172902,11 +172899,6 @@ void FuncDisplay_BodyStatus ( void ){
   lcdprint_data("HEADLAMPS OFF!");
   delay_ms(1000);
   clear_two_lines();
-
-
-
-
-
 
   clear_two_lines();
 
@@ -173060,12 +173052,12 @@ void FuncADC_Example ( void )
  TerminateTask();
 }
 
-void FuncOS_EE_Task_Init ( void )
+
+void FuncTask_Idle ( void )
 {
  while(1){
 
   if(getTunnelStatus()==1){
-
 
    delay_ms(50);
    write_instruction(0x80);

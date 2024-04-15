@@ -164086,7 +164086,7 @@ extern void Driver_Can_TxTest(void);
 extern void CAN_RxInt0Handler(void);
 extern void CAN_RX_HND(void);
 
-extern char getLEDKing(void);
+extern char getBodyStatus(void);
 extern char getTunnelStatus(void);
 # 16 "C:\\Users\\user\\ECLIPS~1\\TC275_~1\\bsw\\drivers\\../../main.h" 2
 

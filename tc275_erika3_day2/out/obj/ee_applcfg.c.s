@@ -315,7 +315,7 @@ osEE_tdb_array:
 	.word	10
 	.byte	0
 	.zero	3
-	.word	FuncOS_EE_Task_Init
+	.word	FuncTask_Idle
 	.byte	1
 	.byte	1
 	.byte	1
@@ -3854,7 +3854,7 @@ osEE_task_stack_1:
 	.uleb128 0x76
 	.string	"OSEE_TC_CORE0_3_ISR_TID 0"
 	.byte	0
-.section .debug_macro,"G",@progbits,wm4.ee_applcfg.h.39.d44cbe7760c67535463e6f8ad88ce699,comdat
+.section .debug_macro,"G",@progbits,wm4.ee_applcfg.h.39.b0fe033b8a4362e91accfa974e06dfb9,comdat
 .Ldebug_macro2:
 	.uahalf	0x4
 	.byte	0
@@ -3905,7 +3905,7 @@ osEE_task_stack_1:
 	.string	"ADC_Example (9U)"
 	.byte	0x1
 	.uleb128 0x42
-	.string	"OS_EE_Task_Init (10U)"
+	.string	"Task_Idle (10U)"
 	.byte	0x1
 	.uleb128 0x43
 	.string	"Task_Motor (11U)"
@@ -9390,7 +9390,7 @@ osEE_task_stack_1:
 	.extern	FuncLCD_IsIntunnel,STT_FUNC,0
 	.extern	FuncTask_AEB,STT_FUNC,0
 	.extern	FuncTask_Motor,STT_FUNC,0
-	.extern	FuncOS_EE_Task_Init,STT_FUNC,0
+	.extern	FuncTask_Idle,STT_FUNC,0
 	.extern	FuncADC_Example,STT_FUNC,0
 	.extern	FuncTOF_Example,STT_FUNC,0
 	.extern	FuncBuzzer_Example,STT_FUNC,0

@@ -365,7 +365,7 @@
 #define Buzzer_Example (7U)
 #define TOF_Example (8U)
 #define ADC_Example (9U)
-#define OS_EE_Task_Init (10U)
+#define Task_Idle (10U)
 #define Task_Motor (11U)
 #define Task_AEB (12U)
 #define LCD_IsIntunnel (13U)
@@ -7679,7 +7679,7 @@ extern void FuncUltrasonic_Example ( void );
 extern void FuncBuzzer_Example ( void );
 extern void FuncTOF_Example ( void );
 extern void FuncADC_Example ( void );
-extern void FuncOS_EE_Task_Init ( void );
+extern void FuncTask_Idle ( void );
 extern void FuncTask_Motor ( void );
 extern void FuncTask_AEB ( void );
 extern void FuncLCD_IsIntunnel ( void );
@@ -75950,7 +75950,7 @@ extern void Driver_Can_TxTest(void);
 extern void CAN_RxInt0Handler(void);
 extern void CAN_RX_HND(void);
 
-extern char getLEDKing(void);
+extern char getBodyStatus(void);
 extern char getTunnelStatus(void);
 # 6 "C:\\Users\\user\\ECLIPS~1\\TC275_~1\\bsw\\drivers\\Driver_Can.c" 2
 # 28 "C:\\Users\\user\\ECLIPS~1\\TC275_~1\\bsw\\drivers\\Driver_Can.c"
@@ -75967,7 +75967,7 @@ const uint32 dataHigh = 0x9abc0000;
 
 IfxMultican_Message stRxMsgData[10];
 
-char led_king=0;
+char bodystatus_ok=0;
 char tunnel_ok=0;
 
 
@@ -76014,12 +76014,12 @@ void CAN_RX_HND(void){
 
           if(u32nuTemp3==0x00010101){
 
-           led_king=1;
+           bodystatus_ok=1;
            ActivateTask((14U));
             }
           else if(u32nuTemp3==0x00000000){
 
-           led_king=0;
+           bodystatus_ok=0;
            ActivateTask((14U));
           }
           else{
@@ -76032,8 +76032,8 @@ void CAN_RX_HND(void){
 }
 
 
-char getLEDKing(void){
- return led_king;
+char getBodyStatus(void){
+ return bodystatus_ok;
 }
 char getTunnelStatus(void){
  return tunnel_ok;

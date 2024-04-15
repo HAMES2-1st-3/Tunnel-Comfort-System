@@ -994,7 +994,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x3f8a obj/bsw/IfxScu_cfg.c.o
  wm4.ee_oscfg.h.21.b3edb0e26443645bf8c0b6c0fd1f5946
                 0x0000000000000000        0x8 obj/bsw/drivers/Driver_Can.c.o
- wm4.ee_applcfg.h.39.d44cbe7760c67535463e6f8ad88ce699
+ wm4.ee_applcfg.h.39.b0fe033b8a4362e91accfa974e06dfb9
                 0x0000000000000000        0x8 obj/bsw/drivers/Driver_Can.c.o
  wm4.ee_arch_override.h.52.27977248034d7dba2968def3f4cf49b2
                 0x0000000000000000        0x8 obj/bsw/drivers/Driver_Can.c.o
@@ -3037,7 +3037,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x4e91 obj/bsw/system/system_tc27x.c.o
  wm4.ee_oscfg.h.21.b3edb0e26443645bf8c0b6c0fd1f5946
                 0x0000000000000000        0x8 obj/ee_applcfg.c.o
- wm4.ee_applcfg.h.39.d44cbe7760c67535463e6f8ad88ce699
+ wm4.ee_applcfg.h.39.b0fe033b8a4362e91accfa974e06dfb9
                 0x0000000000000000        0x8 obj/ee_applcfg.c.o
  wm4.ee_arch_override.h.52.27977248034d7dba2968def3f4cf49b2
                 0x0000000000000000        0x8 obj/ee_applcfg.c.o
@@ -3093,7 +3093,7 @@ Discarded input sections
                 0x0000000000000000        0x8 obj/ee_applcfg.c.o
  .text          0x0000000000000000        0x0 obj/ee_applcfg.c.o
  .debug_macro   0x0000000000000000      0x3d5 obj/ee_applcfg.c.o
- .debug_macro   0x0000000000000000      0x398 obj/ee_applcfg.c.o
+ .debug_macro   0x0000000000000000      0x392 obj/ee_applcfg.c.o
  .debug_macro   0x0000000000000000       0xb3 obj/ee_applcfg.c.o
  .debug_macro   0x0000000000000000      0x99b obj/ee_applcfg.c.o
  .debug_macro   0x0000000000000000       0x2d obj/ee_applcfg.c.o
@@ -3115,7 +3115,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x2d obj/ee_applcfg.c.o
  wm4.ee_oscfg.h.21.b3edb0e26443645bf8c0b6c0fd1f5946
                 0x0000000000000000        0x8 obj/main.c.o
- wm4.ee_applcfg.h.39.d44cbe7760c67535463e6f8ad88ce699
+ wm4.ee_applcfg.h.39.b0fe033b8a4362e91accfa974e06dfb9
                 0x0000000000000000        0x8 obj/main.c.o
  wm4.ee_arch_override.h.52.27977248034d7dba2968def3f4cf49b2
                 0x0000000000000000        0x8 obj/main.c.o
@@ -3335,7 +3335,7 @@ Discarded input sections
                 0x0000000000000000        0x8 obj/main.c.o
  .data          0x0000000000000000        0x0 obj/main.c.o
  .debug_macro   0x0000000000000000      0x3d5 obj/main.c.o
- .debug_macro   0x0000000000000000      0x398 obj/main.c.o
+ .debug_macro   0x0000000000000000      0x392 obj/main.c.o
  .debug_macro   0x0000000000000000       0xb3 obj/main.c.o
  .debug_macro   0x0000000000000000      0x99b obj/main.c.o
  .debug_macro   0x0000000000000000       0x2d obj/main.c.o
@@ -5610,7 +5610,7 @@ LOAD c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/
                 0x0000000080009a38                IfxScuWdt_enableWatchdogWithDebugger
  .text          0x0000000080009a80      0x23e obj/bsw/drivers/Driver_Can.c.o
                 0x0000000080009a80                CAN_RX_HND
-                0x0000000080009b18                getLEDKing
+                0x0000000080009b18                getBodyStatus
                 0x0000000080009b22                getTunnelStatus
                 0x0000000080009b2c                Driver_Can_Init
                 0x0000000080009c86                Driver_Can_TxTest
@@ -5738,7 +5738,7 @@ LOAD c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/
                 0x000000008000c3bc                FuncBuzzer_Example
                 0x000000008000c40a                FuncTOF_Example
                 0x000000008000c44e                FuncADC_Example
-                0x000000008000c474                FuncOS_EE_Task_Init
+                0x000000008000c474                FuncTask_Idle
                 0x000000008000c4e8                main
  .text          0x000000008000c50a      0x46a C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_cstart.c.o)
                 0x000000008000c50a                osEE_tc_core0_start
@@ -6528,7 +6528,7 @@ LOAD c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/
  *(.bss)
  .bss           0x0000000070001998      0x228 obj/bsw/drivers/Driver_Can.c.o
                 0x00000000700019a0                tunnel_ok
-                0x00000000700019a1                led_king
+                0x00000000700019a1                bodystatus_ok
                 0x00000000700019a4                stRxMsgData
                 0x0000000070001a6c                u32nuCanRxCnt
                 0x0000000070001a70                stEcu1Can
@@ -7068,7 +7068,7 @@ LOAD c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/
  *(.debug_pubnames)
 
 .debug_info     memory region -> *default*
-                0x0000000000000000    0xb2919
+                0x0000000000000000    0xb2918
  *(.debug_info)
  .debug_info    0x0000000000000000      0x2f8 obj/bsw/CompilerGcc.c.o
  .debug_info    0x00000000000002f8      0x2f8 obj/bsw/CompilerGhs.c.o
@@ -7085,86 +7085,86 @@ LOAD c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/
  .debug_info    0x000000000002d271     0x9d1e obj/bsw/IfxScuCcu.c.o
  .debug_info    0x0000000000036f8f     0x7948 obj/bsw/IfxScuWdt.c.o
  .debug_info    0x000000000003e8d7      0x245 obj/bsw/IfxScu_cfg.c.o
- .debug_info    0x000000000003eb1c     0x775f obj/bsw/drivers/Driver_Can.c.o
- .debug_info    0x000000000004627b     0x7336 obj/bsw/drivers/asclin.c.o
- .debug_info    0x000000000004d5b1     0x5cf4 obj/bsw/drivers/gpt12.c.o
- .debug_info    0x00000000000532a5     0x5020 obj/bsw/drivers/vadc.c.o
- .debug_info    0x00000000000582c5      0x2aa obj/bsw/etc/etc.c.o
- .debug_info    0x000000000005856f     0x47a8 obj/bsw/io/Buzzer.c.o
- .debug_info    0x000000000005cd17     0x2e9f obj/bsw/io/GPIO.c.o
- .debug_info    0x000000000005fbb6     0x29e7 obj/bsw/io/LCD.c.o
- .debug_info    0x000000000006259d     0x46a6 obj/bsw/io/Motor.c.o
- .debug_info    0x0000000000066c43     0x254b obj/bsw/io/ToF.c.o
- .debug_info    0x000000000006918e     0x4844 obj/bsw/io/Ultrasonic.c.o
- .debug_info    0x000000000006d9d2      0x545 obj/bsw/system/interrupts.c.o
- .debug_info    0x000000000006df17     0x7929 obj/bsw/system/system_tc27x.c.o
- .debug_info    0x0000000000075840     0x1857 obj/ee_applcfg.c.o
- .debug_info    0x0000000000077097     0x596a obj/main.c.o
- .debug_info    0x000000000007ca01     0x2eb0 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_cstart.c.o)
- .debug_info    0x000000000007f8b1     0x2567 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_system.c.o)
- .debug_info    0x0000000000081e18     0x1305 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_trapvec.c.o)
- .debug_info    0x000000000008311d     0x13bf C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_intvec.c.o)
- .debug_info    0x00000000000844dc     0x4c3c C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_api_osek.c.o)
- .debug_info    0x0000000000089118     0x1e81 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
- .debug_info    0x000000000008af99     0x19ae C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_scheduler.c.o)
- .debug_info    0x000000000008c947     0x151b C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_kernel.c.o)
- .debug_info    0x000000000008de62     0x1d4a C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
- .debug_info    0x000000000008fbac     0x1cac C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_counter.c.o)
- .debug_info    0x0000000000091858     0x186c C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_alarm.c.o)
- .debug_info    0x00000000000930c4     0x15dc C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_std_change_context.c.o)
- .debug_info    0x00000000000946a0     0x163d C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_hal.c.o)
- .debug_info    0x0000000000095cdd     0x201c C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_ctx.c.o)
- .debug_info    0x0000000000097cf9      0xd50 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-atoi.o)
- .debug_info    0x0000000000098a49      0x2d4 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-strchr.o)
- .debug_info    0x0000000000098d1d      0x2bc c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-strlen.o)
- .debug_info    0x0000000000098fd9      0xdbf c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-strtol.o)
- .debug_info    0x0000000000099d98      0xde1 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-vsprintf.o)
- .debug_info    0x000000000009ab79      0x232 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-ctype_.o)
- .debug_info    0x000000000009adab      0xca4 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-impure.o)
- .debug_info    0x000000000009ba4f     0x1b92 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-svfprintf.o)
- .debug_info    0x000000000009d5e1     0x17b1 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-dtoa.o)
- .debug_info    0x000000000009ed92     0x11df c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-locale.o)
- .debug_info    0x000000000009ff71     0x128c c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-mallocr.o)
- .debug_info    0x00000000000a11fd      0x2f4 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-memchr.o)
- .debug_info    0x00000000000a14f1      0x300 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-memcpy.o)
- .debug_info    0x00000000000a17f1      0xcd3 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-mlock.o)
- .debug_info    0x00000000000a24c4     0x1ad4 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-mprec.o)
- .debug_info    0x00000000000a3f98      0x2f0 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-s_fpclassify.o)
- .debug_info    0x00000000000a4288      0xd00 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-sbrkr.o)
- .debug_info    0x00000000000a4f88      0x2aa c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-strcmp.o)
- .debug_info    0x00000000000a5232     0x14c5 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-svfiprintf.o)
- .debug_info    0x00000000000a66f7      0xe22 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-callocr.o)
- .debug_info    0x00000000000a7519     0x10f9 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-freer.o)
- .debug_info    0x00000000000a8612      0x309 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-memmove.o)
- .debug_info    0x00000000000a891b      0x2cb c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-memset.o)
- .debug_info    0x00000000000a8be6     0x118f c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-reallocr.o)
- .debug_info    0x00000000000a9d75      0xe7a c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-reent.o)
- .debug_info    0x00000000000aabef      0x723 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(cint.o)
- .debug_info    0x00000000000ab312      0x395 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(wdtcon.o)
- .debug_info    0x00000000000ab6a7      0x2a0 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
- .debug_info    0x00000000000ab947      0x33b c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_sbrk.o)
- .debug_info    0x00000000000abc82      0x6f0 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos.o)
- .debug_info    0x00000000000ac372      0x26c c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_abort.o)
- .debug_info    0x00000000000ac5de      0x855 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_addsub_df.o)
- .debug_info    0x00000000000ace33      0x7b7 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_mul_df.o)
- .debug_info    0x00000000000ad5ea      0x6d6 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_div_df.o)
- .debug_info    0x00000000000adcc0      0x5dd c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_eq_df.o)
- .debug_info    0x00000000000ae29d      0x5dd c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_ne_df.o)
- .debug_info    0x00000000000ae87a      0x5dd c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_gt_df.o)
- .debug_info    0x00000000000aee57      0x5dd c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_ge_df.o)
- .debug_info    0x00000000000af434      0x5dd c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_lt_df.o)
- .debug_info    0x00000000000afa11      0x50c c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_si_to_df.o)
- .debug_info    0x00000000000aff1d      0x5a2 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_df_to_si.o)
- .debug_info    0x00000000000b04bf      0x3db c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_thenan_df.o)
- .debug_info    0x00000000000b089a      0x4f0 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_usi_to_df.o)
- .debug_info    0x00000000000b0d8a      0x3b5 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(udivdi3.o)
- .debug_info    0x00000000000b113f      0x33a c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(umoddi3.o)
- .debug_info    0x00000000000b1479       0xb9 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_ashldi3.o)
- .debug_info    0x00000000000b1532       0xb9 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_lshrdi3.o)
- .debug_info    0x00000000000b15eb      0x58d c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_pack_df.o)
- .debug_info    0x00000000000b1b78      0x508 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_unpack_df.o)
- .debug_info    0x00000000000b2080      0x4a2 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_fpcmp_parts_df.o)
- .debug_info    0x00000000000b2522      0x3f7 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(udiv6432.o)
+ .debug_info    0x000000000003eb1c     0x7767 obj/bsw/drivers/Driver_Can.c.o
+ .debug_info    0x0000000000046283     0x7336 obj/bsw/drivers/asclin.c.o
+ .debug_info    0x000000000004d5b9     0x5cf4 obj/bsw/drivers/gpt12.c.o
+ .debug_info    0x00000000000532ad     0x5020 obj/bsw/drivers/vadc.c.o
+ .debug_info    0x00000000000582cd      0x2aa obj/bsw/etc/etc.c.o
+ .debug_info    0x0000000000058577     0x47a8 obj/bsw/io/Buzzer.c.o
+ .debug_info    0x000000000005cd1f     0x2e9f obj/bsw/io/GPIO.c.o
+ .debug_info    0x000000000005fbbe     0x29e7 obj/bsw/io/LCD.c.o
+ .debug_info    0x00000000000625a5     0x46a6 obj/bsw/io/Motor.c.o
+ .debug_info    0x0000000000066c4b     0x254b obj/bsw/io/ToF.c.o
+ .debug_info    0x0000000000069196     0x4844 obj/bsw/io/Ultrasonic.c.o
+ .debug_info    0x000000000006d9da      0x545 obj/bsw/system/interrupts.c.o
+ .debug_info    0x000000000006df1f     0x7929 obj/bsw/system/system_tc27x.c.o
+ .debug_info    0x0000000000075848     0x1857 obj/ee_applcfg.c.o
+ .debug_info    0x000000000007709f     0x5961 obj/main.c.o
+ .debug_info    0x000000000007ca00     0x2eb0 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .debug_info    0x000000000007f8b0     0x2567 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_system.c.o)
+ .debug_info    0x0000000000081e17     0x1305 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_trapvec.c.o)
+ .debug_info    0x000000000008311c     0x13bf C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .debug_info    0x00000000000844db     0x4c3c C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_info    0x0000000000089117     0x1e81 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_info    0x000000000008af98     0x19ae C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_info    0x000000000008c946     0x151b C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_info    0x000000000008de61     0x1d4a C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_info    0x000000000008fbab     0x1cac C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_counter.c.o)
+ .debug_info    0x0000000000091857     0x186c C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .debug_info    0x00000000000930c3     0x15dc C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_info    0x000000000009469f     0x163d C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_hal.c.o)
+ .debug_info    0x0000000000095cdc     0x201c C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_ctx.c.o)
+ .debug_info    0x0000000000097cf8      0xd50 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-atoi.o)
+ .debug_info    0x0000000000098a48      0x2d4 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-strchr.o)
+ .debug_info    0x0000000000098d1c      0x2bc c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-strlen.o)
+ .debug_info    0x0000000000098fd8      0xdbf c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-strtol.o)
+ .debug_info    0x0000000000099d97      0xde1 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-vsprintf.o)
+ .debug_info    0x000000000009ab78      0x232 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-ctype_.o)
+ .debug_info    0x000000000009adaa      0xca4 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-impure.o)
+ .debug_info    0x000000000009ba4e     0x1b92 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-svfprintf.o)
+ .debug_info    0x000000000009d5e0     0x17b1 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-dtoa.o)
+ .debug_info    0x000000000009ed91     0x11df c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-locale.o)
+ .debug_info    0x000000000009ff70     0x128c c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-mallocr.o)
+ .debug_info    0x00000000000a11fc      0x2f4 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-memchr.o)
+ .debug_info    0x00000000000a14f0      0x300 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-memcpy.o)
+ .debug_info    0x00000000000a17f0      0xcd3 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-mlock.o)
+ .debug_info    0x00000000000a24c3     0x1ad4 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-mprec.o)
+ .debug_info    0x00000000000a3f97      0x2f0 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-s_fpclassify.o)
+ .debug_info    0x00000000000a4287      0xd00 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-sbrkr.o)
+ .debug_info    0x00000000000a4f87      0x2aa c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-strcmp.o)
+ .debug_info    0x00000000000a5231     0x14c5 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-svfiprintf.o)
+ .debug_info    0x00000000000a66f6      0xe22 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-callocr.o)
+ .debug_info    0x00000000000a7518     0x10f9 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-freer.o)
+ .debug_info    0x00000000000a8611      0x309 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-memmove.o)
+ .debug_info    0x00000000000a891a      0x2cb c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-memset.o)
+ .debug_info    0x00000000000a8be5     0x118f c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-reallocr.o)
+ .debug_info    0x00000000000a9d74      0xe7a c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a(lib_a-reent.o)
+ .debug_info    0x00000000000aabee      0x723 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(cint.o)
+ .debug_info    0x00000000000ab311      0x395 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(wdtcon.o)
+ .debug_info    0x00000000000ab6a6      0x2a0 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+ .debug_info    0x00000000000ab946      0x33b c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_sbrk.o)
+ .debug_info    0x00000000000abc81      0x6f0 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos.o)
+ .debug_info    0x00000000000ac371      0x26c c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_abort.o)
+ .debug_info    0x00000000000ac5dd      0x855 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_addsub_df.o)
+ .debug_info    0x00000000000ace32      0x7b7 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_mul_df.o)
+ .debug_info    0x00000000000ad5e9      0x6d6 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_div_df.o)
+ .debug_info    0x00000000000adcbf      0x5dd c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_eq_df.o)
+ .debug_info    0x00000000000ae29c      0x5dd c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_ne_df.o)
+ .debug_info    0x00000000000ae879      0x5dd c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_gt_df.o)
+ .debug_info    0x00000000000aee56      0x5dd c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_ge_df.o)
+ .debug_info    0x00000000000af433      0x5dd c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_lt_df.o)
+ .debug_info    0x00000000000afa10      0x50c c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_si_to_df.o)
+ .debug_info    0x00000000000aff1c      0x5a2 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_df_to_si.o)
+ .debug_info    0x00000000000b04be      0x3db c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_thenan_df.o)
+ .debug_info    0x00000000000b0899      0x4f0 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_usi_to_df.o)
+ .debug_info    0x00000000000b0d89      0x3b5 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(udivdi3.o)
+ .debug_info    0x00000000000b113e      0x33a c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(umoddi3.o)
+ .debug_info    0x00000000000b1478       0xb9 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_ashldi3.o)
+ .debug_info    0x00000000000b1531       0xb9 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_lshrdi3.o)
+ .debug_info    0x00000000000b15ea      0x58d c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_pack_df.o)
+ .debug_info    0x00000000000b1b77      0x508 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_unpack_df.o)
+ .debug_info    0x00000000000b207f      0x4a2 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(_fpcmp_parts_df.o)
+ .debug_info    0x00000000000b2521      0x3f7 c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a(udiv6432.o)
 
 .debug_abbrev   memory region -> *default*
                 0x0000000000000000     0xb733
@@ -7838,7 +7838,7 @@ LOAD c:/hightec/toolchains/tricore/v4.9.3.0-infineon-1.0/bin/../lib/gcc/tricore/
 OUTPUT(erika3app.elf elf32-tricore)
 
 .debug_macro    memory region -> *default*
-                0x0000000000000000   0x287290
+                0x0000000000000000   0x28728a
  .debug_macro   0x0000000000000000     0x1c22 obj/bsw/CompilerGcc.c.o
  .debug_macro   0x0000000000001c22       0x62 obj/bsw/CompilerGcc.c.o
  .debug_macro   0x0000000000001c84       0x7d obj/bsw/CompilerGcc.c.o
@@ -7893,131 +7893,131 @@ OUTPUT(erika3app.elf elf32-tricore)
  .debug_macro   0x00000000000c79ec     0x1bba obj/bsw/IfxScu_cfg.c.o
  .debug_macro   0x00000000000c95a6     0x21e9 obj/bsw/drivers/Driver_Can.c.o
  .debug_macro   0x00000000000cb78f      0x3d5 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000cbb64      0x398 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000cbefc       0xb3 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000cbfaf      0x99b obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000cc94a       0x2d obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000cc977      0x199 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000ccb10      0x15f obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000ccc6f      0x3b9 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000cd028      0x2e4 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000cd30c      0x8bc obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000cdbc8      0x119 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000cdce1     0x1724 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000cf405      0x457 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000cf85c      0x3f6 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000cfc52      0x94e obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000d05a0     0xa6b3 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000dac53     0x17b6 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000dc409      0x62b obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000dca34       0x5a obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000dca8e       0x2d obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000dcabb       0x66 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000dcb21       0xb1 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000dcbd2      0x3f8 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000dcfca     0x28bb obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000df885       0x30 obj/bsw/drivers/Driver_Can.c.o
- .debug_macro   0x00000000000df8b5     0x2629 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000000e1ede      0x14f obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000000e202d     0x59c5 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000000e79f2     0x1cdc obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000000e96ce     0x5329 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000000ee9f7      0x54f obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000000eef46      0xef5 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000000efe3b    0x62127 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x0000000000151f62     0x13a6 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x0000000000153308     0x7c8a obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000015af92    0x12246 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000016d1d8     0x248f obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000016f667      0x2f7 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000016f95e      0x23a obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000016fb98     0x5808 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001753a0     0x4e9f obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000017a23f      0xce3 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000017af22      0x481 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000017b3a3    0x3952e obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001b48d1      0x4e0 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001b4db1     0x11c0 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001b5f71      0x7a7 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001b6718      0x799 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001b6eb1     0x1471 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001b8322      0xd47 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001b9069    0x3ec10 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001f7c79      0xdde obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001f8a57      0x286 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001f8cdd     0x6c56 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001ff933       0x5a obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000001ff98d     0x8005 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x0000000000207992     0x1e8d obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000020981f     0x22bc obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000020badb      0x605 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000020c0e0     0x3832 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000020f912     0x100d obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000021091f    0x10f10 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000022182f     0x1bee obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000022341d       0x31 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000022344e       0xa8 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000002234f6       0x79 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000022356f      0x24a obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000002237b9       0x27 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000002237e0       0xa1 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x0000000000223881       0xd5 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x0000000000223956      0x22a obj/bsw/drivers/asclin.c.o
- .debug_macro   0x0000000000223b80       0xbe obj/bsw/drivers/asclin.c.o
- .debug_macro   0x0000000000223c3e     0x1322 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x0000000000224f60       0x56 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x0000000000224fb6       0x2d obj/bsw/drivers/asclin.c.o
- .debug_macro   0x0000000000224fe3       0x2c obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000022500f       0x75 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x0000000000225084      0x2cf obj/bsw/drivers/asclin.c.o
- .debug_macro   0x0000000000225353       0xc7 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x000000000022541a      0x5bd obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000002259d7       0x23 obj/bsw/drivers/asclin.c.o
- .debug_macro   0x00000000002259fa     0x2a02 obj/bsw/drivers/gpt12.c.o
- .debug_macro   0x00000000002283fc       0x2a obj/bsw/drivers/gpt12.c.o
- .debug_macro   0x0000000000228426       0x5b obj/bsw/drivers/gpt12.c.o
- .debug_macro   0x0000000000228481       0x20 obj/bsw/drivers/gpt12.c.o
- .debug_macro   0x00000000002284a1       0x87 obj/bsw/drivers/gpt12.c.o
- .debug_macro   0x0000000000228528     0x23a9 obj/bsw/drivers/vadc.c.o
- .debug_macro   0x000000000022a8d1     0x1cdc obj/bsw/drivers/vadc.c.o
- .debug_macro   0x000000000022c5ad     0x3f85 obj/bsw/drivers/vadc.c.o
- .debug_macro   0x0000000000230532     0x1b9c obj/bsw/etc/etc.c.o
- .debug_macro   0x00000000002320ce     0x2988 obj/bsw/io/Buzzer.c.o
- .debug_macro   0x0000000000234a56     0x253a obj/bsw/io/GPIO.c.o
- .debug_macro   0x0000000000236f90     0x2539 obj/bsw/io/LCD.c.o
- .debug_macro   0x00000000002394c9     0x240b obj/bsw/io/Motor.c.o
- .debug_macro   0x000000000023b8d4     0x2983 obj/bsw/io/ToF.c.o
- .debug_macro   0x000000000023e257     0x296b obj/bsw/io/Ultrasonic.c.o
- .debug_macro   0x0000000000240bc2     0x1c31 obj/bsw/system/interrupts.c.o
- .debug_macro   0x00000000002427f3     0x4e91 obj/bsw/system/interrupts.c.o
- .debug_macro   0x0000000000247684     0xadf7 obj/bsw/system/interrupts.c.o
- .debug_macro   0x000000000025247b      0x3ef obj/bsw/system/interrupts.c.o
- .debug_macro   0x000000000025286a     0x1dbf obj/bsw/system/system_tc27x.c.o
- .debug_macro   0x0000000000254629     0x19cf obj/bsw/system/system_tc27x.c.o
- .debug_macro   0x0000000000255ff8     0xd864 obj/bsw/system/system_tc27x.c.o
- .debug_macro   0x000000000026385c      0xe8b obj/bsw/system/system_tc27x.c.o
- .debug_macro   0x00000000002646e7     0x1b36 obj/bsw/system/system_tc27x.c.o
- .debug_macro   0x000000000026621d     0x1e41 obj/ee_applcfg.c.o
- .debug_macro   0x000000000026805e       0x69 obj/ee_applcfg.c.o
- .debug_macro   0x00000000002680c7       0x35 obj/ee_applcfg.c.o
- .debug_macro   0x00000000002680fc      0x147 obj/ee_applcfg.c.o
- .debug_macro   0x0000000000268243       0x40 obj/ee_applcfg.c.o
- .debug_macro   0x0000000000268283       0x6a obj/ee_applcfg.c.o
- .debug_macro   0x00000000002682ed       0x3f obj/ee_applcfg.c.o
- .debug_macro   0x000000000026832c       0x6b obj/ee_applcfg.c.o
- .debug_macro   0x0000000000268397     0x2b8b obj/main.c.o
- .debug_macro   0x000000000026af22     0x21eb C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_cstart.c.o)
- .debug_macro   0x000000000026d10d      0x42b C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_cstart.c.o)
- .debug_macro   0x000000000026d538     0x209b C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_system.c.o)
- .debug_macro   0x000000000026f5d3     0x2297 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_trapvec.c.o)
- .debug_macro   0x000000000027186a     0x2314 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_intvec.c.o)
- .debug_macro   0x0000000000273b7e     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_api_osek.c.o)
- .debug_macro   0x0000000000275a93     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
- .debug_macro   0x00000000002779a8     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_scheduler.c.o)
- .debug_macro   0x00000000002798bd     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_kernel.c.o)
- .debug_macro   0x000000000027b7d2     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
- .debug_macro   0x000000000027d6e7     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_counter.c.o)
- .debug_macro   0x000000000027f5fc     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_alarm.c.o)
- .debug_macro   0x0000000000281511     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_std_change_context.c.o)
- .debug_macro   0x0000000000283426     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_hal.c.o)
- .debug_macro   0x000000000028533b     0x1f55 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_ctx.c.o)
+ .debug_macro   0x00000000000cbb64      0x392 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000cbef6       0xb3 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000cbfa9      0x99b obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000cc944       0x2d obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000cc971      0x199 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000ccb0a      0x15f obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000ccc69      0x3b9 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000cd022      0x2e4 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000cd306      0x8bc obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000cdbc2      0x119 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000cdcdb     0x1724 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000cf3ff      0x457 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000cf856      0x3f6 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000cfc4c      0x94e obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000d059a     0xa6b3 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000dac4d     0x17b6 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000dc403      0x62b obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000dca2e       0x5a obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000dca88       0x2d obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000dcab5       0x66 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000dcb1b       0xb1 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000dcbcc      0x3f8 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000dcfc4     0x28bb obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000df87f       0x30 obj/bsw/drivers/Driver_Can.c.o
+ .debug_macro   0x00000000000df8af     0x2629 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000000e1ed8      0x14f obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000000e2027     0x59c5 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000000e79ec     0x1cdc obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000000e96c8     0x5329 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000000ee9f1      0x54f obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000000eef40      0xef5 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000000efe35    0x62127 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000151f5c     0x13a6 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000153302     0x7c8a obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000015af8c    0x12246 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000016d1d2     0x248f obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000016f661      0x2f7 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000016f958      0x23a obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000016fb92     0x5808 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000017539a     0x4e9f obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000017a239      0xce3 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000017af1c      0x481 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000017b39d    0x3952e obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000001b48cb      0x4e0 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000001b4dab     0x11c0 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000001b5f6b      0x7a7 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000001b6712      0x799 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000001b6eab     0x1471 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000001b831c      0xd47 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000001b9063    0x3ec10 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000001f7c73      0xdde obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000001f8a51      0x286 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000001f8cd7     0x6c56 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000001ff92d       0x5a obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000001ff987     0x8005 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000020798c     0x1e8d obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000209819     0x22bc obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000020bad5      0x605 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000020c0da     0x3832 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000020f90c     0x100d obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000210919    0x10f10 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000221829     0x1bee obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000223417       0x31 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000223448       0xa8 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000002234f0       0x79 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000223569      0x24a obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000002237b3       0x27 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000002237da       0xa1 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000022387b       0xd5 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000223950      0x22a obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000223b7a       0xbe obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000223c38     0x1322 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000224f5a       0x56 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000224fb0       0x2d obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000224fdd       0x2c obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000225009       0x75 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000022507e      0x2cf obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x000000000022534d       0xc7 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x0000000000225414      0x5bd obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000002259d1       0x23 obj/bsw/drivers/asclin.c.o
+ .debug_macro   0x00000000002259f4     0x2a02 obj/bsw/drivers/gpt12.c.o
+ .debug_macro   0x00000000002283f6       0x2a obj/bsw/drivers/gpt12.c.o
+ .debug_macro   0x0000000000228420       0x5b obj/bsw/drivers/gpt12.c.o
+ .debug_macro   0x000000000022847b       0x20 obj/bsw/drivers/gpt12.c.o
+ .debug_macro   0x000000000022849b       0x87 obj/bsw/drivers/gpt12.c.o
+ .debug_macro   0x0000000000228522     0x23a9 obj/bsw/drivers/vadc.c.o
+ .debug_macro   0x000000000022a8cb     0x1cdc obj/bsw/drivers/vadc.c.o
+ .debug_macro   0x000000000022c5a7     0x3f85 obj/bsw/drivers/vadc.c.o
+ .debug_macro   0x000000000023052c     0x1b9c obj/bsw/etc/etc.c.o
+ .debug_macro   0x00000000002320c8     0x2988 obj/bsw/io/Buzzer.c.o
+ .debug_macro   0x0000000000234a50     0x253a obj/bsw/io/GPIO.c.o
+ .debug_macro   0x0000000000236f8a     0x2539 obj/bsw/io/LCD.c.o
+ .debug_macro   0x00000000002394c3     0x240b obj/bsw/io/Motor.c.o
+ .debug_macro   0x000000000023b8ce     0x2983 obj/bsw/io/ToF.c.o
+ .debug_macro   0x000000000023e251     0x296b obj/bsw/io/Ultrasonic.c.o
+ .debug_macro   0x0000000000240bbc     0x1c31 obj/bsw/system/interrupts.c.o
+ .debug_macro   0x00000000002427ed     0x4e91 obj/bsw/system/interrupts.c.o
+ .debug_macro   0x000000000024767e     0xadf7 obj/bsw/system/interrupts.c.o
+ .debug_macro   0x0000000000252475      0x3ef obj/bsw/system/interrupts.c.o
+ .debug_macro   0x0000000000252864     0x1dbf obj/bsw/system/system_tc27x.c.o
+ .debug_macro   0x0000000000254623     0x19cf obj/bsw/system/system_tc27x.c.o
+ .debug_macro   0x0000000000255ff2     0xd864 obj/bsw/system/system_tc27x.c.o
+ .debug_macro   0x0000000000263856      0xe8b obj/bsw/system/system_tc27x.c.o
+ .debug_macro   0x00000000002646e1     0x1b36 obj/bsw/system/system_tc27x.c.o
+ .debug_macro   0x0000000000266217     0x1e41 obj/ee_applcfg.c.o
+ .debug_macro   0x0000000000268058       0x69 obj/ee_applcfg.c.o
+ .debug_macro   0x00000000002680c1       0x35 obj/ee_applcfg.c.o
+ .debug_macro   0x00000000002680f6      0x147 obj/ee_applcfg.c.o
+ .debug_macro   0x000000000026823d       0x40 obj/ee_applcfg.c.o
+ .debug_macro   0x000000000026827d       0x6a obj/ee_applcfg.c.o
+ .debug_macro   0x00000000002682e7       0x3f obj/ee_applcfg.c.o
+ .debug_macro   0x0000000000268326       0x6b obj/ee_applcfg.c.o
+ .debug_macro   0x0000000000268391     0x2b8b obj/main.c.o
+ .debug_macro   0x000000000026af1c     0x21eb C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .debug_macro   0x000000000026d107      0x42b C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .debug_macro   0x000000000026d532     0x209b C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_system.c.o)
+ .debug_macro   0x000000000026f5cd     0x2297 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_trapvec.c.o)
+ .debug_macro   0x0000000000271864     0x2314 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .debug_macro   0x0000000000273b78     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_macro   0x0000000000275a8d     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_macro   0x00000000002779a2     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_macro   0x00000000002798b7     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_macro   0x000000000027b7cc     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_macro   0x000000000027d6e1     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_counter.c.o)
+ .debug_macro   0x000000000027f5f6     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .debug_macro   0x000000000028150b     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_macro   0x0000000000283420     0x1f15 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_hal.c.o)
+ .debug_macro   0x0000000000285335     0x1f55 C:\Users\user\ECLIPS~1\TC275_~1\erika\lib\libee.a(ee_tc_ctx.c.o)

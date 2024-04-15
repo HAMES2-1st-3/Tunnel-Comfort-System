@@ -158,7 +158,7 @@ CPU tc275_shieldbuddy {
 			SIZE = 1024;
 		};
 	};
-	TASK OS_EE_Task_Init {
+	TASK Task_Idle {
 		PRIORITY = 1;
 		SCHEDULE = FULL;
 		AUTOSTART = FALSE;

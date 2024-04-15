@@ -456,7 +456,7 @@ static VAR(OsEE_TDB, OS_CONST)
     /* .p_tcb          = */ &osEE_tcb_array[10U],
     /* .tid            = */ 10U,
     /* .task_type      = */ OSEE_TASK_TYPE_BASIC,
-    /* .task_func      = */ TASK_FUNC(OS_EE_Task_Init),
+    /* .task_func      = */ TASK_FUNC(Task_Idle),
     /* .ready_prio     = */ 1U,
     /* .dispatch_prio  = */ 1U,
     /* .max_num_of_act = */ 1U

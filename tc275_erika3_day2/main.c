@@ -5,10 +5,7 @@
 
 void StartupHook(void)
 {
-	//my_printf("Hello aaaorld!\n");
-	//ActivateTask(Task_Motor);
-	//ActivateTask(Blink_LED);
-	ActivateTask(OS_EE_Task_Init);
+	ActivateTask(Task_Idle);
 
 }
 
@@ -21,7 +18,7 @@ DeclareTask(Ultrasonic_Example);
 DeclareTask(Buzzer_Example);
 DeclareTask(TOF_Example);
 DeclareTask(ADC_Example);
-DeclareTask(OS_EE_Task_Init);
+DeclareTask(Task_Idle);
 DeclareTask(Task_Motor);
 DeclareTask(Task_AEB);
 DeclareTask(LCD_IsIntunnel);
@@ -32,6 +29,7 @@ unsigned char dir;
 int flag=0;
 int pwm=0;
 
+//우선순위 3
 TASK(LCD_IsIntunnel){ //Sensor ECU로부터 CAN 메시지 수신시 수행되는 TASK
 
 	char TunnelStatus=getTunnelStatus();
@@ -43,7 +41,7 @@ TASK(LCD_IsIntunnel){ //Sensor ECU로부터 CAN 메시지 수신시 수행되는 TASK
 		delay_ms(200);
 		write_instruction(0x80); //첫번째 줄 이동
 		delay_ms(200);
-		lcdprint_data("THE CARS ENTER");
+		lcdprint_data("THE CAR ENTERS");
 
 		delay_ms(200);
 		write_instruction(0xc0); //2번째 줄 이동
@@ -70,12 +68,12 @@ TASK(LCD_IsIntunnel){ //Sensor ECU로부터 CAN 메시지 수신시 수행되는 TASK
 
 	TerminateTask();
 }
-
+//우선순위 2
 TASK(Display_BodyStatus){ //Body ECU로부터 CAN 메시지 수신시 수행되는 TASK
 
-	char HeadLampStatus=getLEDKing(); //can에서 받아와
+	char BodyStatus=getBodyStatus(); //body 상태 수신
 
-	if(HeadLampStatus){ //터널 진입으로 Body ECU의 헤드램프 켜지면
+	if(BodyStatus){ //터널 진입으로 Body ECU 모두 작동시
 
 		setHeadlampLED(1);
 		clear_two_lines();
@@ -140,7 +138,6 @@ TASK(Display_BodyStatus){ //Body ECU로부터 CAN 메시지 수신시 수행되는 TASK
 		delay_ms(100);
 		write_instruction(0x80); //첫번째 줄 이동
 		delay_ms(100);
-		//
 
 		delay_ms(100);
 		lcdprint_data("RETURN TO");
@@ -160,11 +157,6 @@ TASK(Display_BodyStatus){ //Body ECU로부터 CAN 메시지 수신시 수행되는 TASK
 		delay_ms(1000);
 		clear_two_lines();
 
-		//delay_ms(100);
-		//write_instruction(0x80); //첫번째 줄 이동
-		//delay_ms(100);
-		//lcdprint_data("TUNNEL MODE: OFF");
-		//delay_ms(500);
 		clear_two_lines();
 
 	}
@@ -317,12 +309,12 @@ TASK(ADC_Example)
 	TerminateTask();
 }
 
-TASK(OS_EE_Task_Init) //터널 진입 전과 터널 통과 후 터널 모드 표시 유지
+//Idle TASK 우선순위 1
+TASK(Task_Idle) //터널 진입 전과 터널 통과 후 터널 모드 표시 유지
 {
 	while(1){
 
 		if(getTunnelStatus()==1){ //터널 in
-			//clear_two_lines();
 
 			delay_ms(50);
 			write_instruction(0x80); //첫번째 줄 이동

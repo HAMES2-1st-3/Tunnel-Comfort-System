@@ -128,6 +128,24 @@ CPU tc275_shieldbuddy
 	
 	
 	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 ALARM alarm1 {
 		ACTION = ACTIVATETASK {
 			TASK = Blink_LED;
@@ -284,7 +302,7 @@ ALARM alarm1 {
 			SIZE = 1024;
 		};
 	};
-	TASK OS_EE_Task_Init {
+	TASK Task_Idle {
 		PRIORITY = 1;
 		SCHEDULE = FULL;
 		AUTOSTART = FALSE;
