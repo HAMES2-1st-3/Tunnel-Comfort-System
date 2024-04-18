@@ -11,11 +11,11 @@
    <td align="center"><a href="https://github.com/howonu"><img src="https://avatars.githubusercontent.com/howonu" width="130px;" alt=""></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/re-ag"><b>re-ag</b></a></td>
-    <td align="center"><a href="https://github.com/shintaewon"><b>shintaewon</b></a></td>
-    <td align="center"><a href="https://github.com/GeoChoi"><b>GeoChoi</b></a></td>
-    <td align="center"><a href="https://github.com/chanik-s"><b>chanik-s</b></a></td>
-    <td align="center"><a href="https://github.com/howonu"><b>howonu</b></a></td>
+    <td align="center"><a href="https://github.com/re-ag"><b>김재은</b></a></td>
+    <td align="center"><a href="https://github.com/shintaewon"><b>신태원</b></a></td>
+    <td align="center"><a href="https://github.com/GeoChoi"><b>최지오</b></a></td>
+    <td align="center"><a href="https://github.com/chanik-s"><b>정찬익</b></a></td>
+    <td align="center"><a href="https://github.com/howonu"><b>유호원</b></a></td>
   </tr>
 </table>
 <br />
