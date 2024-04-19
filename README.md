@@ -14,10 +14,10 @@
 12. [후기](#후기)
 
 
-## 프로젝트 소개
+# 프로젝트 소개
 > 터널 운행 내부 환경 설정 시스템 프로젝트
 
-## :sparkles:참여자
+# 팀원 구성
 <table>
  <tr>
     <td align="center"><a href="https://github.com/re-ag"><img src="https://avatars.githubusercontent.com/re-ag" width="130px;" alt=""></a></td>
@@ -35,6 +35,18 @@
   </tr>
 </table>
 <br />
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## :white_check_mark: Jira Smart Commit 규칙
 - '완료' 로 상태 바꾸기 : #{ISSUE_NUM} #done #comment "{detail info}"
